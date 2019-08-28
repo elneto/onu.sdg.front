@@ -2,8 +2,8 @@ import React from "react"
 import logo from "../../assets/icons/logo.svg"
 import logoMobile from "../../assets/icons/logo_mobile.svg"
 
-import userImage from "../../assets/icons/user-icon.svg"
-import bellImage from "../../assets/icons/bell-icon.svg"
+import userImage from "../../assets/icons/user.svg"
+import bellImage from "../../assets/icons/bell.svg"
 import searchIcon from "../../assets/icons/search.svg"
 import homeIcon from "../../assets/icons/home.svg"
 
