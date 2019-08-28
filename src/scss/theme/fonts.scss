@@ -1,0 +1,111 @@
+
+$path: '../../assets/fonts';
+$Roboto: '#{$path}/Roboto/Roboto';
+$Oswald: '#{$path}/Oswald/Oswald';
+$RobotoCondensed: '#{$path}/RobotoCondensed/RobotoCondensed';
+
+
+
+//Roboto
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$Roboto}-Regular.eot');
+    src: url('#{$Roboto}-Regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$Roboto}-Regular.woff2') format('woff2'),
+    url('#{$Roboto}-Regular.woff') format('woff'),
+    url('#{$Roboto}-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('#{$Roboto}-Medium.eot'),
+    url('#{$Roboto}-Medium.eot?#iefix') format('embedded-opentype'),
+    url('#{$Roboto}-Medium.woff2') format('woff2'),
+    url('#{$Roboto}-Medium.woff') format('woff'),
+    url('#{$Roboto}-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('#{$Roboto}-Bold.eot'),
+    url('#{$Roboto}-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$Roboto}-Bold.woff2') format('woff2'),
+    url('#{$Roboto}-Bold.woff') format('woff'),
+    url('#{$Roboto}-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Oswald
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('#{$Oswald}-Regular.eot'),
+    url('#{$Oswald}-Regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$Oswald}-Regular.woff2') format('woff2'),
+    url('#{$Oswald}-Regular.woff') format('woff'),
+    url('#{$Oswald}-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('#{$Oswald}-Medium.eot'),
+    url('#{$Oswald}-Medium.eot?#iefix') format('embedded-opentype'),
+    url('#{$Oswald}-Medium.woff2') format('woff2'),
+    url('#{$Oswald}-Medium.woff') format('woff'),
+    url('#{$Oswald}-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('#{$Oswald}-Bold.eot'),
+    url('#{$Oswald}-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$Oswald}-Bold.woff2') format('woff2'),
+    url('#{$Oswald}-Bold.woff') format('woff'),
+    url('#{$Oswald}-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-SemiBold';
+    src: url('#{$Oswald}-SemiBold.eot'),
+    url('#{$Oswald}-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('#{$Oswald}-SemiBold.woff2') format('woff2'),
+    url('#{$Oswald}-SemiBold.woff') format('woff'),
+    url('#{$Oswald}-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+//RobotoCondensed
+
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('#{$RobotoCondensed}-Regular.eot');
+    src: url('#{$RobotoCondensed}-Regular.eot?#iefix') format('embedded-opentype'),
+    url('#{$RobotoCondensed}-Regular.woff2') format('woff2'),
+    url('#{$RobotoCondensed}-Regular.woff') format('woff'),
+    url('#{$RobotoCondensed}-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Bold';
+    src: url('#{$RobotoCondensed}-Bold.eot'),
+    url('#{$RobotoCondensed}-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$RobotoCondensed}-Bold.woff2') format('woff2'),
+    url('#{$RobotoCondensed}-Bold.woff') format('woff'),
+    url('#{$RobotoCondensed}-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

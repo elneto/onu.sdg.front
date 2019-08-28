@@ -1,0 +1,122 @@
+@import "../../scss/theme/variables.scss";
+@import "../../scss/theme/mixins.scss";
+
+.button {
+  outline: none;
+  cursor: pointer;
+  @include items-center;
+  font-family: "Roboto";
+  background-color: transparent;
+
+  &.button-burger {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    margin: 0;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    display: block;
+    cursor: pointer;
+    display: none;
+    &.primary {
+      span {
+        background-color: $primary;
+      }
+     
+    }
+    &.secondary {
+      span {
+        background-color: $secondary;
+      }
+    }
+    span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+    }
+  }
+  &.button-burger span:nth-child(3) {
+    top: 15px;
+  }
+
+  &.button-burger span:nth-child(1) {
+    top: 0px;
+  }
+
+  &.button-burger span:nth-child(2),
+  &.button-burger span:nth-child(3) {
+    top: 10px;
+  }
+
+  &.button-burger span:nth-child(4) {
+    top: 21px;
+  }
+
+  &.button-burger.open span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+  }
+
+  &.button-burger.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &.button-burger.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  &.button-burger.open span:nth-child(4) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+  }
+
+  &.button-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $grey-2;
+    position: relative;
+    .notification {
+      position: absolute;
+      top: -7px;
+      right: -7px;
+      width: 17px;
+      height: 17px;
+      font-size: 9px;
+      background-color: $primary;
+      color: $white;
+      border-radius: 50%;
+      @include items-center;
+    }
+    .svg {
+      path {
+        fill: $grey-2;
+      }
+    }
+    &:hover {
+      border: 1px solid $primary;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .button {
+    &.button-burger {
+      display: block;
+    }
+  }
+}

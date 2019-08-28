@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+@mixin items-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin items-space{
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin input-placeholder {
+    font-size: 13px;
+    font-weight: 500;
+    color: $grey-2;
+    font-style: italic;
+}

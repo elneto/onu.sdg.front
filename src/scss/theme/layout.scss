@@ -1,0 +1,23 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "../base/corrections.scss";
+@import "../base/reset.scss";
+@import "./fonts.scss";
+@import "../components/button.scss";
+
+body {
+  font-family: $main-font;
+  font-size: 15px;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  padding: 12px 14px;
+  border-radius: 3px;
+  &:focus {
+    border: solid 1px $primary;
+  }
+}
+
+
