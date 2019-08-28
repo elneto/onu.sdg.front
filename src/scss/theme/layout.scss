@@ -11,13 +11,7 @@ body {
 }
 
 .input {
-  width: 100%;
   outline: none;
-  padding: 12px 14px;
-  border-radius: 3px;
-  &:focus {
-    border: solid 1px $primary;
-  }
 }
 
 
