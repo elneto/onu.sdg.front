@@ -111,6 +111,27 @@
       border: 1px solid $primary;
     }
   }
+
+  &.button-primary {
+    width: 190px;
+    height: 50px;
+    border-radius: 1px;
+    background-color: $white;
+    border: 1px solid $primary;
+    transition: .4s;
+    padding: 15px 50px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $primary;
+    &:hover {
+      border: solid 1px $primary;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  &.button-secondary {
+
+  }
 }
 
 @media screen and (max-width: 760px) {
