@@ -41,9 +41,5 @@
 @media screen and (max-width: 760px) {
   .input-text {
     width: 100%;
-    &:focus {
-      border: 1px solid $primary;
-      color: $secondary;
-    }
   }
 }
