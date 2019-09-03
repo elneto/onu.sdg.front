@@ -2,23 +2,21 @@
 @import "../../scss/theme/mixins.scss";
 
 .footer {
-  padding: $lateral-padding;
   border-top: 1px solid $grey-6;
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
   justify-content: space-between;
-  &__logo {
-  }
-  &__links {
+  .footer__links {
     display: flex;
     align-items: center;
-    ul {
+    justify-content: flex-end;
+    .nav {
       display: flex;
       margin-right: 30px;
-      li:not(:last-child) {
-        padding-right: 5px;
+      .nav-item:not(:last-child) {
         margin-right: 5px;
+        padding-right: 5px;
         &::after {
           content: "";
           width: 1px;
@@ -28,13 +26,17 @@
           margin-left: 10px;
         }
       }
-      li {
+      .nav-item {
         display: flex;
         align-items: center;
-        a {
+        .nav-link {
           font-size: 13px;
           font-weight: 500;
           color: $grey-1;
+          padding: 0;
+          &:hover, &.active {
+            color: $primary;
+          }
         }
       }
     }
@@ -53,25 +55,18 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .footer {
-    padding: $lateral-padding-tablet;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-}
 
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 992px) {
   .footer {
-    padding: $lateral-padding-mobile;
     padding-top: 32px;
     padding-bottom: 20px;
     flex-direction: column;
     align-items: flex-start;
-    &__logo {
+    .footer__logo {
       margin-bottom: 15px;
     }
-    &__links {
+    .footer__links {
       align-items: flex-start;
       flex-direction: column;
       ul {
