@@ -5,16 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
-// import Header from "./header"
 import Header from "./header/index.js";
 import "../scss/theme/layout.scss";
 import Footer from "./footer/index.js";
-import InputText from "./inputText/index.js";
-import Checkbox from "./checkbox/index.js";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,22 +22,19 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main>
-          <InputText/>
-          <Checkbox />
-        </main>
+      <main></main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+  children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

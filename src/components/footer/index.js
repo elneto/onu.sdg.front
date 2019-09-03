@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.scss";
-import facebook from "../../assets/icons/facebook.svg";
-import twitter from "../../assets/icons/twitter.svg";
-import logo from "../../assets/icons/logo-footer.svg";
+import facebook from "../../assets/images/facebook.svg";
+import twitter from "../../assets/images/twitter.svg";
+import logo from "../../assets/images/logo-footer.svg";
 
 const Footer = ({}) => (
   <footer className="footer">

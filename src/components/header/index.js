@@ -1,14 +1,20 @@
 import React from "react"
-import logo from "../../assets/icons/logo.svg"
-import logoMobile from "../../assets/icons/logo_mobile.svg"
+import logo from "../../assets/images/logo.svg"
+import logoMobile from "../../assets/images/logo_mobile.svg"
 
-import userImage from "../../assets/icons/user.svg"
-import bellImage from "../../assets/icons/bell.svg"
-import searchIcon from "../../assets/icons/search.svg"
-import homeIcon from "../../assets/icons/home.svg"
-
+import userImage from "../../assets/images/user.svg"
+import bellImage from "../../assets/images/bell.svg"
+import searchIcon from "../../assets/images/search.svg"
+import homeIcon from "../../assets/images/home.svg"
 import "./style.scss"
 import SubItem from "../sub-item"
+import custom from "./header";
+import { Helmet } from "react-helmet"
+
+
+// if(typeof document !== "undefined")
+//   custom();
+
 
 class Header extends React.Component {
   toggleSubMenu = e => {
@@ -44,14 +50,14 @@ class Header extends React.Component {
         <header className="header">
           <div className="header__language">
             <div className="header__language-welcome">
-              <img className="home-icon" src={homeIcon} />
+              <img className="home-icon" src={homeIcon} alt=""/>
               <p>Welcome to the United Nations</p>
             </div>
             <button
               className="button button-burger primary"
-              id="burger"
+              id="burger-language"
               type="button"
-              onClick={e => this.toggleLanguageNav(e)}
+              // onClick={e => this.toggleLanguageNav(e)}
             >
               <span />
               <span />
@@ -96,10 +102,10 @@ class Header extends React.Component {
           </div>
           <nav>
             <button
-              id="burger"
+              id="burger-nav"
               type="button"
               className="button button-burger secondary"
-              onClick={e => this.showMenu(e)}
+             
             >
               <span />
               <span />
@@ -110,7 +116,7 @@ class Header extends React.Component {
               <li>
                 <a href="#">Home</a>
               </li>
-              <li className="has-submenu" onClick={e => this.toggleSubMenu(e)}>
+              <li className="has-submenu">
                 Goals
                 <div className="submenu">
                   <SubItem /> <SubItem /> <SubItem />
@@ -119,22 +125,22 @@ class Header extends React.Component {
               <li>
                 <a href="#">States</a>
               </li>
-              <li className="has-submenu" onClick={e => this.toggleSubMenu(e)}>
+              <li className="has-submenu">
                 Partnerships
                 <div className="submenu">2</div>
               </li>
-              <li className="has-submenu" onClick={e => this.toggleSubMenu(e)}>
+              <li className="has-submenu">
                 Stakeholders
                 <div className="submenu">3</div>
               </li>
-              <li className="has-submenu" onClick={e => this.toggleSubMenu(e)}>
+              <li className="has-submenu">
                 Resources
                 <div className="submenu">4</div>
               </li>
               <li>
                 <a href="#">Events</a>
               </li>
-              <li className="has-submenu" onClick={e => this.toggleSubMenu(e)}>
+              <li className="has-submenu">
                 About
                 <div className="submenu">5</div>
               </li>
