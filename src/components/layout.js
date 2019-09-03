@@ -8,10 +8,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
+import $ from 'jquery';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import Header from "./header/index.js";
 import "../scss/theme/layout.scss";
 import Footer from "./footer/index.js";
+
+import LanguageNavBar from "./LanguageNavBar/index.js";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

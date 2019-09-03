@@ -31,6 +31,24 @@ $main-font: "Roboto";
 $secondary-font: "Oswald";
 
 
+$font-family-sans-serif: "Roboto";
+$font-family-sans-serif: "Roboto" ,"Oswald";     
+$font-family-monospace:  "Roboto", "Oswald";
+$font-family-base: $font-family-sans-serif;
+
+
+
+
 $lateral-padding: 0 calc(50% - 1140px/2);
 $lateral-padding-tablet: 0 30px;
 $lateral-padding-mobile: 0 20px;
+
+
+
+
+
+
+
+
+
+

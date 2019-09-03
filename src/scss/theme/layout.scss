@@ -1,3 +1,4 @@
+@import "./bootstrap-overrides.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
 @import "../base/corrections.scss";
@@ -5,13 +6,17 @@
 @import "./fonts.scss";
 @import "../components/button.scss";
 
+
 body {
-  font-family: $main-font;
-  font-size: 15px;
+  font-size: 13px !important;
 }
 
 .input {
   outline: none;
 }
+
+
+//bootstrap variables
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
