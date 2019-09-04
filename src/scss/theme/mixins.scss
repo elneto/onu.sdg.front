@@ -17,3 +17,11 @@
     color: $grey-2;
     font-style: italic;
 }
+
+@mixin input-form-placeholder {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: $grey-2;
+}

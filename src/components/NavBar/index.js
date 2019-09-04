@@ -147,7 +147,7 @@ const NavBar = ({}) => (
           placeholder="Search"
           aria-label="Search"
         />
-        <button class="btn btn-primary" type="submit">
+        <button class="btn" type="submit">
           <img src={searchIcon} />
         </button>
       </form>

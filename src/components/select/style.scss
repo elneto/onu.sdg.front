@@ -1,27 +1,31 @@
 @import "../../scss/theme/variables.scss";
 @import "../../scss/theme/mixins.scss";
 
-.select {
+.form-group {
+  select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     outline: none;
-    cursor: pointer;
-    width: 207px;
     border-radius: 3px;
     padding: 15px;
     border: 1px solid $grey-8;
     background-color: rgba(242, 242, 242, 0.11);
-    background: url('../../assets/icons/arrow-down.svg') center right no-repeat;
+    background: url("../../assets/images/arrow-down.svg") center right no-repeat;
     background-size: 17px 17px;
     background-origin: content-box;
+    height: 50px;
+    font-size: 14px;
     &:focus {
-        border: 1px solid $primary;
+      border: 1px solid $primary;
     }
+  }
 }
 
 @media screen and (max-width: 760px) {
-  .select {
-    width: 100%;
+  .form-group {
+    select {
+      width: 100%;
+    }
   }
 }

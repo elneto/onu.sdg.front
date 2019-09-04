@@ -1,10 +1,12 @@
 import React from "react";
 import "./style.scss";
 
-const Checkbox = ({}) => (
-  <div className="checkbox__wrapper">
-    <input id="checkbox" type="checkbox" className="input input-checkbox"></input>
-    <label for="checkbox">Hola</label>
+const Checkbox = ({id, label}) => (
+  <div className="form-check">
+    <input className="form-check-input" type="checkbox" id={id} />
+    <label className="form-check-label" for={id}>
+      {label}
+    </label>
   </div>
 );
 

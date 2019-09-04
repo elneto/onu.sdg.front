@@ -7,31 +7,31 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
-import $ from 'jquery';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import Header from "./header/index.js";
 import "../scss/theme/layout.scss";
-import Footer from "./footer/index.js";
+import Footer from "./Footer/index.js";
 
-import LanguageNavBar from "./LanguageNavBar/index.js";
+import Button from "./Button/index.js";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Input from "./Input/index.js";
+import Select from "./Select/index.js";
+import Checkbox from "./Checkbox/index.js";
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main></main>
+      <Header />
+      <main>
+        <Button color="primary">Hola soy un botón</Button>
+        <Input
+          id="exampleFormControlInput"
+          type="email"
+          placeholder="Placeholder"
+        />
+        <Select id="exampleFormControlSelect" label="Example" />
+        <Checkbox id="checkbox" label="Check me"/>
+      </main>
       <Footer />
     </>
   );
