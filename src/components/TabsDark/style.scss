@@ -1,20 +1,16 @@
 @import "../../scss/theme/variables.scss";
 @import "../../scss/theme/mixins.scss";
-.tabs {
+
+@include tabs;
+
+.tabs-dark {
   .nav-tabs-un {
     background-color: $secondary;
     .nav-tabs {
       background-color: $secondary;
-      border-bottom: none;
       .nav-link {
         font-family: "Oswald-Bold";
-        font-size: 16px;
-        line-height: 1.5;
-        color: $white;
         color: $grey-8;
-        text-transform: uppercase;
-        border-radius: 0;
-        border: none;
         &.active,
         &:hover {
           background-color: transparent;
@@ -24,9 +20,6 @@
         }
       }
     }
-  }
-  .tab-content {
-    padding-top: 40px;
   }
 }
 

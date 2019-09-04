@@ -15,7 +15,8 @@ import Footer from "./Footer/index.js";
 
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import GoalsBanner from "./GoalsBanner";
-import TabAccordion from "./VerticalNav";
+import TabsDark from "./TabsDark";
+import TabsLight from "./TabsLight";
 
 
 const Layout = ({ children }) => {
@@ -24,7 +25,8 @@ const Layout = ({ children }) => {
       <Header />
       <main>
       <GoalsBanner color="green"/>
-      <TabAccordion />
+      <TabsDark/>
+      <TabsLight />
       </main>
       <Footer />
     </>

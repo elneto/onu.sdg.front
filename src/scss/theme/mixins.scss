@@ -1,27 +1,45 @@
 @import "./variables.scss";
 
-@mixin items-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@mixin items-space{
-    display: flex;
-    justify-content: space-between;
+@mixin items-space {
+  display: flex;
+  justify-content: space-between;
 }
 
 @mixin input-placeholder {
-    font-size: 13px;
-    font-weight: 500;
-    color: $grey-2;
-    font-style: italic;
+  font-size: 13px;
+  font-weight: 500;
+  color: $grey-2;
+  font-style: italic;
 }
 
 @mixin input-form-placeholder {
-    font-family: "Roboto";
-    font-size: 14px;
-    line-height: 1.57;
-    letter-spacing: normal;
-    color: $grey-2;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: $grey-2;
+}
+
+@mixin tabs {
+  .tabs {
+    .nav-tabs {
+      border-bottom: none;
+    }
+    .nav-link {
+      text-transform: uppercase;
+      border-radius: 0;
+      border: none;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .tab-content {
+      padding-top: 40px;
+    }
+  }
 }

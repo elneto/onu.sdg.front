@@ -2,15 +2,18 @@ import React from "react";
 import Button from "../Button";
 import "./style.scss";
 
-const Tabs = ({}) => (
-  <div className="tabs">
-    <div className="nav-tabs-un">
-      <div className="container">
-        <ul className="nav nav-tabs flex-column flex-lg-row" id="myTab" role="tablist">
+const TabsLight = ({}) => (
+  <div className="container">
+    <div className="tabs tabs-light">
+        <ul
+          className="nav nav-tabs flex-column flex-lg-row"
+          id="myTab"
+          role="tablist"
+        >
           <li className="nav-item">
             <a
               className="nav-link active"
-              id="home-tab"
+              id="tab-light-1"
               data-toggle="tab"
               href="#home"
               role="tab"
@@ -23,7 +26,7 @@ const Tabs = ({}) => (
           <li className="nav-item">
             <a
               className="nav-link"
-              id="profile-tab"
+              id="tab-light-2"
               data-toggle="tab"
               href="#profile"
               role="tab"
@@ -36,7 +39,7 @@ const Tabs = ({}) => (
           <li className="nav-item">
             <a
               className="nav-link"
-              id="contact-tab"
+              id="tab-light-3"
               data-toggle="tab"
               href="#contact"
               role="tab"
@@ -47,46 +50,34 @@ const Tabs = ({}) => (
             </a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div className="container">
       <div className="tab-content" id="myTabContent">
         <div
           className="tab-pane fade show active "
           id="home"
           role="tabpanel"
-          aria-labelledby="home-tab"
+          aria-labelledby="tab-light-1"
         >
-          <div className="d-flex justify-content-between align-items-cente">
-            <h2>OVERVIEW</h2>
-            <Button color="primary">More info</Button>
-          </div>
+          lorem
         </div>
         <div
           className="tab-pane fade"
           id="profile"
           role="tabpanel"
-          aria-labelledby="profile-tab"
+          aria-labelledby="tab-light-2"
         >
-          <div className="d-flex justify-content-between align-items-center">
-            <h2>TARGETS & INDICATORS</h2>
-            <Button color="primary">More info</Button>
-          </div>
+          lorem
         </div>
         <div
           className="tab-pane fade"
           id="contact"
           role="tabpanel"
-          aria-labelledby="contact-tab"
+          aria-labelledby="tab-light-3"
         >
-          <div className="d-flex justify-content-between align-items-cente">
-            <h2>PROGRESS & INFO</h2>
-            <Button color="primary">More info</Button>
-          </div>
+          lorem
         </div>
       </div>
     </div>
   </div>
 );
 
-export default Tabs;
+export default TabsLight;
