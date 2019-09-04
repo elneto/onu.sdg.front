@@ -8,29 +8,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Header from "./header/index.js";
+import Header from "./Header/index.js";
 import "../scss/theme/layout.scss";
 import Footer from "./Footer/index.js";
 
-import Button from "./Button/index.js";
+
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Input from "./Input/index.js";
-import Select from "./Select/index.js";
-import Checkbox from "./Checkbox/index.js";
+import GoalsBanner from "./GoalsBanner/index.js";
+
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
       <main>
-        <Button color="primary">Hola soy un botón</Button>
-        <Input
-          id="exampleFormControlInput"
-          type="email"
-          placeholder="Placeholder"
-        />
-        <Select id="exampleFormControlSelect" label="Example" />
-        <Checkbox id="checkbox" label="Check me"/>
+      <GoalsBanner color="green"/>
       </main>
       <Footer />
     </>

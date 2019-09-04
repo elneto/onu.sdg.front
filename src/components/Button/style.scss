@@ -23,4 +23,18 @@
       color: $white;
     }
   }
+  &.btn-transparent {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+    &::after {
+      content: "";
+      background: url("../../assets/images/arrow-down-white.svg") no-repeat center;
+      background-origin: content-box;
+      background-position: center right;
+      background-size: 22px 18px;
+      width: 22px;
+      height: 18px;
+    }
+  }
 }

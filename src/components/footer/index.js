@@ -13,34 +13,34 @@ const Footer = ({}) => (
         </div>
         <div className="col-sm-12  col-lg-8">
           <div className="footer__links d-flex">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+            <ul className="nav">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Contact
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Copyright
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Fraud Alert
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Privacy Notice
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Site Index
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Terms of Use
                 </a>
               </li>

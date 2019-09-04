@@ -12,6 +12,9 @@
         margin-right: 10px;
       }
     }
+    .nav-link {
+      padding: 0;
+    }
     &::after {
       content: "";
       height: 4px;

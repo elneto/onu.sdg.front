@@ -34,15 +34,15 @@ const NavBar = ({}) => (
             >
               Goals
             </a>
-            <div class="dropdown-menu w-100" aria-labelledby="goals">
+            <div className="dropdown-menu w-100" aria-labelledby="goals">
               <div className="container">
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Another action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Something else here
                 </a>
               </div>
@@ -64,15 +64,15 @@ const NavBar = ({}) => (
             >
               Partnerships
             </a>
-            <div class="dropdown-menu w-100" aria-labelledby="partnerships">
+            <div className="dropdown-menu w-100" aria-labelledby="partnerships">
               <div className="container">
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Another action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Something else here
                 </a>
               </div>
@@ -94,15 +94,15 @@ const NavBar = ({}) => (
             >
               Resources
             </a>
-            <div class="dropdown-menu w-100" aria-labelledby="resources">
+            <div className="dropdown-menu w-100" aria-labelledby="resources">
               <div className="container">
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Another action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Something else here
                 </a>
               </div>
@@ -124,15 +124,15 @@ const NavBar = ({}) => (
             >
               About
             </a>
-            <div class="dropdown-menu w-100" aria-labelledby="about">
+            <div className="dropdown-menu w-100" aria-labelledby="about">
               <div className="container">
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Another action
                 </a>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Something else here
                 </a>
               </div>
@@ -147,7 +147,7 @@ const NavBar = ({}) => (
           placeholder="Search"
           aria-label="Search"
         />
-        <button class="btn" type="submit">
+        <button className="btn" type="submit">
           <img src={searchIcon} />
         </button>
       </form>
