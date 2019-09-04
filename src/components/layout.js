@@ -15,6 +15,7 @@ import Footer from "./Footer/index.js";
 
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import GoalsBanner from "./GoalsBanner/index.js";
+import Tabs from "./Tabs/index.js";
 
 
 const Layout = ({ children }) => {
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
       <Header />
       <main>
       <GoalsBanner color="green"/>
+      <Tabs />
       </main>
       <Footer />
     </>
