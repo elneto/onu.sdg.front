@@ -17,6 +17,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import GoalsBanner from "./GoalsBanner";
 import TabsDark from "./TabsDark";
 import TabsLight from "./TabsLight";
+import TabsButton from "./TabsButton/index.js";
 
 
 const Layout = ({ children }) => {
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
       <GoalsBanner color="green"/>
       <TabsDark/>
       <TabsLight />
+      <TabsButton />
       </main>
       <Footer />
     </>
