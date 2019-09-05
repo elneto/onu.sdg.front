@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.scss";
+import SocialIcon from '../SocialIcon';
 import facebook from "../../assets/images/facebook.svg";
 import twitter from "../../assets/images/twitter.svg";
 import logo from "../../assets/images/logo-footer.svg";
+
 
 const Footer = ({}) => (
   <footer className="footer">
@@ -45,14 +47,10 @@ const Footer = ({}) => (
                 </a>
               </li>
             </ul>
-            
+
             <div className="footer__links-social d-flex">
-              <a href="#">
-                <img src={facebook} alt="facebook logo" />
-              </a>
-              <a href="#">
-                <img src={twitter} alt="facebook logo" />
-              </a>
+              <SocialIcon icon={facebook} />
+              <SocialIcon icon={twitter} />
             </div>
           </div>
         </div>

@@ -16,6 +16,11 @@ import Footer from "./Footer/index.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import GoalsBanner from "./GoalsBanner";
 import ToolTip from "./Tooltip/index.js";
+import SocialIcon from "./SocialIcon";
+import facebook from "../assets/images/facebook.svg";
+import twitter from "../assets/images/twitter.svg";
+import linkedin from "../assets/images/linkedin.svg";
+import mail from "../assets/images/mail.svg";
 
 
 const Layout = ({ children }) => {
@@ -25,7 +30,11 @@ const Layout = ({ children }) => {
       <main>
       <GoalsBanner color="green"/>    
       <ToolTip />  
-      <ToolTip close/>  
+      <ToolTip close/>
+      <SocialIcon icon={facebook} />  
+      <SocialIcon icon={twitter} />  
+      <SocialIcon icon={linkedin} />  
+      <SocialIcon icon={mail} />  
       </main>
       <Footer />
     </>
