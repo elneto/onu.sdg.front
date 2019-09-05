@@ -4,7 +4,9 @@ import logoMobile from "../../assets/images/logo_mobile.svg";
 
 import userImage from "../../assets/images/user.svg";
 import bellImage from "../../assets/images/bell.svg";
+import Notification from "../Notification";
 import "./style.scss";
+
 
 const HeaderBanner = ({}) => (
   <div className="container">
@@ -25,7 +27,7 @@ const HeaderBanner = ({}) => (
         <div className="actions d-xs-flex  justify-content-md-end">
           <button className="button button-circle grey">
             <img className="svg" src={bellImage} alt="bell image" />
-            <span className="notification">10</span>
+            <Notification>10</Notification>
           </button>
           <button className="button button-circle grey">
             <img className="svg" src={userImage} alt="user image" />

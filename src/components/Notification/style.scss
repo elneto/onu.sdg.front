@@ -1,0 +1,16 @@
+@import "../../scss/theme/variables.scss";
+@import "../../scss/theme/mixins.scss";
+
+
+.notification {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 17px;
+    height: 17px;
+    font-size: 9px;
+    background-color: $primary;
+    color: $white;
+    border-radius: 50%;
+    @include items-center;
+  }

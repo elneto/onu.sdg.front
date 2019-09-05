@@ -90,18 +90,6 @@
     border-radius: 50%;
     border: 1px solid $grey-2;
     position: relative;
-    .notification {
-      position: absolute;
-      top: -7px;
-      right: -7px;
-      width: 17px;
-      height: 17px;
-      font-size: 9px;
-      background-color: $primary;
-      color: $white;
-      border-radius: 50%;
-      @include items-center;
-    }
     .svg {
       path {
         fill: $grey-2;
