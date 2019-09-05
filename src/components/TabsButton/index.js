@@ -2,7 +2,6 @@ import React from "react";
 import "./style.scss";
 
 const TabsButton = ({}) => (
-  <div className="container">
     <div className="tabs-button">
       <ul
         className="nav nav-pills d-flex justify-content-end"
@@ -55,7 +54,6 @@ const TabsButton = ({}) => (
         </div>
       </div>
     </div>
-  </div>
 );
 
 export default TabsButton;

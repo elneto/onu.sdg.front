@@ -1,0 +1,111 @@
+@import "../../scss/theme/variables.scss";
+@import "../../scss/theme/mixins.scss";
+
+.stepper {
+  .nav-pills {
+    justify-content: space-between;
+  }
+  .nav-item {
+    width: 270px;
+    line-height: 16px;
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+
+    .step {
+      padding: 3.5px 10px;
+      border: 2px solid $white;
+      font-family: "Oswald";
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50%;
+      margin-right: 9px;
+      line-height: 1.3;
+      color: $white;
+    }
+    &.completed {
+      border: solid 1px rgba(0, 173, 239, 0.3);
+      background-color: rgba(0, 173, 239, 0.03);
+      color: $primary;
+      .step {
+        border: 2px solid $primary;
+        background: url("../../assets/images/check-blue.svg") center no-repeat;
+        background-size: 17px 12px;
+        color: transparent;
+      }
+    }
+    &.disabled {
+      color: $white;
+      background: $grey-8;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .stepper {
+    .nav-pills:before,
+    .active:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      height: 1px;
+
+      background-color: $primary;
+      width: 100%;
+      z-index: -1;
+    }
+    .active:after {
+      background-color: $grey-8;
+    }
+    .nav-pills {
+      position: relative;
+      overflow: hidden;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+      }
+    }
+
+    .nav-item {
+      width: auto;
+      padding: 0;
+      background-color: transparent;
+
+      display: inline-block;
+      .step {
+        margin-right: 0;
+      }
+      .text {
+        display: none;
+      }
+      &.active {
+        background-color: transparent;
+        .step {
+          border: 1px solid $primary;
+          background-color: $primary;
+        }
+      }
+      &.disabled {
+        .step {
+          background-color: $grey-8;
+        }
+      }
+      &.completed {
+        background-color: $white;
+        .step {
+          background-color: rgba(0, 173, 239, 0.03);
+        }
+      }
+
+      &.completed,
+      &.disabled {
+        border: none;
+        background-color: transparent;
+      }
+    }
+  }
+}
