@@ -1,0 +1,9 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.badge {
+    font-family: 'Oswald-Bold';
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 2px;
+}

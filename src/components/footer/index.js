@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import SocialIcon from '../SocialIcon';
+import SocialIcon from '../Common/SocialIcon';
 import facebook from "../../assets/images/facebook.svg";
 import twitter from "../../assets/images/twitter.svg";
 import logo from "../../assets/images/logo-footer.svg";

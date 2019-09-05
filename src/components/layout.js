@@ -14,17 +14,15 @@ import Footer from "./Footer/index.js";
 
 
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import GoalsBanner from "./GoalsBanner";
-import Stepper from "./Stepper/index.js";
+import JumbotronHome from "./Jumbotron/JumbotronHome/index.js";
 
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <GoalsBanner color="green"/>  
+      <JumbotronHome />
       <main className="container">
-      <Stepper />  
       </main>
       <Footer />
     </>

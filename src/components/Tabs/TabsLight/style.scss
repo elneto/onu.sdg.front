@@ -1,0 +1,36 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+@include tabs;
+
+.tabs-light {
+  .nav-tabs {
+    background-color: $white;
+    border-bottom: 1px solid $grey-8;
+    .nav-link {
+      font-family: "Oswald";
+      color: $grey-2;
+      &.active,
+      &:hover {
+        background-color: transparent;
+        border-color: transparent;
+        color: $secondary;
+        border-bottom: 2px solid $secondary;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .tabs-light {
+    .nav-tabs {
+      .nav-link {
+        &.active,
+        &:hover {
+          border-bottom: 0;
+          border-left: 2px solid $secondary;
+        }
+      }
+    }
+  }
+}

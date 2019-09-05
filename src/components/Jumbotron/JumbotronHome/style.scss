@@ -1,0 +1,36 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.home-banner {
+    height: calc(100vh - 201px);
+    background: url('../../../assets/home-banner.jpg') center no-repeat;
+    background-size: cover;
+    h1 {
+        font-family: "Oswald-Bold";
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 0.98;
+        color: $white;
+        margin-bottom: 50px;
+        span {
+            background-color: $primary;
+            display: inline-block;
+            margin-top: 5px;
+            padding: 2px 6px;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .home-banner {
+        h1 {
+            font-size: 42px;
+            line-height: 1;
+        }
+        .btn-un {
+            width: 100%;
+        }
+    }
+  }
+

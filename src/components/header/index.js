@@ -1,8 +1,8 @@
 import React from "react";
 
-import NavBar from "../NavBar";
-import LanguageNavBar from "../LanguageNavBar";
-import HeaderBanner from "../HeaderBanner";
+import NavBar from "./NavBar";
+import LanguageNavBar from "./LanguageNavBar";
+import HeaderBanner from "./HeaderBanner";
 
 class Header extends React.Component {
   render() {

@@ -1,0 +1,33 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.label-status {
+  padding: 6px 7px;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 3px;
+  display: inline-block;
+
+  &.completed {
+    color: $status-1;
+    background-color: rgba(95, 201, 88, 0.05);
+    border: solid 1px $status-1;
+  }
+  &.on-track {
+    color: $status-2;
+    background-color: rgba(255, 187, 20, 0.05);
+    border: solid 1px $status-2;
+  }
+
+  &.cancelled {
+    color: $status-3;
+    background-color: rgba(244, 93, 72, 0.05);
+    border: solid 1px $status-3;
+  }
+
+  &.grey {
+    color: $white;
+    background-color: rgba(77, 77, 77, 0.25);
+  }
+}
