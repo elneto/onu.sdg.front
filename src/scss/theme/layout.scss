@@ -19,7 +19,13 @@ body {
 //bootstrap variables
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-
+//Button
+button {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
 
 h2 {
   color: $secondary;

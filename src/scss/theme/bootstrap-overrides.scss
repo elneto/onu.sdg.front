@@ -43,4 +43,7 @@ $card-border-width: 0;
 //Button
 button {
   outline: none;
+  &:focus {
+    outline: none;
+  }
 }

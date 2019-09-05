@@ -1,0 +1,23 @@
+@import "../../scss/theme/variables.scss";
+@import "../../scss/theme/mixins.scss";
+
+.label-goal {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  border: solid 1px $grey-8;
+  background-color: rgba(242, 242, 242, 0.11);
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  color: $grey-2;
+  padding: 5px 10px;
+  .close-icon {
+      margin-left: 15px;
+      background: url('../../assets/images/close.svg') center no-repeat;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      background-size: contain;
+  }
+}

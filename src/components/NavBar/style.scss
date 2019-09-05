@@ -40,6 +40,9 @@
     border: none;
     border-radius: 0;
     background-color: $grey-4;
+    padding-top: 35px;
+    padding-bottom: 45px;
+    box-shadow: 0 10px 10px -10px  rgba(0, 0, 0, 0.3);
   }
   .nav-item:last-child {
     border-right: 1px solid $white;

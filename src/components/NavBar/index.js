@@ -1,6 +1,7 @@
 import React from "react";
 import searchIcon from "../../assets/images/search.svg";
 import "./style.scss";
+import SubItem from "../sub-item";
 
 const NavBar = ({}) => (
   <nav className="navbar navbar-expand-lg navbar-custom">
@@ -35,16 +36,10 @@ const NavBar = ({}) => (
               Goals
             </a>
             <div className="dropdown-menu w-100" aria-labelledby="goals">
-              <div className="container">
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
+              <div className="container d-flex justify-content-center flex-lg-row flex-column">
+                <SubItem />
+                <SubItem />
+                <SubItem />
               </div>
             </div>
           </li>
