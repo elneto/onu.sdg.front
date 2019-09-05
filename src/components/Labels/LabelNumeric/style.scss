@@ -1,9 +1,20 @@
 @import "src/scss/theme/variables.scss";
 @import "src/scss/theme/mixins.scss";
 
+$goals: $goal-1, $goal-2, $goal-3, $goal-4, $goal-5, $goal-6, $goal-7, $goal-8,
+  $goal-9, $goal-10, $goal-11, $goal-12, $goal-13, $goal-14, $goal-15, $goal-16,
+  $goal-17;
+
 .badge {
-    font-family: 'Oswald-Bold';
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 2px;
+  font-family: "Oswald-Bold";
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 2px;
+  width: 24px;
+
+  @for $i from 1 through length($goals) {
+    &.goal-#{$i} {
+      background-color: nth($goals, $i);
+    }
+  }
 }

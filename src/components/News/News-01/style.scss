@@ -1,0 +1,74 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.news-01 {
+  border: solid 1px $grey-8;
+  background-color: $white;
+  transition: 0.4s;
+  max-width: 480px;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    background-color: $primary;
+    h3,
+    .date,
+    p,
+    .related,
+    .link {
+      color: $white;
+    }
+    .link {
+      text-decoration: underline;
+    }
+    .badge {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+  h3 {
+    line-height: 64px;
+    font-family: "Oswald-Bold";
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: $secondary;
+  }
+  .date {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: $grey-2;
+    text-transform: uppercase;
+    line-height: 14px;
+    display: block;
+    margin-bottom: 13px;
+  }
+  p {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: $grey-2;
+  }
+  .related {
+    color: $grey-3;
+    &-text {
+      line-height: 14px;
+      font-family: "Roboto";
+      font-size: 12px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      display: block;
+    }
+  }
+  .link {
+    margin-bottom: 25px;
+  }
+
+  // .card-body {
+  //   padding: 40px 50px;
+  // }
+}

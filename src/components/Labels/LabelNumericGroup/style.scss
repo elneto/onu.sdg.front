@@ -1,0 +1,8 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.label-group {
+  .badge:not(:last-child) {
+    margin-right: 3px;
+  }
+}
