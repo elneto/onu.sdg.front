@@ -1,0 +1,18 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.news-04 {
+  max-width: 360px;
+  .card-date {
+    border-top: 6px solid $primary;
+    padding-top: 15px;
+  }
+  .card-body {
+    padding: 1.25rem 0;
+  }
+  &:hover {
+    .card-title {
+      color: $primary;
+    }
+  }
+}

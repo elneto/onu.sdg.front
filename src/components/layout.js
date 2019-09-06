@@ -18,6 +18,7 @@ import News01 from "./News/News-01/index.js";
 import News02 from "./News/News-02/index.js";
 import NewsImage from "../assets/news-02.jpg";
 import News03 from "./News/News-03/index.js";
+import News04 from "./News/News-04/index.js";
 const Layout = ({ children }) => {
   return (
     <>
@@ -37,6 +38,11 @@ const Layout = ({ children }) => {
           <News03 image={NewsImage}></News03>
           <News03 image={NewsImage}></News03>
           <News03 image={NewsImage}></News03>
+        </div>
+        <div className="d-flex justify-content-between flex-lg-row flex-column" >
+         <News04 />
+         <News04 />
+         <News04 />
         </div>
       </main>
       <Footer />
