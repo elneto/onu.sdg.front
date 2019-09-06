@@ -3,8 +3,8 @@ import homeIcon from "../../../assets/images/home.svg";
 import "./style.scss";
 
 const LanguageNavBar = ({}) => (
-  <nav className="navbar navbar-expand-lg navbar-light navbar-language fixed-top">
-    <div className="container">
+    <nav className="navbar navbar-expand-md navbar-light navbar-language fixed-top">
+        <div className="container">
       <a className="navbar-brand" href="#">
         <img src={homeIcon} alt="" />
         Welcome to the United Nations
@@ -20,7 +20,10 @@ const LanguageNavBar = ({}) => (
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
         <ul className="navbar-nav">
           <li className="nav-item">
             <a className="nav-link" href="#">
@@ -54,8 +57,8 @@ const LanguageNavBar = ({}) => (
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
+      </div>
+    </nav>
 );
 
 export default LanguageNavBar;

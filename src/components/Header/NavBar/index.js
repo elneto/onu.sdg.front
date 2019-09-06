@@ -3,9 +3,8 @@ import searchIcon from "../../../assets/images/search.svg";
 import MegaMenu from "../MegaMenu";
 import "./style.scss";
 
-
 const NavBar = ({}) => (
-  <nav className="navbar navbar-expand-lg navbar-custom">
+  <nav className="navbar navbar-expand-md navbar-custom">
     <div className="container d-flex">
       <button
         className="navbar-toggler"
@@ -18,7 +17,10 @@ const NavBar = ({}) => (
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse order-3 order-2" id="navbarToggle">
+      <div
+        className="collapse navbar-collapse order-3 order-2"
+        id="navbarToggle"
+      >
         <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
           <li className="nav-item">
             <a className="nav-link" href="#">

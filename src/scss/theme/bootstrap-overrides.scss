@@ -8,7 +8,6 @@ $navbar-light-active-color: $primary;
 $navbar-light-disabled-color: $secondary;
 $navbar-light-toggler-border-color: $secondary;
 
-
 //Box shadow
 
 $input-btn-focus-box-shadow: none;
@@ -21,18 +20,17 @@ $btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
 $btn-active-box-shadow: none;
 
-
-//Card 
+//Card
 
 $card-border-radius: 0;
 $card-border-width: 0;
-
 
 // $container-max-widths: (sm: 540px,md: 720px,lg: 960px,xl: 1140px);
 
 .navbar-light {
   .navbar-toggler {
     outline: none;
+    padding: 0;
     &.blue {
       border-color: transparent;
       .navbar-toggler-icon {
@@ -42,7 +40,6 @@ $card-border-width: 0;
   }
 }
 
-
 //Button
 button {
   outline: none;
@@ -50,3 +47,11 @@ button {
     outline: none;
   }
 }
+
+
+// .row > [class*="col-"]:first-child {
+//   padding-left: 0;
+// }
+// .row > [class*="col-"]:last-child {
+//   padding-right: 0;
+// }

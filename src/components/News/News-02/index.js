@@ -6,8 +6,8 @@ import "./style.scss";
 
 
 const News02 = ({ image }) => (
-  <div class="card card-news news-02">
-    <a href="#">
+  <div class="card card-news news-02 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+    <a>
       <img class="card-img-top" src={image} alt="new image" />
       <div class="card-body">
         <span className="card-date">10 MAY</span>

@@ -5,7 +5,9 @@
   border: solid 1px $grey-8;
   background-color: $white;
   transition: 0.4s;
-  max-width: 480px;
+  .card-body {
+    padding: 42px 50px;
+  }
   &:hover {
     background-color: $primary;
     .card-title,

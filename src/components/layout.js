@@ -19,30 +19,40 @@ import News02 from "./News/News-02/index.js";
 import NewsImage from "../assets/news-02.jpg";
 import News03 from "./News/News-03/index.js";
 import News04 from "./News/News-04/index.js";
+import News05 from "./News/News-05/index.js";
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
       <JumbotronHome />
-      <main className="container">
-        <div className="d-flex justify-content-between flex-lg-row flex-column">
-          <News01 />
-          <News01 />
-          <News01 />
+      <main>
+        <div className="container-full">
+          <div className="d-flex justify-content-between flex-lg-row flex-column">
+            <News01 />
+            <News01 />
+            <News01 />
+          </div>
         </div>
-        <div className="d-flex  justify-content-between flex-lg-row flex-column">
-          <News02 image={NewsImage} />
-          <News02 image={NewsImage} />
-        </div>
-        <div className="d-flex justify-content-between flex-lg-row flex-column" >
-          <News03 image={NewsImage}></News03>
-          <News03 image={NewsImage}></News03>
-          <News03 image={NewsImage}></News03>
-        </div>
-        <div className="d-flex justify-content-between flex-lg-row flex-column" >
-         <News04 />
-         <News04 />
-         <News04 />
+
+        <div className="container">
+          <div className="row">
+            <News02 image={NewsImage} />
+            <News02 image={NewsImage} />
+          </div>
+          <div className="d-flex justify-content-between flex-lg-row flex-column">
+            <News03 image={NewsImage}></News03>
+            <News03 image={NewsImage}></News03>
+            <News03 image={NewsImage}></News03>
+          </div>
+          <div className="d-flex justify-content-between flex-lg-row flex-column">
+            <News04 />
+            <News04 />
+            <News04 />
+          </div>
+          <div className="d-flex justify-content-between flex-lg-row flex-column">
+            <News05 image={NewsImage}></News05>
+            <News05 image={NewsImage}></News05>
+          </div>
         </div>
       </main>
       <Footer />

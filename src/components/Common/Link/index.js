@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 const Link = ({ children }) => (
-  <a class="link" href="#" role="button">
+  <a className="link" href="#" role="button">
     {children}
   </a>
 );

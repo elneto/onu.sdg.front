@@ -14,8 +14,6 @@ body {
   outline: none;
 }
 
-
-
 //bootstrap variables
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
@@ -29,7 +27,7 @@ button {
 
 h2 {
   color: $secondary;
-  font-family: 'Oswald-Bold';
+  font-family: "Oswald-Bold";
   font-size: 45px;
   font-weight: bold;
   line-height: 59px;
@@ -38,6 +36,7 @@ h2 {
   border-right: 1px solid $primary;
   margin-bottom: 0;
 }
+
 @media (max-width: 992px) {
   h2 {
     font-size: 32px;
@@ -45,4 +44,22 @@ h2 {
     border-right: none;
     line-height: 1.84;
   }
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding: 0;
+  }
+}
+
+
+// .row {
+//   margin-right: 0;
+//   margin-left: 0;
+// }
+
+
+.container-full {
+  max-width: 1440px;
+  margin: 0 auto;
 }
