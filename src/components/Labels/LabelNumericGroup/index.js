@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.scss";
-import LabelNumeric from "../LabelNumeric";
 
-const LabelNumericGroup = ({children}) => (
+const LabelNumericGroup = ({ children }) => (
   <div className="label-group">
-      {children}
+    <span className="label-group-text">Related Goals</span>
+    <div className="label-group-content">{children}</div>
   </div>
 );
 

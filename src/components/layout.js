@@ -15,7 +15,8 @@ import Footer from "./Footer/index.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import JumbotronHome from "./Jumbotron/JumbotronHome/index.js";
 import News01 from "./News/News-01/index.js";
-
+import News02 from "./News/News-02/index.js";
+import NewsImage from "../assets/news-02.jpg";
 const Layout = ({ children }) => {
   return (
     <>
@@ -26,6 +27,10 @@ const Layout = ({ children }) => {
           <News01 />
           <News01 />
           <News01 />
+        </div>
+        <div className="d-flex  justify-content-between flex-lg-row flex-column">
+          <News02 image={NewsImage} />
+          <News02 image={NewsImage} />
         </div>
       </main>
       <Footer />
