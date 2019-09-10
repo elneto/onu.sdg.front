@@ -24,6 +24,9 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-plugin-no-sourcemaps",
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
