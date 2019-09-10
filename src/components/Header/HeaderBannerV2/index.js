@@ -17,7 +17,7 @@ const HeaderBannerV2 = ({}) => (
       <div className="col-lg-4 col-md-12">
         <div className="row">
           <div className="col-8">
-            <form className="d-flex">
+            <form className="d-flex mb-1">
               <input
                 className="form-control"
                 type="search"
@@ -28,6 +28,7 @@ const HeaderBannerV2 = ({}) => (
                 Search
               </button>
             </form>
+            <span>Advanced Search</span>
           </div>
           <div className="col">
             <div className="actions d-xs-flex  justify-content-md-end">

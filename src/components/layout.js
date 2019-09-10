@@ -19,6 +19,7 @@ import News03 from "./News/News-03/index.js";
 import News04 from "./News/News-04/index.js";
 import News05 from "./News/News-05/index.js";
 import JumbotronHome from "./Jumbotron/JumbotronHome/index.js";
+import FooterV2 from "./FooterV2/index.js";
 const Layout = ({ children }) => {
   return (
     <>
@@ -49,7 +50,8 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
+      <FooterV2 />
     </>
   );
 };
