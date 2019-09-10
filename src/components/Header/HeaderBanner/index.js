@@ -10,7 +10,7 @@ import "./style.scss";
 
 const HeaderBanner = ({}) => (
   <div className="container">
-    <div className="row header__banner">
+    <div className="row header-banner">
       <div className="col d-flex justify-content-center  mb-3 mb-sm-0">
         <img
           className="d-none d-lg-block logo"
