@@ -3,6 +3,12 @@
 
 .jumbotron-event {
   padding: 15px 0 100px;
+  position: relative;
+
+  &.grey {
+    background-color: $grey-4;
+  }
+
   .jumbotron-content {
     padding-right: 0;
     padding-left: 0;
@@ -63,4 +69,25 @@
     color: $primary;
     text-decoration: underline;
   }
+  .event-logo {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 280px;
+  }
 }
+
+
+@media (max-width: 576px) {
+  .jumbotron-event {
+    .event-logo {
+      width: 100%;
+      position: relative;
+      padding: 15px;
+      bottom: 0;
+      margin-top: 40px;
+      right: 0;
+    }
+  }
+}
+

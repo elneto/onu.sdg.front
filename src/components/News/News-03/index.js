@@ -1,7 +1,6 @@
 import React from "react";
 import LabelNumericGroup from "../../Labels/LabelNumericGroup";
 import LabelNumeric from "../../Labels/LabelNumeric";
-import "../news.scss";
 import "./style.scss";
 
 const News03 = ({ image }) => (

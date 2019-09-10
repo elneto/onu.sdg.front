@@ -1,5 +1,5 @@
 import React from "react";
-import '../event.scss';
+import logoSmart from "src/assets/images/logo-smart.svg";
 import "./style.scss";
 
 const JumbotronPartnerships = ({ color }) => (
@@ -10,6 +10,8 @@ const JumbotronPartnerships = ({ color }) => (
           Partnerships
         </a>
         <h1>SEA TURTLE RESTORATION AND PROTECTION</h1>
+        <h2>#SDGACTION8035</h2>
+        <img className="logo"  src={logoSmart} alt="smart logo" />
       </div>
     </div>
   </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import "../news.scss";
 import "./style.scss";
 
 const News05 = ({ image }) => (

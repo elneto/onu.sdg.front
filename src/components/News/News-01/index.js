@@ -2,7 +2,6 @@ import React from "react";
 import LabelNumeric from "../../Labels/LabelNumeric";
 import Link from "../..//Common/Link";
 import LabelNumericGroup from "../../Labels/LabelNumericGroup";
-import "../news.scss";
 import "./style.scss";
 
 const News01 = ({}) => (

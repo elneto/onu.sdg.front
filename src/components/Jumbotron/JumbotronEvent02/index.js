@@ -1,5 +1,4 @@
 import React from "react";
-import '../event.scss';
 import "./style.scss";
 import Link from "../../Common/Link";
 

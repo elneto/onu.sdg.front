@@ -4,7 +4,9 @@
 @import "../base/corrections.scss";
 @import "../base/reset.scss";
 @import "./fonts.scss";
-@import "../components/button.scss";
+@import "components/button.scss";
+@import "components/news.scss";
+@import "components/jumbotron-events.scss";
 
 body {
   font-size: 13px !important;
@@ -17,13 +19,6 @@ body {
 //bootstrap variables
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-//Button
-button {
-  outline: none;
-  &:focus {
-    outline: none;
-  }
-}
 
 // h2 {
 //   color: $secondary;
@@ -36,6 +31,13 @@ button {
 //   border-right: 1px solid $primary;
 //   margin-bottom: 0;
 // }
+
+
+
+.container-full {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 @media (max-width: 992px) {
   h2 {
@@ -52,14 +54,3 @@ button {
   }
 }
 
-
-// .row {
-//   margin-right: 0;
-//   margin-left: 0;
-// }
-
-
-.container-full {
-  max-width: 1440px;
-  margin: 0 auto;
-}

@@ -7,15 +7,15 @@
   position: relative;
   &.green {
     background: 
-    linear-gradient(90deg, $goal-03 68%, rgba(76,161,70,0.6082808123249299) 100%),
+    linear-gradient(90deg, $goal-3 68%, rgba(76,161,70,0.6082808123249299) 100%),
     url('../../../assets/goal-02.jpg');
     background-repeat: no-repeat;
     background-position: center right;
   }
   &.orange {
-    background-color: $goal-02;
+    background-color: $goal-2;
     background: 
-    linear-gradient(90deg, $goal-02 68%, rgba(221,167,58,0.6082808123249299) 100%),
+    linear-gradient(90deg, $goal-2 68%, rgba(221,167,58,0.6082808123249299) 100%),
     url('../../../assets/goal-02.jpg');
     background-repeat: no-repeat;
     background-position: center right;
@@ -70,45 +70,15 @@
     bottom: 35px;
     width: 80px;
   }
-  .btn-outline-light {
-    font-size: 13px;
-    border-radius: 13.5px;
-    &.left {
-      margin-right: 7px;
-      &::before {
-        content: "";
-        background: url("../../../assets/images/arrow-right.svg") center no-repeat;
-        background-origin: content-box;
-        background-position: center right;
-        width: 17px;
-        height: 14px;
-        background-size: contain;
-        margin-right: 5px;
-        transform: rotate(-180deg);
-      }
-    }
-    &.right {
-      &::after {
-        content: "";
-        background: url("../../../assets/images/arrow-right.svg") center no-repeat;
-        background-origin: content-box;
-        background-position: center right;
-        width: 17px;
-        height: 14px;
-        background-size: contain;
-        margin-left: 5px;
-      }
-    }
-  }
 }
 
 @media (max-width: 992px) {
   .goals-banner {
       &.green {
-        background: $goal-03;
+        background: $goal-3;
       }
       &.orange {
-        background: $goal-02;
+        background: $goal-2;
       }
     .goal-logo {
         position: absolute;

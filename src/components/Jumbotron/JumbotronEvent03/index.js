@@ -1,11 +1,9 @@
 import React from "react";
-import '../event.scss';
-import "./style.scss";
 import eventLogo from "../../../assets/images/event-logo.png";
 import Link from "../../Common/Link";
 
 const JumbotronEvent03 = ({ color }) => (
-  <div className="jumbotron-event jumbotron-event-03">
+  <div className="jumbotron-event jumbotron-event-03 grey">
     <div className="container">
       <div className="jumbotron-content col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <a className="event-link" href="#" role="button">

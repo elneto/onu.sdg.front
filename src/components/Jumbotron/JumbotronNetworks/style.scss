@@ -1,8 +1,16 @@
 @import "src/scss/theme/variables.scss";
 @import "src/scss/theme/mixins.scss";
 
-.jumbotron-topics {
-  padding: 15px 0 30px;
+.jumbotron-networks {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../../../assets/news-02.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
   h1 {
     display: flex;
     flex-direction: column;
@@ -14,8 +22,5 @@
       background-color: $primary;
       margin-top: 20px;
     }
-  }
-  h2 {
-    margin-bottom: 90px;
   }
 }

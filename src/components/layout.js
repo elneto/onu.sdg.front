@@ -20,11 +20,19 @@ import News04 from "./News/News-04/index.js";
 import News05 from "./News/News-05/index.js";
 import JumbotronHome from "./Jumbotron/JumbotronHome/index.js";
 import FooterV2 from "./FooterV2/index.js";
+import JumbotronEvent03 from "./Jumbotron/JumbotronEvent03/index.js";
+import JumbotronPartnerships from "./Jumbotron/JumbotronPartnerships/index.js";
+import JumbotronEvent01 from "./Jumbotron/JumbotronEvent01/index.js";
+import JumbotronTopics from "./Jumbotron/JumbotronTopics/index.js";
+import JumbotronGoals from "./Jumbotron/JumbotronGoals/index.js";
+import JumbotronActionNetworks from "./Jumbotron/JumbotronNetworks/index.js";
+import JumbotronStates from "./Jumbotron/JumbotronStates/index.js";
+import JumbotronSpecialEvent from "./Jumbotron/JumbotronSpecialEvent/index.js";
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <JumbotronHome />
+      <JumbotronSpecialEvent />
       <main>
         <div className="container-full">
           <div className="d-flex justify-content-between flex-lg-row flex-column mb-5">

@@ -1,0 +1,122 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.button {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  &.button-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $grey-2;
+    position: relative;
+    .svg {
+      path {
+        fill: $grey-2;
+      }
+    }
+    &:hover {
+      border: 1px solid $primary;
+    }
+  }
+}
+
+.btn {
+  &.btn-outline-light,
+  &.btn-outline-dark {
+    font-family: "Oswald";
+    font-size: 13px;
+    border-radius: 13.5px;
+    &.left {
+      margin-right: 7px;
+      &::before {
+        content: "";
+        background-origin: content-box;
+        background-position: center right;
+        width: 17px;
+        height: 14px;
+        background-size: contain;
+        margin-right: 5px;
+        transform: rotate(-180deg);
+      }
+    }
+    &.right {
+      &::after {
+        content: "";
+
+        background-origin: content-box;
+        background-position: center right;
+        width: 17px;
+        height: 14px;
+        background-size: contain;
+        margin-left: 5px;
+      }
+    }
+  }
+  &.btn-outline-dark {
+    &:hover {
+      &.left {
+        margin-right: 7px;
+        &::before {
+          content: "";
+          background: url("../../assets/images/arrow-right.svg") center
+            no-repeat;
+        }
+      }
+      &.right {
+        &::after {
+          content: "";
+          background: url("../../assets/images/arrow-right.svg") center
+            no-repeat;
+        }
+      }
+    }
+    &.left {
+      margin-right: 7px;
+      &::before {
+        content: "";
+        background: url("../../assets/images/arrow-black.svg") center no-repeat;
+      }
+    }
+    &.right {
+      &::after {
+        content: "";
+        background: url("../../assets/images/arrow-black.svg") center no-repeat;
+      }
+    }
+  }
+  &.btn-outline-light {
+    &:hover {
+      &.left {
+        margin-right: 7px;
+        &::before {
+          content: "";
+          background: url("../../assets/images/arrow-black.svg") center
+            no-repeat;
+        }
+      }
+      &.right {
+        &::after {
+          content: "";
+          background: url("../../assets/images/arrow-black.svg") center
+            no-repeat;
+        }
+      }
+    }
+    &.left {
+      margin-right: 7px;
+      &::before {
+        content: "";
+        background: url("../../assets/images/arrow-right.svg") center no-repeat;
+      }
+    }
+    &.right {
+      &::after {
+        content: "";
+        background: url("../../assets/images/arrow-right.svg") center no-repeat;
+      }
+    }
+  }
+}
