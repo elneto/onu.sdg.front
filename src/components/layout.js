@@ -26,13 +26,12 @@ const Layout = ({ children }) => {
       <JumbotronHome />
       <main>
         <div className="container-full">
-          <div className="d-flex justify-content-between flex-lg-row flex-column">
+          <div className="d-flex justify-content-between flex-lg-row flex-column mb-5">
             <News01 />
             <News01 />
             <News01 />
           </div>
         </div>
-
         <div className="container">
           <div className="row">
             <News02 image={NewsImage} />
@@ -47,10 +46,6 @@ const Layout = ({ children }) => {
             <News04 />
             <News04 />
             <News04 />
-          </div>
-          <div className="d-flex justify-content-between flex-lg-row flex-column">
-            <News05 image={NewsImage}></News05>
-            <News05 image={NewsImage}></News05>
           </div>
         </div>
       </main>
