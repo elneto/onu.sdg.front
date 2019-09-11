@@ -7,12 +7,10 @@
 // You can delete this file if you're not using it
 
 const path = require("path");
-exports.modifyWebpackConfig = ({ config, _stage }) => {
-  return config.merge({
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
     resolve: {
-      alias: {
-        styles: path.resolve(config._config.context, "src/scss")
-      }
+      modules: [path.resolve(__dirname, "src"), "node_modules"]
     }
   });
 };

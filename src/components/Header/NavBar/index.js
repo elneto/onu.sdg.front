@@ -4,7 +4,7 @@ import MegaMenu from "../MegaMenu";
 import "./style.scss";
 
 const NavBar = ({}) => (
-  <nav className="navbar navbar-expand-md navbar-custom">
+  <nav className="navbar navbar-expand-lg navbar-custom">
     <div className="container d-flex">
       <button
         className="navbar-toggler"

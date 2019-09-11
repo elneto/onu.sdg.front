@@ -2,7 +2,20 @@
 @import "src/scss/theme/mixins.scss";
 
 .jumbotron-topics {
-    h2 {
-        margin-bottom: 90px;
+  padding: 15px 0 30px;
+  h1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    &:after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: $primary;
+      margin-top: 20px;
     }
+  }
+  h2 {
+    margin-bottom: 90px;
+  }
 }

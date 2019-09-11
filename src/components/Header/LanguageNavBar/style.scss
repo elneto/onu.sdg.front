@@ -20,7 +20,7 @@
       padding: 8px 0;
     }
     .nav-item {
-      &.active {
+      &.active, &:hover {
         background-color: $white;
         position: relative;
         font-family: "Roboto-Bold";
@@ -30,6 +30,7 @@
           background-color: #c5c5c5;
           position: absolute;
           top: 0;
+          left: 0;
           width: 100%;
         }
       }
@@ -54,7 +55,10 @@
 @media (max-width: 768px) {
   .navbar-language {
     &.navbar {
-      padding: 0.5rem 1rem;
+      padding: 0;
+      .navbar-brand {
+        padding-left: 0.75rem;
+      }
       .navbar-collapse {
         .navbar-nav {
           text-align: center;
