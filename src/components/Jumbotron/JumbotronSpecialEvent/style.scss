@@ -14,10 +14,22 @@
   .carousel-indicators .active {
     background-color: $primary;
   }
+
+
+  .carousel-control-prev-icon {
+      transform: rotate(-180deg);
+  }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     position: absolute;
     bottom: 40px;
+    background-image: url('../../../assets/images/arrow-right.svg');
+    border: 1px solid $white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-size: 20px 20px;
   }
 }
 

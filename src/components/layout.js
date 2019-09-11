@@ -20,12 +20,13 @@ import News04 from "./News/News-04/index.js";
 
 import JumbotronHome from "./Jumbotron/JumbotronHome/index.js";
 import FooterV2 from "./FooterV2/index.js";
+import JumbotronSpecialEvent from "./Jumbotron/JumbotronSpecialEvent/index.js";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <JumbotronHome />
+      <JumbotronSpecialEvent />
       <main>
         <div className="container-full">
           <div className="d-flex justify-content-between flex-lg-row flex-column mb-5">
