@@ -10,7 +10,7 @@ import "./style.scss";
 const HeaderBannerV2 = ({}) => (
   <div className="container">
     <div className="row header-banner header-form">
-      <div className="col-lg-8 col-md-12 d-flex justify-content-center mb-3 mb-lg-0">
+      <div className="col-lg-8 col-md-12 d-flex  mb-3 mb-lg-0">
         <img className="d-none d-lg-block logo" src={logo} alt="logo" />
         <img className="d-lg-none logo-mobile" src={logoMobile} alt="logo" />
       </div>

@@ -57,7 +57,14 @@
       box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
     }
     .nav-item {
-      border-right: 4px solid $-grey-9;
+      .nav-link {
+        border-right: 4px solid $-grey-9;
+      }
+    }
+    .nav-item:first-child {
+      .nav-link {
+        border-left: 4px solid $-grey-9;
+      }
     }
     .navbar-toggler {
       outline: none;
@@ -79,9 +86,11 @@
       padding: 0;
 
       .nav-item,
-      .nav-item:last-child {
-        border-right: none;
-        border-left: none;
+      .nav-item:first-child {
+        .nav-link {
+          border-right: none;
+          border-left: none;
+        }
         &:hover,
         &.show {
           border-bottom: none;

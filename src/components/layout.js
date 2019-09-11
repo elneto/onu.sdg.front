@@ -21,20 +21,40 @@ import News04 from "./News/News-04/index.js";
 import JumbotronHome from "./Jumbotron/JumbotronHome/index.js";
 import FooterV2 from "./FooterV2/index.js";
 import JumbotronSpecialEvent from "./Jumbotron/JumbotronSpecialEvent/index.js";
+import JumbotronAbout from "./Jumbotron/JumbotronAbout/index.js";
+import Featured01 from "./Featured-01/index.js";
+import Featured02 from "./Featured-02/index.js";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
       <JumbotronSpecialEvent />
+      <JumbotronAbout />
       <main>
         <div className="container-full">
-          <div className="d-flex justify-content-between flex-lg-row flex-column mb-5">
+          <div className="row">
             <News01 />
             <News01 />
             <News01 />
           </div>
         </div>
+        <div className="container-full">
+          <div className="mb-5 row">
+            <Featured01 />
+            <Featured01 />
+            <Featured01 />
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="row row-spacing ">
+            <Featured02 />
+            <Featured02 />
+            <Featured02 />
+          </div>
+        </div>
+
         <div className="container">
           <div className="row">
             <News02 image={NewsImage} />

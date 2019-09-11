@@ -1,0 +1,43 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.featured-01 {
+  background: url("../../assets/featured-01.jpg") center no-repeat;
+  background-size: cover;
+  height: 380px;
+  border-bottom: 6px solid $primary;
+  transition: 0.4s;
+
+  > a {
+    height: 100%;
+  }
+
+  .card-body {
+    height: 100%;
+    padding: 170px 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .link {
+    margin-top: auto;
+  }
+
+  .card-title,
+  .link {
+    color: $white;
+  }
+
+  &:hover {
+    background: $primary;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-01 {
+    .card-body {
+      padding: 170px 1.25rem 60px;
+    }
+  }
+}
