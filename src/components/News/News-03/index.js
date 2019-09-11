@@ -4,7 +4,7 @@ import LabelNumeric from "../../Labels/LabelNumeric";
 import "./style.scss";
 
 const News03 = ({ image }) => (
-  <div class="card card-news news-03">
+  <div class="card card-custom news-03">
     <a href="#">
       <img class="card-img-top" src={image} alt="new image" />
       <div class="card-body">

@@ -4,7 +4,7 @@ import LabelNumeric from "../../Labels/LabelNumeric";
 import "./style.scss";
 
 const News04 = ({ }) => (
-  <div class="card card-news news-04">
+  <div class="card card-custom news-04">
     <a href="#">
       <div class="card-body">
         <span className="card-date">5 jul</span>

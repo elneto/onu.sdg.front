@@ -3,7 +3,7 @@ import image from "src/assets/featured-02.jpg";
 import "./style.scss";
 
 const Featured02 = ({}) => (
-  <div className="card card-news featured-02 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+  <div className="card card-custom featured-02 col-xl-4 col-lg-4 col-md-4 col-sm-12">
     <a href="#">
       <div className="card-body">
         <img className="card-image" src={image} alt="featured image" />

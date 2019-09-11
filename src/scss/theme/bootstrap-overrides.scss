@@ -25,6 +25,8 @@ $btn-active-box-shadow: none;
 $card-border-radius: 0;
 $card-border-width: 0;
 
+$container-max-widths: (sm: 670px,md: 720px,lg: 960px,xl: 1140px);
+
 //Button
 button {
   outline: none;

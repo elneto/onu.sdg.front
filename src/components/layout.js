@@ -24,6 +24,13 @@ import JumbotronSpecialEvent from "./Jumbotron/JumbotronSpecialEvent/index.js";
 import JumbotronAbout from "./Jumbotron/JumbotronAbout/index.js";
 import Featured01 from "./Featured-01/index.js";
 import Featured02 from "./Featured-02/index.js";
+import Event01 from "./Events/Event-01/index.js";
+import Event02 from "./Events/Event-02/index.js";
+import Event03 from "./Events/Event-03/index.js";
+import Event04 from "./Events/Event-04/index.js";
+import Event05 from "./Events/Event-05/index.js";
+import Event06 from "./Events/Event-06/index.js";
+import Event07 from "./Events/Event-07/index.js";
 
 const Layout = ({ children }) => {
   return (
@@ -53,9 +60,35 @@ const Layout = ({ children }) => {
             <Featured02 />
             <Featured02 />
           </div>
+          <div className="row row-spacing">
+            <Event01 />
+            <Event01 />
+            <Event01 />
+          </div>
+          <div className="row row-spacing">
+            <Event02 />
+            <Event02 />
+            <Event02 />
+            <Event02 />
+          </div>
+          <div className="row row-spacing">
+            <Event03 />
+            <Event03 />
+            <Event03 />
+            <Event03 />
+          </div>
+          <div className="row row-spacing">
+            <Event05 />
+          </div>
+          <div className="row row-spacing">
+            <Event06 />
+          </div>
+          <div className="row row-spacing">
+            <Event07 />
+          </div>
         </div>
 
-        <div className="container">
+        {/* <div className="container">
           <div className="row">
             <News02 image={NewsImage} />
             <News02 image={NewsImage} />
@@ -70,7 +103,7 @@ const Layout = ({ children }) => {
             <News04 />
             <News04 />
           </div>
-        </div>
+        </div> */}
       </main>
       {/* <Footer /> */}
       <FooterV2 />

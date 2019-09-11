@@ -3,7 +3,7 @@ import Link from "src/components/Common/Link";
 import "./style.scss";
 
 const Featured01 = ({}) => (
-  <div className="card card-news featured-01 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+  <div className="card card-custom featured-01 col-sm-4 col-12">
     <a href="#">
       <div className="card-body">
         <h3 className="card-title">

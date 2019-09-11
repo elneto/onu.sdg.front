@@ -1,0 +1,30 @@
+.event-07 {
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .group-date {
+    flex-direction: column;
+  }
+  .event-text {
+    max-width: 490px;
+  }
+
+  .event-date {
+    &::after {
+      content: none;
+    }
+  }
+
+  .event-text,
+  .event-place {
+    margin-bottom: 0;
+  }
+  .event-logo {
+    max-width: 200px;
+    > img {
+        width: 100%;
+    }
+  }
+}

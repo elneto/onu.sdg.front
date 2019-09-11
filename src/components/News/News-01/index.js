@@ -5,7 +5,7 @@ import LabelNumericGroup from "../../Labels/LabelNumericGroup";
 import "./style.scss";
 
 const News01 = ({}) => (
-  <div className="card card-news news-01 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+  <div className="card card-custom news-01 col-12 col-sm-4">
     <a href="#">
       <div className="card-body">
         <span className="card-date">10 MAY</span>
