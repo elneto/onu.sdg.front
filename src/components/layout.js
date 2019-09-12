@@ -31,6 +31,7 @@ import Event04 from "./Events/Event-04/index.js";
 import Event05 from "./Events/Event-05/index.js";
 import Event06 from "./Events/Event-06/index.js";
 import Event07 from "./Events/Event-07/index.js";
+import Goal01 from "./Goals/Goal-01/index.js";
 
 const Layout = ({ children }) => {
   return (
@@ -55,6 +56,12 @@ const Layout = ({ children }) => {
         </div>
 
         <div className="container">
+          <Goal01 goal="goal-1" />
+          <Goal01 goal="goal-2" />
+          <Goal01 goal="goal-3" />
+        </div>
+
+        {/* <div className="container">
           <div className="row row-spacing ">
             <Featured02 />
             <Featured02 />
@@ -86,7 +93,7 @@ const Layout = ({ children }) => {
           <div className="row row-spacing">
             <Event07 />
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="container">
           <div className="row">

@@ -1,72 +1,61 @@
 //colors
-$primary: #00ADEF;
+$primary: #00adef;
 $secondary: #333333;
 
-$grey-1: #4D4D4D;
+$grey-1: #4d4d4d;
 $grey-2: #9f9f9f;
-$grey-3: #CECECE;
-$grey-4: #F2F2F2;
-$grey-5: #4D4D4D;
+$grey-3: #cecece;
+$grey-4: #f2f2f2;
+$grey-5: #4d4d4d;
 
 $grey-6: #e2e2e2;
 $grey-7: #767676;
 $grey-8: #d8d8d8;
-$-grey-9: #C5C5C5;
+$-grey-9: #c5c5c5;
 
-
-$white: #FFFFFF;
+$white: #ffffff;
 
 //Goals
-$goal-1: #E5233D;
-$goal-2: #DDA73A;
-$goal-3: #4CA146;
-$goal-4: #13496B;
-$goal-5: #EF402C;
-$goal-6: #27BFE6;
-$goal-7: #FBC412;
-$goal-8: #A31C44;
-$goal-9: #F26A2D;
-$goal-10: #E01483;
-$goal-11: #F89D2A;
-$goal-12: #BF8D2C;
+$goal-1: #e5233d;
+$goal-2: #dda73a;
+$goal-3: #4ca146;
+$goal-4: #13496b;
+$goal-5: #ef402c;
+$goal-6: #27bfe6;
+$goal-7: #fbc412;
+$goal-8: #a31c44;
+$goal-9: #f26a2d;
+$goal-10: #e01483;
+$goal-11: #f89d2a;
+$goal-12: #bf8d2c;
 $goal-13: #407f46;
-$goal-14: #1F97D4;
-$goal-15: #59BA48;
-$goal-16: #126A9F;
-$goal-17: #13496B;
+$goal-14: #1f97d4;
+$goal-15: #59ba48;
+$goal-16: #126a9f;
+$goal-17: #13496b;
 
 $status-1: #5fc958;
 $status-2: #ffbb14;
 $status-3: #f45d48;
 
-
 $orange: #ff9832;
 $red: #dc1769;
 $blue: #0091b9;
-
 
 //fonts
 $main-font: "Roboto";
 $secondary-font: "Oswald";
 
-
 $font-family-sans-serif: "Roboto";
-$font-family-sans-serif: "Roboto" ,"Oswald";     
-$font-family-monospace:  "Roboto", "Oswald";
+$font-family-sans-serif: "Roboto", "Oswald";
+$font-family-monospace: "Roboto", "Oswald";
 $font-family-base: $font-family-sans-serif;
 
-
-$lateral-padding: 0 calc(50% - 1140px/2);
+$lateral-padding: 0 calc(50% - 1140px / 2);
 $lateral-padding-tablet: 0 30px;
 $lateral-padding-mobile: 0 20px;
 
-
-
-
-
-@function get-rem($target) {
-    @return ($target / 16px) * 1rem;
-  }
-
-
+$goals: $goal-1, $goal-2, $goal-3, $goal-4, $goal-5, $goal-6, $goal-7, $goal-8,
+  $goal-9, $goal-10, $goal-11, $goal-12, $goal-13, $goal-14, $goal-15, $goal-16,
+  $goal-17;
 
