@@ -28,7 +28,6 @@ const HeaderBannerV2 = ({}) => (
                 Search
               </button>
             </form>
-            <span>Advanced Search</span>
           </div>
           <div className="col">
             <div className="actions d-xs-flex  justify-content-md-end">

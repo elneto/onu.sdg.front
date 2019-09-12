@@ -1,18 +1,22 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi peoples</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="container">
+      <div className="heading-block">
+        <h2>List of components</h2>
+      </div>
+    </div>
+    <div className="d-flex flex-column container">
+      <Link to="/page-home">Home</Link>
+      <Link to="/page-header/">Header</Link>
+      <Link to="/page-footer/">Footer</Link>
+      <Link to="/page-news/">News</Link>
+    </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
