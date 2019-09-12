@@ -1,0 +1,13 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+@media (max-width: 576px) {
+  .goals-wrapper {
+    background-color: $secondary;
+    .heading-block {
+      h2 {
+        color: $white;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 60px auto;
+  padding: 60px 0;
   h2 {
     color: $secondary;
     font-family: "Oswald-Bold";
@@ -22,7 +22,7 @@
 
 @media (max-width: 576px) {
   .heading-block {
-    margin: 30px auto;
+    padding: 30px 0;
     flex-direction: column;
     align-items: flex-start;
     .btn {

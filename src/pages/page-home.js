@@ -8,6 +8,9 @@ import NewsHome from "../components/News/NewsHome";
 import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
+import GoalsWrapper from "../components/Goals/GoalsWrapper";
+
+
 
 const PageHome = () => (
   <>
@@ -28,6 +31,7 @@ const PageHome = () => (
           <Event01 />
         </div>
       </div>
+      <GoalsWrapper goals={17}/>
     </main>
 
     <FooterV2 />

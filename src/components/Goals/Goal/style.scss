@@ -106,24 +106,42 @@
   }
 
   @for $i from 1 through length($goals) {
-    &.goal-#{$i}, .goal-#{$i} {
-      background: nth($goals, $i);
+    &.goal-#{$i} {
+      .card-body {
+        background: nth($goals, $i);
+      }
     }
   }
 }
 
-
-
-@media (min-width: 576px) {
-  .card-goal {
-    .modal {
-      display: none !important;
-    }
-  }
-}
+// @media (min-width: 576px) {
+//   .card-goal {
+//     .modal {
+//       display: none !important;
+//     }
+//   }
+// }
 
 @media (max-width: 576px) {
   .card-goal {
     height: 270px;
+    .card-body {
+      opacity: 1;
+     
+    }
+    .modal-dialog {
+      margin: 0;
+      height: 100%;
+    }
+    .close {
+      position: absolute;
+      right: 20px;
+      color: $white;
+      z-index: 1;
+    }
+    .modal-body {
+      height: 100%;
+      padding: 0;
+    }
   }
 }
