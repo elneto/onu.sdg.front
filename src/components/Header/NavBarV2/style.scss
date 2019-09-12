@@ -43,7 +43,7 @@
       color: $white;
       font-size: 15px;
       height: 100%;
-      font-family: "RobotoCondensed-Bold";
+      font-family: "RobotoCondensed";
       padding: 12px !important;
       position: relative;
     }
@@ -58,12 +58,12 @@
     }
     .nav-item {
       .nav-link {
-        border-right: 4px solid $-grey-9;
+        border-right: 4px solid $grey-9;
       }
     }
     .nav-item:first-child {
       .nav-link {
-        border-left: 4px solid $-grey-9;
+        border-left: 4px solid $grey-9;
       }
     }
     .navbar-toggler {

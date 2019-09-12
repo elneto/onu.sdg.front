@@ -1,0 +1,25 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.heading-block {
+  margin: 60px auto;
+  h2 {
+    color: $secondary;
+    font-family: "Oswald-Bold";
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 59px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-block {
+    margin: 30px auto;
+    h2 {
+      font-size: 32px;
+      line-height: 1.84;
+    }
+  }
+}

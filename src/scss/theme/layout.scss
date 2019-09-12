@@ -8,6 +8,7 @@
 @import "components/news.scss";
 @import "components/jumbotron-events.scss";
 @import "components/events.scss";
+@import "components/heading-block.scss";
 
 body {
   font-size: 13px !important;
@@ -20,17 +21,6 @@ body {
 //bootstrap variables
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-// h2 {
-//   color: $secondary;
-//   font-family: "Oswald-Bold";
-//   font-size: 45px;
-//   font-weight: bold;
-//   line-height: 59px;
-//   text-transform: uppercase;
-//   padding-right: 180px;
-//   border-right: 1px solid $primary;
-//   margin-bottom: 0;
-// }
 
 .container-full {
   max-width: 1440px;
@@ -62,14 +52,14 @@ body {
   }
 }
 
-@media (max-width: 992px) {
-  h2 {
-    font-size: 32px;
-    padding-right: 0px;
-    border-right: none;
-    line-height: 1.84;
-  }
-}
+// @media (max-width: 992px) {
+//   h2 {
+//     font-size: 32px;
+//     padding-right: 0px;
+//     border-right: none;
+//     line-height: 1.84;
+//   }
+// }
 
 // @media (min-width: 576px) {
 //   .container {

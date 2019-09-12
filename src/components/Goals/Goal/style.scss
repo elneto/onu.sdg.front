@@ -3,7 +3,7 @@
 
 .card-goal {
   position: relative;
-  max-width: 240px;
+  cursor: pointer;
 
   .goal-image {
     z-index: 1;
@@ -106,8 +106,24 @@
   }
 
   @for $i from 1 through length($goals) {
-    &.goal-#{$i} {
+    &.goal-#{$i}, .goal-#{$i} {
       background: nth($goals, $i);
     }
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  .card-goal {
+    .modal {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .card-goal {
+    height: 270px;
   }
 }
