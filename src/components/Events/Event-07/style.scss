@@ -28,3 +28,17 @@
     }
   }
 }
+
+
+@media (max-width: 992px) {
+  .event-07 {
+    .card-body {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      > div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
