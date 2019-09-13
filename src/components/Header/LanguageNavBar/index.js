@@ -4,7 +4,7 @@ import "./style.scss";
 const LanguageNavBar = ({}) => (
   <nav className="navbar navbar-expand-md navbar-language fixed-top">
     <a className="navbar-brand" href="#">
-      <img src='assets/images/home.svg' alt="" />
+      <img src='/assets/images/home.svg' alt="" />
       Welcome to the United Nations
     </a>
     <button
