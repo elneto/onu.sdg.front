@@ -1,5 +1,5 @@
-@import "scss/theme/variables.scss";
-@import "scss/theme/mixins.scss";
+@import "../../../scss/theme/variables.scss";
+@import "../../../scss/theme/mixins.scss";
 
 .goals-banner {
   font-family: "Oswald";
@@ -8,7 +8,7 @@
   &.green {
     background: 
     linear-gradient(90deg, $goal-3 68%, rgba(76,161,70,0.6082808123249299) 100%),
-    url('../../../assets/goal-02.jpg');
+    url('/static/assets/goal-02.jpg');
     background-repeat: no-repeat;
     background-position: center right;
   }
@@ -16,7 +16,7 @@
     background-color: $goal-2;
     background: 
     linear-gradient(90deg, $goal-2 68%, rgba(221,167,58,0.6082808123249299) 100%),
-    url('../../../assets/goal-02.jpg');
+    url('/static/assets/goal-02.jpg');
     background-repeat: no-repeat;
     background-position: center right;
   }

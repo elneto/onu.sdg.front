@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export && node scripts/postbuild",
-    "start": "next start"
+    "start": "next start",
+    "out": "http-server out"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "concat": "^1.0.3",
     "glob": "^7.1.4",
+    "http-server": "^0.11.1",
     "path": "^0.12.7",
     "rimraf": "^3.0.0"
   }

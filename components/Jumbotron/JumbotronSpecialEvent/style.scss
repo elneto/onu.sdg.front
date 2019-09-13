@@ -1,5 +1,5 @@
-@import "scss/theme/variables.scss";
-@import "scss/theme/mixins.scss";
+@import "../../../scss/theme/variables.scss";
+@import "../../../scss/theme/mixins.scss";
 
 .specials-events {
   &::after {
@@ -34,7 +34,7 @@
 }
 
 .special-event {
-  background: url("/static/assets/special-event.jpg") no-repeat center center;
+  background: url("/static/content/special-event.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 80px;
   h1,
