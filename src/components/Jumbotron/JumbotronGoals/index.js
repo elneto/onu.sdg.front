@@ -1,5 +1,4 @@
 import React from "react";
-import goalImage from "/assets/images/goal-01.svg";
 import "./style.scss";
 
 const JumbotronGoals = ({ color }) => (
@@ -29,7 +28,7 @@ const JumbotronGoals = ({ color }) => (
           </button>
         </div>
       </div>
-      <img className="goal-logo" src={goalImage} alt="" />
+      <img className="goal-logo" src='/assets/images/goal-01.svg"' alt="" />
     </div>
   </div>
 );

@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "src/components/Common/Link";
-import logoNetworks from "src/assets/images/logo-networks.png";
 import "./style.scss";
 
 const JumbotronActionNetworks = ({}) => (
@@ -18,7 +17,7 @@ const JumbotronActionNetworks = ({}) => (
         <Link>Register</Link>
       </div>
     </div>
-    <img className="event-logo" src={logoNetworks} alt="smart logo" />
+    <img className="event-logo" src='/assets/images/logo-networks.png' alt="smart logo" />
   </div>
 );
 

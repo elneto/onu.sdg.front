@@ -1,17 +1,16 @@
 import React from "react";
 import "./style.scss";
-import logo from "assets/images/logo-footer-white.svg";
-import facebookIcon from "assets/images/facebook-app-logo.svg";
+
 
 const FooterV2 = ({}) => (
   <footer className="footer-dark">
     <div className="container">
       <div className="footer-social">
-        <img className="footer__logo" src={logo} alt="footer logo" />
+        <img className="footer__logo" src="/assets/images/logo-footer-white.svg" alt="footer logo" />
         <div className="footer-actions">
           <div className="d-flex align-items-center">
             <span className="">Join the conversation:</span>
-            <img className="" src={facebookIcon} alt="facebook logo" />
+            <img className="" src='/assets/images/facebook-app-logo.svg' alt="facebook logo" />
           </div>
           <a
             href="#"

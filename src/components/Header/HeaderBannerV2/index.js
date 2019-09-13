@@ -1,9 +1,4 @@
 import React from "react";
-import logo from "assets/images/logo.svg";
-import logoMobile from "assets/images/logo_mobile.svg";
-
-import userImage from "assets/images/user.svg";
-import bellImage from "assets/images/bell.svg";
 import Notification from "../../Common/Notification";
 import "./style.scss";
 
@@ -11,8 +6,8 @@ const HeaderBannerV2 = ({}) => (
   <div className="container">
     <div className="row header-banner header-form">
       <div className="col-lg-8 col-md-12 d-flex  mb-3 mb-lg-0">
-        <img className="d-none d-lg-block logo" src={logo} alt="logo" />
-        <img className="d-lg-none logo-mobile" src={logoMobile} alt="logo" />
+        <img className="d-none d-lg-block logo" src='/assets/images/logo.svg' alt="logo" />
+        <img className="d-lg-none logo-mobile" src="/assets/images/logo_mobile.svg" alt="logo" />
       </div>
       <div className="col-lg-4 col-md-12">
         <div className="row">
@@ -32,11 +27,11 @@ const HeaderBannerV2 = ({}) => (
           <div className="col">
             <div className="actions d-xs-flex  justify-content-md-end">
               <button className="button button-circle grey">
-                <img className="svg" src={bellImage} alt="bell image" />
+                <img className="svg" src='/assets/images/bell.svg' alt="bell image" />
                 <Notification>10</Notification>
               </button>
               <button className="button button-circle grey">
-                <img className="svg" src={userImage} alt="user image" />
+                <img className="svg" src='/assets/images/user.svg' alt="user image" />
               </button>
             </div>
           </div>

@@ -1,6 +1,4 @@
 import React from "react";
-import goalLogo from "src/assets/goals/goal-1.jpg";
-import goalImage from "src/assets/goals/images/img-goal-1.jpg";
 import "./style.scss";
 
 const Goal = ({ goal }) => (
@@ -64,7 +62,7 @@ const Goal = ({ goal }) => (
     </div>
 
     <a href="#">
-      <img src={goalImage} className="goal-image" alt="goal image" />
+      <img src='/assets/goals/images/img-goal-1.jpg' className="goal-image" alt="goal image" />
       <div className="card-body">
         <span className="goal-number">8</span>
         <h3 className="goal-title">
@@ -97,7 +95,7 @@ const Goal = ({ goal }) => (
         </button>
       </div>
 
-      <img className="goal-logo" src={goalLogo} alt="goal logo" />
+      <img className="goal-logo" src='/assets/goals/goal-1.jpg' alt="goal logo" />
     </a>
   </div>
 );

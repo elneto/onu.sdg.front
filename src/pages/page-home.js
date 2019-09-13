@@ -10,9 +10,9 @@ import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
 import GoalsRelatedBlock from "../components/Goals/GoalRelatedBlock";
 import GoalRegister from "../components/Goals/GoalsRegister";
-import JumbotronStates from "../components/Jumbotron/JumbotronStates";
+import Event07 from "../components/Events/Event-07";
 
-
+import GoalsWrapper from "src/components/Goals/GoalsWrapper"
 
 const PageHome = () => (
   <>
@@ -33,8 +33,6 @@ const PageHome = () => (
           <Event01 />
         </div>
       </div>
-      <GoalsRelatedBlock goals={6} />
-      <GoalRegister goal={3} />
     </main>
 
     <FooterV2 />

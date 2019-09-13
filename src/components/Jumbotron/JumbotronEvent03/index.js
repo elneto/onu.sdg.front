@@ -1,5 +1,4 @@
 import React from "react";
-import eventLogo from "/assets/images/event-logo.png";
 import Link from "../../Common/Link";
 
 const JumbotronEvent03 = ({ color }) => (
@@ -18,7 +17,7 @@ const JumbotronEvent03 = ({ color }) => (
         <Link>Visit the website</Link>
       </div>
     </div>
-    <img className="event-logo" src={eventLogo} />
+    <img className="event-logo" src='/assets/images/event-logo.png' />
   </div>
 );
 

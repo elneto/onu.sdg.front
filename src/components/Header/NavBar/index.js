@@ -1,5 +1,4 @@
 import React from "react";
-import searchIcon from "assets/images/search.svg";
 import MegaMenu from "../MegaMenu";
 import "./style.scss";
 
@@ -146,7 +145,7 @@ const NavBar = ({}) => (
           aria-label="Search"
         />
         <button className="btn" type="submit">
-          <img src={searchIcon} />
+          <img src="/assets/images/search.svg" />
         </button>
       </form>
     </div>

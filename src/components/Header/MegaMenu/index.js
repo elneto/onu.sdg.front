@@ -1,11 +1,10 @@
 import React from "react";
 import "./style.scss";
-import goal07 from "assets/images/group-7.jpg";
 const MegaMenu = ({}) => (
   <ul className="mega-menu">
     <li className="mega-menu-item important">
       <a href="#">
-        <img src={goal07} alt="" />
+        <img src="/assets/images/group-7.jpg" alt="" />
         <div className="important__content">
           <p className="title">Sustainable Development Goals</p>
           <p className="description">

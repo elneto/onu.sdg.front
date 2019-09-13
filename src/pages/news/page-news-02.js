@@ -1,7 +1,6 @@
 import React from "react";
 import News02 from "../../components/News/News-02";
-import newImage from "assets/news-02.jpg";
 
-const News02Page = () => <News02 image={newImage} />;
+const News02Page = () => <News02 image={'/assets/news-02.jpg'} />;
 
 export default News02Page;

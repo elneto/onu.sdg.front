@@ -1,5 +1,4 @@
 import React from "react";
-import eventLogo from "assets/images/event-logo.png";
 import "./style.scss";
 
 const Event07 = ({}) => (
@@ -7,7 +6,7 @@ const Event07 = ({}) => (
     <a href="#">
       <div className="card-body">
         <div className="event-logo">
-          <img src={eventLogo} alt="event logo" />
+          <img src='/assets/images/event-logo.png' alt="event logo" />
         </div>
         <div className="group-date">
           <span className="event-day">11</span>
