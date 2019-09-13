@@ -9,6 +9,7 @@
     .goal-link {
       .link {
         color: $primary;
+        text-decoration: underline;
       }
     }
   }
@@ -42,20 +43,29 @@
 
   .goal-targets {
     display: flex;
+    align-items: center;
     .target:not(:last-child) {
       margin-right: 5px;
     }
     .target {
       display: flex;
       align-items: center;
-      height: 23px;
-      padding: 4px 10px;
+      padding: 4px 8px;
       border-radius: 6px;
       border: solid 1px $grey-8;
       background-color: rgba(242, 242, 242, 0.11);
       font-size: 12px;
       font-weight: 500;
       color: $grey-2;
+      line-height: 14px;
+    }
+    .more-targets {
+      line-height: 16px;
+      font-size: 14px;
+      line-height: 1;
+      font-weight: 500;
+      font-family: "Roboto-Medium";
+      color: $grey-5;
     }
   }
 
@@ -89,5 +99,60 @@
         background-color: nth($goals, $i);
       }
     }
+  }
+}
+
+.goal-modal {
+  @for $i from 1 through length($goals) {
+    &.goal-#{$i} {
+      .goal-number {
+        background-color: nth($goals, $i);
+      }
+    }
+  }
+
+  .goal-title {
+    color: $grey-1;
+    font-family: "Oswald-Bold";
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .goal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $grey-8;
+    > div:first-child {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .goal-number {
+    color: $white;
+    font-family: "Oswald-Bold";
+    font-size: 17px;
+    line-height: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+  }
+  .modal-title {
+    color: $secondary;
+    font-family: "Oswald-Bold";
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1140px;
   }
 }
