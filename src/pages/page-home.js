@@ -10,6 +10,7 @@ import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
 import GoalsRelatedBlock from "../components/Goals/GoalRelatedBlock";
 import GoalRegister from "../components/Goals/GoalsRegister";
+import JumbotronStates from "../components/Jumbotron/JumbotronStates";
 
 
 

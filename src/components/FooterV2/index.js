@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
-import logo from "../../assets/images/logo-footer-white.svg";
-import facebookIcon from "../../assets/images/facebook-app-logo.svg";
+import logo from "assets/images/logo-footer-white.svg";
+import facebookIcon from "assets/images/facebook-app-logo.svg";
 
 const FooterV2 = ({}) => (
   <footer className="footer-dark">

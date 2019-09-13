@@ -2,7 +2,7 @@
 @import "src/scss/theme/mixins.scss";
 
 .featured-01 {
-  background: url("../../../assets/featured-01.jpg") center no-repeat;
+  background: url("/assets/featured-01.jpg") center no-repeat;
   background-size: cover;
   height: 380px;
   border-bottom: 6px solid $primary;

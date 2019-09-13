@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import goal07 from "../../../assets/images/group-7.jpg";
+import goal07 from "assets/images/group-7.jpg";
 const MegaMenu = ({}) => (
   <ul className="mega-menu">
     <li className="mega-menu-item important">

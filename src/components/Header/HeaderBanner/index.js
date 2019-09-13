@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../../../assets/images/logo.svg";
-import logoMobile from "../../../assets/images/logo_mobile.svg";
+import logo from "assets/images/logo.svg";
+import logoMobile from "assets/images/logo_mobile.svg";
 
-import userImage from "../../../assets/images/user.svg";
-import bellImage from "../../../assets/images/bell.svg";
+import userImage from "assets/images/user.svg";
+import bellImage from "assets/images/bell.svg";
 import Notification from "../../Common/Notification";
 import "./style.scss";
 

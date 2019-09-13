@@ -24,7 +24,7 @@
   .carousel-control-next-icon {
     position: absolute;
     bottom: 40px;
-    background-image: url('../../../assets/images/arrow-right.svg');
+    background-image: url('/assets/images/arrow-right.svg');
     border: 1px solid $white;
     border-radius: 50%;
     width: 30px;
@@ -34,7 +34,7 @@
 }
 
 .special-event {
-  background: url("../../../assets/special-event.jpg") no-repeat center center;
+  background: url("/assets/special-event.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 80px;
   h1,

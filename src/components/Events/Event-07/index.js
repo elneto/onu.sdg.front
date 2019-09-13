@@ -1,5 +1,5 @@
 import React from "react";
-import eventLogo from "src/assets/images/event-logo.png";
+import eventLogo from "assets/images/event-logo.png";
 import "./style.scss";
 
 const Event07 = ({}) => (

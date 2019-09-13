@@ -1,5 +1,5 @@
 import React from "react";
-import homeIcon from "../../../assets/images/home.svg";
+import homeIcon from "assets/images/home.svg";
 import "./style.scss";
 
 const LanguageNavBar = ({}) => (

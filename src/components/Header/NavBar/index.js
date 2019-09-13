@@ -1,5 +1,5 @@
 import React from "react";
-import searchIcon from "../../../assets/images/search.svg";
+import searchIcon from "assets/images/search.svg";
 import MegaMenu from "../MegaMenu";
 import "./style.scss";
 

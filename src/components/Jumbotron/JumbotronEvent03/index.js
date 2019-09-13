@@ -1,5 +1,5 @@
 import React from "react";
-import eventLogo from "../../../assets/images/event-logo.png";
+import eventLogo from "/assets/images/event-logo.png";
 import Link from "../../Common/Link";
 
 const JumbotronEvent03 = ({ color }) => (

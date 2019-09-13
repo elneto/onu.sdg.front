@@ -22,7 +22,7 @@
       border: 1px solid $secondary;
       &::after {
         content: " ";
-        background: url('../../assets/images/check.svg')
+        background: url('/assets/images/check.svg')
           no-repeat center;
         display: inline-block;
         width: 100%;

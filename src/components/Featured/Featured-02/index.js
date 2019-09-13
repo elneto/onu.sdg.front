@@ -1,5 +1,5 @@
 import React from "react";
-import image from "src/assets/featured-02.jpg";
+import image from "assets/featured-02.jpg";
 import "./style.scss";
 
 const Featured02 = ({}) => (

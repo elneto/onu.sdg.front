@@ -1,5 +1,5 @@
 import React from "react";
-import goalImage from "../../../assets/images/goal-01.svg";
+import goalImage from "/assets/images/goal-01.svg";
 import "./style.scss";
 
 const JumbotronGoals = ({ color }) => (
