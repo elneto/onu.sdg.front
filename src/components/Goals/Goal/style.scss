@@ -114,20 +114,31 @@
   }
 }
 
-// @media (min-width: 576px) {
-//   .card-goal {
-//     .modal {
-//       display: none !important;
-//     }
-//   }
-// }
+@media (min-width: 576px) {
+  .card-goal {
+    .modal {
+      display: none !important;
+    }
+  }
+}
 
 @media (max-width: 576px) {
   .card-goal {
     height: 270px;
+
+    &:hover {
+      .goal-image,
+      .goal-logo {
+        z-index: 1;
+      }
+      .goal-logo,
+      .goal-image {
+        visibility: visible;
+      }
+    }
+
     .card-body {
       opacity: 1;
-     
     }
     .modal-dialog {
       margin: 0;
