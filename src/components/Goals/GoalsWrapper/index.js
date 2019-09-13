@@ -2,10 +2,13 @@ import React from "react";
 import Goal from "../Goal";
 import GlobalGoal from "../GlobalGoal";
 
+import './style.scss';
+
+
 const GoalsWrapper = ({ goals }) => (
-  <div className="container-full">
+  <div className="container-full goals-wrapper">
     <div className="container">
-      <div className="heading-block">
+      <div className="heading-block container">
         <h2>THE 17 GOALS</h2>
       </div>
     </div>
