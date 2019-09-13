@@ -37,24 +37,24 @@ button {
 
 $grid-gutter-width: 15px;
 
-.row > [class*="col-"]:first-child {
-  padding-left: 0;
-}
+// .row > [class*="col-"]:first-child {
+//   padding-left: 0;
+// }
 
-.row > [class*="col-"]:last-child {
-  padding-right: 0;
-}
+// .row > [class*="col-"]:last-child {
+//   padding-right: 0;
+// }
 
 
-@media (max-width: 768px) {
-  .row {
-    > .col-xs-12,
-    > .col-sm-12,
-    > .col-md-12,
-    > .col-lg-12,
-    > .col-xl-12 {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
+// @media (max-width: 768px) {
+//   .row {
+//     > .col-xs-12,
+//     > .col-sm-12,
+//     > .col-md-12,
+//     > .col-lg-12,
+//     > .col-xl-12 {
+//       padding-left: 0;
+//       padding-right: 0;
+//     }
+//   }
+// }

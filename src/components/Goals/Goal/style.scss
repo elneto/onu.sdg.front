@@ -125,7 +125,8 @@
 @media (max-width: 576px) {
   .card-goal {
     height: 270px;
-
+    pointer-events: auto;
+    cursor: pointer;
     &:hover {
       .goal-image,
       .goal-logo {
