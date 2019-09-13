@@ -1,0 +1,120 @@
+@import "scss/theme/variables.scss";
+@import "scss/theme/mixins.scss";
+.footer-dark {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $secondary;
+  position: relative;
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $grey-7;
+    margin-bottom: 25px;
+    .footer-actions {
+      display: flex;
+      align-items: center;
+      > div {
+        &::after {
+          content: "";
+          height: 35px;
+          width: 1px;
+          background-color: rgba(128, 128, 128, 0.61);
+          margin-left: 40px;
+        }
+      }
+      span {
+        color: #c4c4c4;
+        font-family: "RobotoCondensed-Bold";
+        font-size: 17px;
+        line-height: 20px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+    .btn-footer {
+      width: 100px;
+      border: 1px solid $primary;
+      border-radius: 3px;
+      background-color: $white;
+      text-transform: uppercase;
+      font-family: "Roboto-Bold";
+      font-size: 13px;
+      margin-left: 40px;
+    }
+  }
+  &::before {
+    content: "";
+    height: 4px;
+    background-color: $primary;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .footer__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .nav {
+      display: flex;
+      .nav-item:not(:last-child) {
+        margin-right: 5px;
+        padding-right: 5px;
+        &::after {
+          content: "";
+          height: 14px;
+          border-left: 3px solid $grey-7;
+          display: block;
+          margin-left: 10px;
+        }
+      }
+      .nav-item {
+        display: flex;
+        align-items: center;
+        .nav-link {
+          font-size: 12px;
+          font-weight: 500;
+          color: $white;
+          padding: 0;
+          text-transform: uppercase;
+          &:hover,
+          &.active {
+            color: $primary;
+          }
+        }
+      }
+    }
+    &-social {
+      a:not(:last-child) {
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-dark {
+    padding-top: 32px;
+    padding-bottom: 20px;
+    .footer-social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__logo {
+      margin-bottom: 15px;
+    }
+    .footer__links {
+      ul {
+        margin-right: 0;
+        margin-bottom: 15px;
+        li:not(:last-child) {
+          &::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

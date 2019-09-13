@@ -1,0 +1,19 @@
+@import "scss/theme/variables.scss";
+@import "scss/theme/mixins.scss";
+
+.label-group {
+  color: $grey-3;
+  &-text {
+    line-height: 14px;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+  }
+  &-content {
+    .badge:not(:last-child) {
+      margin-right: 3px;
+    }
+  }
+}

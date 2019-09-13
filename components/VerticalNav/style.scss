@@ -1,0 +1,62 @@
+@import "scss/theme/variables.scss";
+@import "scss/theme/mixins.scss";
+
+.navbar-vertical {
+  width: 250px;
+  .nav-pills,
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    border-radius: 0;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  .nav-pills {
+    > .nav-item {
+      > .nav-link {
+        background-color: $secondary;
+        border-bottom: 1px solid $grey-1;
+        color: $white;
+        font-family: "Oswald-Bold";
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: $grey-8;
+        line-height: 22px;
+        &.active,
+        &:hover {
+          border-left: 4px solid $primary;
+        }
+      }
+    }
+  }
+
+  .sub-nav {
+    > .nav-item {
+      > .nav-link {
+        background-color: $grey-5;
+        font-family: 'Oswald';
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: $grey-2;
+        line-height: 22px;
+        border-bottom: 1px solid $grey-2;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .navbar-vertical {
+    width: 100%;
+  }
+}

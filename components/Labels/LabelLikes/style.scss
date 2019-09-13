@@ -1,0 +1,22 @@
+@import "scss/theme/variables.scss";
+@import "scss/theme/mixins.scss";
+
+.label-likes {
+  padding: 10px 15px;
+  display: flex;
+  border-radius: 18px;
+  border: solid 1px $grey-2;
+  background-color: transparent;
+  font-family: "Roboto";
+  font-size: 13px;
+  color: $grey-2;
+  line-height: 20px;
+  .like-icon {
+    margin-right: 5px;
+    background: url("/static/assets/images/like.svg") center no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-size: contain;
+  }
+}

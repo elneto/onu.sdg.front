@@ -1,0 +1,74 @@
+@import "scss/theme/variables.scss";
+@import "scss/theme/mixins.scss";
+
+.event-04 {
+  padding: 12px 40px;
+  > a {
+    &:hover {
+      .group-date ::after,
+      .separator {
+        background-color: $white;
+      }
+      .featured {
+        color: $white;
+      }
+    }
+  }
+
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .event-date {
+    margin-bottom: 5px;
+    &::after {
+      content: none;
+    }
+  }
+  .event-day {
+    line-height: 1;
+  }
+  h5 {
+    margin-bottom: 5px;
+  }
+  .event-text {
+    font-size: 13px;
+  }
+  .event-place,
+  .event-text {
+    margin-bottom: 0;
+  }
+  .featured {
+    font-family: "Roboto-Medium";
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $primary;
+  }
+
+  .group-date {
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $grey-8;
+      height: 100%;
+      width: 1px;
+      top: 0;
+      right: -60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .event-04 {
+    .card-body {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      > div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

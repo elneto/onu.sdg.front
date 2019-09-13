@@ -1,0 +1,23 @@
+@import "scss/theme/variables.scss";
+@import "scss/theme/mixins.scss";
+
+.featured-02 {
+  > a {
+    height: 100%;
+    border: solid 1px $grey-8;
+    border-radius: 3px;
+  }
+  .card-image {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    > a {
+      border: solid 1px $primary;
+    }
+    .card-title {
+      color: $primary;
+    }
+  }
+}
