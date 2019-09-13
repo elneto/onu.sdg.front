@@ -7,7 +7,7 @@ const GoalRelated = ({ goal }) => (
     <a href="#">
       <div className="card-body">
         <span className="goal-number">{goal}</span>
-        <p className="goal-text">Life below water</p>
+        <h4 className="goal-title">Life below water</h4>
         <img className="goal-logo" src={logoRelated} />
       </div>
     </a>
