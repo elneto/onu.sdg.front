@@ -6,7 +6,7 @@
     .card-body {
       border: 1px solid $primary;
     }
-    .goal-content {
+    .goal-link {
       .link {
         color: $primary;
       }
@@ -23,8 +23,14 @@
   .goal-content {
     width: 100%;
     display: flex;
+    flex-direction: column;
     padding: 15px 0;
     height: 100%;
+  }
+
+  .goal-link {
+    display: flex;
+    margin-top: auto;
     .link {
       align-self: flex-end;
       margin-left: auto;
@@ -33,13 +39,34 @@
       font-size: 14px;
     }
   }
+
+  .goal-targets {
+    display: flex;
+    .target:not(:last-child) {
+      margin-right: 5px;
+    }
+    .target {
+      display: flex;
+      align-items: center;
+      height: 23px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: solid 1px $grey-8;
+      background-color: rgba(242, 242, 242, 0.11);
+      font-size: 12px;
+      font-weight: 500;
+      color: $grey-2;
+    }
+  }
+
   .goal-label {
     width: 30px;
     padding: 15px 10px;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     margin-right: 10px;
-    height: 100%;
+    height: inherit;
   }
   .goal-number {
     font-family: "Oswald-Bold";

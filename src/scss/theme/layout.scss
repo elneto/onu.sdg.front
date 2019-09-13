@@ -21,7 +21,6 @@ body {
 //bootstrap variables
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-
 .container-full {
   max-width: 1440px;
   margin: 0 auto;
@@ -39,6 +38,11 @@ body {
   }
 }
 
+.row-spacing {
+  > [class*="col-"] {
+    padding-bottom: $grid-gutter-width;
+  }
+}
 
 @media (max-width: 768px) {
   .row-spacing {

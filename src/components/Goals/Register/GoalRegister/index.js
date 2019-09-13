@@ -9,10 +9,19 @@ const GoalRegister = ({ goal }) => (
     <div className="card-body">
       <div className="goal-label">
         <span className="goal-number">{goal}</span>
+        <img className="d-none" src="/assets/images/check.svg" />
       </div>
       <div className="goal-content">
         <h4 className="goal-title">Life below water</h4>
-        <Link>Add targets</Link>
+        <div className="goal-link">
+          <div className="goal-targets">
+            <div className="target">1.1</div>
+            <div className="target">1.1</div>
+            <div className="target">1.1</div>
+            <div className="target">1.1</div>
+          </div>
+          <Link>Add targets</Link>
+        </div>
       </div>
     </div>
   </div>

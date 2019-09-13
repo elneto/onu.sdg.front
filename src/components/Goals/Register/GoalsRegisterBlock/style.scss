@@ -1,0 +1,22 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.goals-register-block {
+  .heading {
+    padding-bottom: 20px;
+    h3 {
+      font-family: "Oswald-Bold";
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.14;
+      color: $secondary;
+      display: flex;
+      align-items: center;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.57;
+        color: $grey-1;
+    }
+  }
+}
