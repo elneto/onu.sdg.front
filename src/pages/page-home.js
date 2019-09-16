@@ -9,6 +9,7 @@ import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
 import GoalsRegisterBlock from "../components/Goals/Register/GoalsRegisterBlock";
+import GoalTarget from "../components/Goals/Targets/GoalTarget";
 
 const PageHome = () => (
   <>
@@ -29,6 +30,7 @@ const PageHome = () => (
           <Event01 />
         </div>
         <GoalsRegisterBlock goals={17} />
+        <GoalTarget />
       </div>
     </main>
 
