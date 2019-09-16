@@ -12,6 +12,7 @@ import GoalsTargetBlock from "../components/Goals/Targets/GoalsTargetBlock";
 import Publications01 from "../components/Publications/Publications-01";
 import Publications02 from "../components/Publications/Publications-02";
 import Topic01 from "../components/Topics/Topic-01";
+import Topic02 from "../components/Topics/Topic-02";
 
 const PageHome = () => (
   <>
@@ -52,19 +53,24 @@ const PageHome = () => (
             ))}
           </div>
         </div>
+
+
+
         <div className="container">
           <div className="heading-block row">
             <div className="col-12">
-              <h2>Publications</h2>
-              <Button color="primary">See all publications</Button>
+              <h2>Topics</h2>
             </div>
           </div>
           <div className="mb-5 row row-spacing">
-            {[...Array(4).keys()].map(item => (
-              <Publications01 />
+            {[...Array(3).keys()].map(item => (
+             <Topic02 />
             ))}
           </div>
         </div>
+  
+                 
+
       </div>
     </main>
 

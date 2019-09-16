@@ -1,0 +1,35 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.topic-02 {
+  > a {
+    height: 100%;
+    border: 1px solid $grey-8;
+    display: flex;
+    padding: 15px;
+    &:hover {
+      background: $primary;
+      .card-title,
+      .label-group-text {
+        color: $white;
+      }
+      .badge {
+        background-color: $white;
+        color: $primary;
+      }
+    }
+  }
+  .card-body {
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+  }
+  .label-group {
+      margin-top: auto;
+  }
+  .card-image {
+    width: 90px;
+    height: 120px;
+    margin-right: 15px;
+  }
+}
