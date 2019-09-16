@@ -57,9 +57,9 @@ const PageHome = () => (
 
 
         <div className="container">
-          <div className="heading-block row">
+          <div className="heading-related row">
             <div className="col-12">
-              <h2>Topics</h2>
+              <h3>Related topics</h3>
             </div>
           </div>
           <div className="mb-5 row row-spacing">
