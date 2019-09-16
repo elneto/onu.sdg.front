@@ -1,0 +1,52 @@
+@import "../../../../scss/theme/variables.scss";
+@import "../../../../scss/theme/mixins.scss";
+
+.goal-related {
+  cursor: pointer;
+  > a {
+    color: $white;
+  }
+
+  &:hover {
+    > a {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+  }
+
+  .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+  }
+
+  @for $i from 1 through length($goals) {
+    &.goal-#{$i} {
+      > a {
+        background-color: nth($goals, $i);
+      }
+    }
+  }
+
+  .goal-title {
+    font-family: "Oswald-Bold";
+    font-size: 18px;
+    line-height: 1.11;
+    margin-bottom: 0;
+  }
+
+  .goal-number {
+    font-family: "Oswald-Bold";
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.64;
+    border-right: 1px solid rgba(255, 255, 255, 0.39);
+    padding-right: 20px;
+  }
+
+  .goal-logo {
+    width: 30px;
+    height: 25px;
+  }
+}

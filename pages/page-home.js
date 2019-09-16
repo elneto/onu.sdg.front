@@ -7,6 +7,7 @@ import NewsHome from "../components/News/NewsHome";
 import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
+import GoalRelatedBlock from "../components/Goals/Related/GoalRelatedBlock";
 
 const PageHome = () => (
   <>
@@ -28,6 +29,7 @@ const PageHome = () => (
       </div>
     </main>
     {/**/}
+    <GoalRelatedBlock goals={17} />
     <FooterV2 />
   </>
 );
