@@ -10,6 +10,7 @@ import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
 import GoalsRegisterBlock from "../components/Goals/Register/GoalsRegisterBlock";
 import GoalTarget from "../components/Goals/Targets/GoalTarget";
+import GoalsTargetBlock from "../components/Goals/Targets/GoalsTargetBlock";
 
 const PageHome = () => (
   <>
@@ -30,7 +31,7 @@ const PageHome = () => (
           <Event01 />
         </div>
         <GoalsRegisterBlock goals={17} />
-        <GoalTarget />
+        <GoalsTargetBlock />
       </div>
     </main>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const GoalTarget = () => (
+const GoalTarget = ({ id }) => (
   <div className="card goal-target col-md-12">
     <div className="card-body">
       <div className="goal-header">
@@ -23,16 +23,16 @@ const GoalTarget = () => (
           className="btn dropdown-toggle collapsed"
           id="headingOne"
           data-toggle="collapse"
-          data-target="#collapseOne"
+          data-target={`#indicator${id}`}
           aria-expanded="true"
-          aria-controls="collapseOne"
+          aria-controls={id}
         >
           Indicators
         </button>
       </div>
 
       <div
-        id="collapseOne"
+        id={`indicator${id}`}
         className="indicators-collapse collapse"
         aria-labelledby="headingOne"
       >
