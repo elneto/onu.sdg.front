@@ -41,8 +41,14 @@
     }
   }
 
+  &.has-targets {
+    .goal-targets {
+      display: flex;
+    }
+  }
+
   .goal-targets {
-    display: flex;
+    display: none;
     align-items: center;
     .target:not(:last-child) {
       margin-right: 5px;
@@ -111,6 +117,23 @@
     }
   }
 
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    user-select: none;
+    outline: none;
+  }
+
+  .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .modal-content {
+    padding: 60px 80px;
+  }
+
   .goal-title {
     color: $grey-1;
     font-family: "Oswald-Bold";
@@ -124,9 +147,17 @@
     justify-content: space-between;
     padding-bottom: 15px;
     border-bottom: 1px solid $grey-8;
+    margin-bottom: 20px;
     > div:first-child {
       display: flex;
       align-items: center;
+    }
+  }
+
+  form {
+    .form-check {
+      margin-bottom: 17px;
+      padding-left: 0;
     }
   }
 
@@ -148,6 +179,28 @@
     font-family: "Oswald-Bold";
     font-size: 28px;
     line-height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .goal-modal {
+    .modal-content {
+      padding: 1rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .goal-modal {
+    .goal-header {
+      flex-direction: column;
+      align-items: flex-start;
+      > div:first-child {
+        margin-bottom: 20px;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
   }
 }
 

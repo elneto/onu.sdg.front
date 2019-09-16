@@ -1,5 +1,5 @@
 import React from "react";
-import Checkbox from '../../../Form/Checkbox';
+import Checkbox from "../../../Form/Checkbox";
 import "./style.scss";
 
 const GoalRegister = ({ goal }) => (
@@ -80,18 +80,18 @@ const GoalRegister = ({ goal }) => (
     >
       <div className={`modal-dialog goal-modal goal-${goal}`} role="document">
         <div className="modal-content">
+          <button
+            type="button"
+            className="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
           <div className="modal-header">
             <h5 className="modal-title" id="exampleModalLabel">
               Select the targets
             </h5>
-            <button
-              type="button"
-              className="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
           </div>
           <div className="modal-body">
             <div className="goal-header">
@@ -99,11 +99,50 @@ const GoalRegister = ({ goal }) => (
                 <div className="goal-number">{goal}</div>
                 <div className="goal-title">Good health and well-being</div>
               </div>
-
-              <Checkbox label={"ONU-55"} />
-
               <button className="btn btn-un btn-primary">Add targets</button>
             </div>
+            <form>
+              <Checkbox
+                label={
+                  "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day "
+                }
+              />
+              <Checkbox
+                label={
+                  "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day "
+                }
+              />
+              <Checkbox
+                label={
+                  "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day "
+                }
+              />
+              <Checkbox
+                label={
+                  "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day "
+                }
+              />
+              <Checkbox
+                label={
+                  "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day "
+                }
+              />
+              <Checkbox
+                label={
+                  "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day "
+                }
+              />
+              <Checkbox
+                label={
+                  "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day "
+                }
+              />
+              <Checkbox
+                label={
+                  "By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day "
+                }
+              />
+            </form>
           </div>
         </div>
       </div>
