@@ -13,6 +13,8 @@ import Publications01 from "../components/Publications/Publications-01";
 import Publications02 from "../components/Publications/Publications-02";
 import Topic01 from "../components/Topics/Topic-01";
 import Topic02 from "../components/Topics/Topic-02";
+import Partnerships01 from "../components/Partnerships/Partnerships-01";
+import Partnerships02 from "../components/Partnerships/Partnerships-02";
 
 const PageHome = () => (
   <>
@@ -35,26 +37,27 @@ const PageHome = () => (
           <Event01 />
         </div>
 
-        <div className="mb-5 row row-spacing">
-          {[...Array(4).keys()].map(item => (
-            <Publications02 />
-          ))}
-        </div>
 
         <div className="container">
-          <div className="heading-block row">
+          <div className="heading-related row">
             <div className="col-12">
-              <h2>Topics</h2>
+              <h3>Pipas</h3>
             </div>
           </div>
           <div className="mb-5 row row-spacing">
-            {[...Array(4).keys()].map(item => (
-              <Topic01 />
+            {[...Array(3).keys()].map(item => (
+            <Partnerships01 />
+            ))}
+          </div>
+          <div className="mb-5 row row-spacing">
+            {[...Array(3).keys()].map(item => (
+            <Partnerships02 />
             ))}
           </div>
         </div>
+  
 
-
+            
 
         <div className="container">
           <div className="heading-related row">

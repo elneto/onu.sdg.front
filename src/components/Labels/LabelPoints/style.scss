@@ -3,34 +3,34 @@
 
 .label-points {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 2px 10px;
   border-radius: 3px;
   background-color: $grey-1;
   .oval {
     width: 16px;
     height: 16px;
-    border: solid 0.9px $secondary;
+    border: 1px solid $secondary;
     background-color: $grey-8;
     display: inline-block;
     border-radius: 50%;
     vertical-align: middle;
   }
   .oval:not(:last-child) {
-      margin-right: 2px;
+    margin-right: 2px;
   }
   &.completed {
-      .oval:nth-child(1) {
-        background-color: $status-1;
-      }
+    .oval:nth-child(1) {
+      background-color: $status-1;
+    }
   }
   &.on-track {
-      .oval:nth-child(2) {
-        background-color: $status-2;
-      }
+    .oval:nth-child(2) {
+      background-color: $status-2;
+    }
   }
   &.cancelled {
-      .oval:nth-child(3) {
-        background-color: $status-3;
-      }
+    .oval:nth-child(3) {
+      background-color: $status-3;
+    }
   }
 }
