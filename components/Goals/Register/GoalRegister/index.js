@@ -1,5 +1,5 @@
 import React from "react";
-import Checkbox from 'src/components/Form/Checkbox';
+import Checkbox from '../../../Form/Checkbox';
 import "./style.scss";
 
 const GoalRegister = ({ goal }) => (

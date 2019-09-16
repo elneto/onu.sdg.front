@@ -39,18 +39,23 @@ body {
   }
 }
 
-
-@media (max-width: 768px) {
-  .row-spacing {
-    > .col-xs-12,
-    > .col-sm-12,
-    > .col-md-12,
-    > .col-lg-12,
-    > .col-xl-12 {
-      padding-bottom: $grid-gutter-width/2;
-    }
+.row-spacing {
+  > [class*="col-"] {
+    padding-bottom: $grid-gutter-width;
   }
 }
+
+// @media (max-width: 768px) {
+//   .row-spacing {
+//     > .col-xs-12,
+//     > .col-sm-12,
+//     > .col-md-12,
+//     > .col-lg-12,
+//     > .col-xl-12 {
+//       padding-bottom: $grid-gutter-width/2;
+//     }
+//   }
+// }
 
 // @media (max-width: 992px) {
 //   h2 {

@@ -8,6 +8,7 @@ import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
 import GoalRelatedBlock from "../components/Goals/Related/GoalRelatedBlock";
+import GoalsRegisterBlock from "../components/Goals/Register/GoalsRegisterBlock";
 
 const PageHome = () => (
   <>
@@ -30,6 +31,7 @@ const PageHome = () => (
     </main>
     {/**/}
     <GoalRelatedBlock goals={17} />
+    <GoalsRegisterBlock goals={17} />
     <FooterV2 />
   </>
 );
