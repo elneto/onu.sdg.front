@@ -23,6 +23,14 @@
       color: $white;
     }
   }
+  &.disabled {
+    border: 1px solid $grey-4;
+    background-color: rgba(242, 242, 242, 0.3);
+    color: $grey-3;
+    opacity: 1;
+    pointer-events: none;
+  }
+
   &.btn-transparent {
     background-color: transparent;
     border: 1px solid $white;
