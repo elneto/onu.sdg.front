@@ -1,0 +1,40 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.publications-02 {
+  > a {
+    border-radius: 3px;
+    border: 1px solid $grey-8;
+    &:hover {
+      text-decoration: none;
+      .card-text {
+        color: $primary;
+      }
+      border: 1px solid $primary;
+    }
+  }
+  .card-body {
+    display: flex;
+  }
+  .card-image {
+    width: 40px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 2px;
+    // > div {
+    //   background: url("/assets/publications-01.jpg") center no-repeat;
+    //   background-repeat: no-repeat;
+    //   background-position: center center;
+    //   background-attachment: fixed;
+    //   background-size: cover;
+    // }
+  }
+  .card-text {
+    color: $grey-2;
+    display: flex;
+    align-items: center;
+  }
+  .card-body {
+    padding: 5px;
+  }
+}

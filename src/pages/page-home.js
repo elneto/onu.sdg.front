@@ -8,9 +8,9 @@ import NewsHome from "../components/News/NewsHome";
 import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
-import GoalsRegisterBlock from "../components/Goals/Register/GoalsRegisterBlock";
-import GoalTarget from "../components/Goals/Targets/GoalTarget";
 import GoalsTargetBlock from "../components/Goals/Targets/GoalsTargetBlock";
+import Publications01 from "../components/Publications/Publications-01";
+import Publications02 from "../components/Publications/Publications-02";
 
 const PageHome = () => (
   <>
@@ -21,17 +21,37 @@ const PageHome = () => (
       <NewsHome />
       <FeaturedHome />
       <div className="container">
-        <div className="heading-block">
-          <h2>Events</h2>
-          <Button color="primary">See all events</Button>
+        <div className="heading-block row">
+          <div className="col-12">
+            <h2>Events</h2>
+            <Button color="primary">See all events</Button>
+          </div>
         </div>
         <div className="row row-spacing mb-5">
           <Event01 />
           <Event01 />
           <Event01 />
         </div>
-        <GoalsRegisterBlock goals={17} />
-        <GoalsTargetBlock />
+
+        <div className="mb-5 row row-spacing">
+          {[...Array(4).keys()].map(item => (
+            <Publications02 />
+          ))}
+        </div>
+
+        <div className="container">
+          <div className="heading-block row">
+            <div className="col-12">
+              <h2>Publications</h2>
+              <Button color="primary">See all publications</Button>
+            </div>
+          </div>
+          <div className="mb-5 row row-spacing">
+            {[...Array(4).keys()].map(item => (
+              <Publications01 />
+            ))}
+          </div>
+        </div>
       </div>
     </main>
 
