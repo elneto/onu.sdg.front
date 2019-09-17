@@ -1,0 +1,30 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+.partner-04 {
+  &.card-partnership {
+    > a {
+      &:hover {
+        background: $white;
+        .link {
+          color: $primary;
+        }
+        .partnership-text {
+          color: $grey-2;
+        }
+      }
+    }
+
+    .link {
+      text-decoration: underline;
+      color: $secondary;
+    }
+
+    .partneship-logo {
+      background: url("/assets/partnership-logo.jpg") no-repeat center;
+      width: 160px;
+      height: 65px;
+      background-size: contain;
+      margin-bottom: 10px;
+    }
+  }
+}

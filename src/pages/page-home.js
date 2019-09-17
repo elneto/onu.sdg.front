@@ -16,6 +16,7 @@ import Topic02 from "../components/Topics/Topic-02";
 import Partnerships01 from "../components/Partnerships/Partnerships-01";
 import Partnerships02 from "../components/Partnerships/Partnerships-02";
 import Partnerships03 from "../components/Partnerships/Partnerships-03";
+import Partnerships04 from "../components/Partnerships/Partnership-04";
 
 const PageHome = () => (
   <>
@@ -58,6 +59,7 @@ const PageHome = () => (
         </div>
   
   <Partnerships03 />
+  <Partnerships04 />
 
             
 

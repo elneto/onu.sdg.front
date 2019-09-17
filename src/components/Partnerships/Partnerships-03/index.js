@@ -32,7 +32,7 @@ const Partnerships03 = ({}) => (
           <LabelPoints status={"completed"} />
         </div>
         <div className="partnership-firm">
-          <span className="title">Partners</span>
+          <span className="partnership-label">Partners</span>
           <span className="firm">
             Spain, Ministry of Labour, Migration and Social Security; National
             Service for Employment (SEPE)

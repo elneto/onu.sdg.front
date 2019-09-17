@@ -23,7 +23,7 @@
       .partnership-title,
       .partnership-text,
       .label-status,
-      .partnership-firm .title, .firm {
+      .partnership-firm .partnership-label, .firm {
         color: $white;
       }
       .label-points,
@@ -130,17 +130,18 @@
     }
   }
 
+  .partnership-label {
+    color: $grey-1;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
   .partnership-firm {
     border-top: 1px solid $grey-8;
     padding-top: 20px;
     margin-top: 20px;
     span {
       display: block;
-    }
-    .title {
-      color: $grey-1;
-      font-size: 14px;
-      font-weight: 500;
     }
     .firm {
       font-size: 12px;
