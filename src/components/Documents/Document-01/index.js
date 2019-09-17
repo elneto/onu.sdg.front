@@ -1,0 +1,35 @@
+import React from "react";
+const Document01 = () => (
+  <div className="col-sm-12 col-lg-8 document-card">
+    <div class="card">
+      <div class="card-body">
+        <button
+          type="button"
+          className="btn dropdown-toggle collapsed"
+          id="headingOne"
+          data-toggle="collapse"
+          data-target="#documentNotes"
+          aria-expanded="true"
+          aria-controls="documentNotes"
+        >
+          <h4>Concept notes</h4>
+        </button>
+
+        <div
+          id="documentNotes"
+          className="document-collapse collapse"
+          aria-labelledby="headingOne"
+        >
+          <div className="d-flex align-items-center">
+            <div className="document-icon"></div>
+            <a href="#" className="document-name">
+              Concept notes
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+export default Document01;

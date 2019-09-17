@@ -1,0 +1,61 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.document-card {
+  .card {
+    border-radius: 3px;
+    border: 1px solid $grey-8;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .document-icon {
+    background: url("/assets/images/document.svg") center center no-repeat;
+    width: 19px;
+    height: 24px;
+    background-size: contain;
+    margin-right: 15px;
+  }
+  .document-name {
+    font-size: 14px;
+    line-height: 1.57;
+    color: $grey-2;
+  }
+
+  .document-collapse {
+    border-top: 1px solid $grey-8;
+    padding: 10px 1.25rem;
+    &:hover {
+      background-color: $primary;
+      .document-name {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h4 {
+    font-family: "Oswald-Bold";
+    font-size: 20px;
+    color: $secondary;
+    margin-bottom: 0;
+  }
+  .dropdown-toggle {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 1.25rem;
+    &::after {
+      color: $secondary;
+      transition: 0.4s;
+      transform: rotate(180deg);
+    }
+    &.collapsed {
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
