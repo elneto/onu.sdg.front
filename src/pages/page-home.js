@@ -15,10 +15,8 @@ import Topic01 from "../components/Topics/Topic-01";
 import Topic02 from "../components/Topics/Topic-02";
 import Partnerships01 from "../components/Partnerships/Partnership-01";
 import Partnerships02 from "../components/Partnerships/Partnership-02";
-import Partnerships03 from "../components/Partnerships/Partnership-03";
-import Partnerships04 from "../components/Partnerships/Partnership-04";
-import PartnershipBlock from "../components/Partnerships/PartnershipBlock";
-
+import Chart01 from "../components/Charts/Chart-01";
+import Chart02 from "../components/Charts/Chart-02";
 const PageHome = () => (
   <>
     <SEO title="Page two" />
@@ -40,37 +38,9 @@ const PageHome = () => (
           <Event01 />
         </div>
 
-        <div className="container">
-          <div className="heading-related row">
-            <div className="col-12">
-              <h3>Pipas</h3>
-            </div>
-          </div>
-          <div className="mb-5 row row-spacing">
-            {[...Array(3).keys()].map(item => (
-              <Partnerships01 />
-            ))}
-          </div>
-          <div className="mb-5 row row-spacing">
-            {[...Array(3).keys()].map(item => (
-              <Partnerships02 />
-            ))}
-          </div>
-        </div>
+        <Chart01 />
+        <Chart02 />
 
-        <div className="container">
-          <div className="heading-related row">
-            <div className="col-12">
-              <h3>Related topics</h3>
-            </div>
-          </div>
-          <div className="mb-5 row row-spacing">
-            {[...Array(3).keys()].map(item => (
-              <Topic02 />
-            ))}
-          </div>
-        </div>
-        <PartnershipBlock />
       </div>
     </main>
 
