@@ -6,7 +6,7 @@ const Document01 = () => (
         <button
           type="button"
           className="btn dropdown-toggle collapsed"
-          id="headingOne"
+          id="document"
           data-toggle="collapse"
           data-target="#documentNotes"
           aria-expanded="true"
@@ -18,9 +18,9 @@ const Document01 = () => (
         <div
           id="documentNotes"
           className="document-collapse collapse"
-          aria-labelledby="headingOne"
+          aria-labelledby="document"
         >
-          <div className="d-flex align-items-center">
+          <div className="document-group">
             <div className="document-icon"></div>
             <a href="#" className="document-name">
               Concept notes

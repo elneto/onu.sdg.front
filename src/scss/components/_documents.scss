@@ -10,7 +10,9 @@
     padding: 0;
   }
   .document-icon {
-    background: url("/assets/images/document.svg") center center no-repeat;
+    background-image: url("/assets/images/document.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 19px;
     height: 24px;
     background-size: contain;
@@ -24,9 +26,20 @@
 
   .document-collapse {
     border-top: 1px solid $grey-8;
+    .document-group:not(:last-child) {
+      border-bottom: 1px solid $grey-8;
+    }
+  }
+
+  .document-group {
+    display: flex;
+    align-items: center;
     padding: 10px 1.25rem;
     &:hover {
       background-color: $primary;
+      .document-icon {
+        background-image: url("/assets/images/document-white.svg");
+      }
       .document-name {
         color: $white;
         text-decoration: underline;

@@ -11,6 +11,8 @@ import Button from "../components/Common/Button";
 import Chart01 from "../components/Charts/Chart-01";
 import Chart02 from "../components/Charts/Chart-02";
 import Document01 from "../components/Documents/Document-01";
+import Document02 from "../components/Documents/Document-02";
+import Document03 from "../components/Documents/Document-03";
 const PageHome = () => (
   <>
     <SEO title="Page two" />
@@ -36,6 +38,8 @@ const PageHome = () => (
         <Chart02 />
 
       <Document01 />
+      <Document02 />
+      <Document03 />
       </div>
     </main>
 
