@@ -4,8 +4,8 @@ import LabelNumericGroup from "../../Labels/LabelNumericGroup";
 import LabelPoints from "../../Labels/LabelPoints";
 import LabelStatus from "../../Labels/LabelStatus";
 
-const Partnerships02 = ({}) => (
-  <div className="card card-partnership partner-02 col-12 col-sm-6 col-lg-4">
+const Partnerships03 = ({}) => (
+  <div className="card card-partnership partner-03 col-sm-12 col-lg-9">
     <a href="#">
       <div className="card-body">
         <div className="d-flex justify-content-between align-items-center mb-2">
@@ -17,6 +17,12 @@ const Partnerships02 = ({}) => (
         </h4>
         <span className="partnership-date">27 May 2019</span>
 
+        <p className="partnership-text">
+          El PLAN DE CHOQUE POR EL EMPLEO JÓVEN 2019-2021; approved by the
+          Spanish Council of Ministers (December 7 2018), consists on hiring
+          3.000 employment counselors in Spain.
+        </p>
+
         <div className="d-flex justify-content-between align-items-end mb-2 mt-auto">
           <LabelNumericGroup>
             <LabelNumeric color={"goal-4"}>6</LabelNumeric>
@@ -25,18 +31,11 @@ const Partnerships02 = ({}) => (
           </LabelNumericGroup>
           <LabelPoints status={"completed"} />
         </div>
-        <div className="d-flex justify-content-end partnership-actions">
-          <span>
-            <span className="partnership-icon likes"></span>
-            10
-          </span>
-          <span>
-            <span className="partnership-icon comments"></span>
-            10
-          </span>
-          <span>
-            <span className="partnership-icon checks"></span>
-            10
+        <div className="partnership-firm">
+          <span className="title">Partners</span>
+          <span className="firm">
+            Spain, Ministry of Labour, Migration and Social Security; National
+            Service for Employment (SEPE)
           </span>
         </div>
       </div>
@@ -44,4 +43,4 @@ const Partnerships02 = ({}) => (
   </div>
 );
 
-export default Partnerships02;
+export default Partnerships03;

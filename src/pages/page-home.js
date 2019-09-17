@@ -15,6 +15,7 @@ import Topic01 from "../components/Topics/Topic-01";
 import Topic02 from "../components/Topics/Topic-02";
 import Partnerships01 from "../components/Partnerships/Partnerships-01";
 import Partnerships02 from "../components/Partnerships/Partnerships-02";
+import Partnerships03 from "../components/Partnerships/Partnerships-03";
 
 const PageHome = () => (
   <>
@@ -56,6 +57,7 @@ const PageHome = () => (
           </div>
         </div>
   
+  <Partnerships03 />
 
             
 

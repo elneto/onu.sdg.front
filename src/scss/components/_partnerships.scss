@@ -21,7 +21,9 @@
       .partnership-date,
       .partnership-hashtag,
       .partnership-title,
-      .label-status {
+      .partnership-text,
+      .label-status,
+      .partnership-firm .title, .firm {
         color: $white;
       }
       .label-points,
@@ -92,6 +94,12 @@
     font-size: 12px;
   }
 
+  .partnership-text {
+    font-size: 14px;
+    line-height: 1.57;
+    color: $grey-2;
+  }
+
   .partnership-actions {
     visibility: hidden;
     > span {
@@ -112,13 +120,32 @@
     background-position: center center;
     margin-right: 4px;
     &.likes {
-      background-image: url("/assets/images/like.svg");
+      background-image: url("/assets/images/like-white.svg");
     }
     &.comments {
-      background-image: url("/assets/images/comment.svg");
+      background-image: url("/assets/images/comment-white.svg");
     }
     &.checks {
-      background-image: url("/assets/images/check.svg");
+      background-image: url("/assets/images/check-white.svg");
+    }
+  }
+
+  .partnership-firm {
+    border-top: 1px solid $grey-8;
+    padding-top: 20px;
+    margin-top: 20px;
+    span {
+      display: block;
+    }
+    .title {
+      color: $grey-1;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .firm {
+      font-size: 12px;
+      line-height: 1.33;
+      color: $grey-2;
     }
   }
 }

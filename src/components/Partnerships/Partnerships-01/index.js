@@ -8,7 +8,7 @@ const Partnerships01 = ({}) => (
   <div className="card card-partnership partner-01 col-12 col-sm-6 col-lg-4">
     <a href="#">
       <div className="card-body">
-        <div className="d-flex justify-content-between align-items-center mb-3">
+        <div className="d-flex justify-content-between align-items-center mb-2">
           <span className="partnership-hashtag">#OceanAction32054</span>
           <LabelStatus status={"completed"}>Completed </LabelStatus>
         </div>
