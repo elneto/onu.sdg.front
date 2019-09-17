@@ -8,11 +8,9 @@ import NewsHome from "../components/News/NewsHome";
 import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
-import Chart01 from "../components/Charts/Chart-01";
-import Chart02 from "../components/Charts/Chart-02";
-import Document01 from "../components/Documents/Document-01";
-import Document02 from "../components/Documents/Document-02";
-import Document03 from "../components/Documents/Document-03";
+import TimeLine01 from "../components/Timeline/Timeline-01";
+import TimeLine02 from "../components/Timeline/Timeline-02";
+
 const PageHome = () => (
   <>
     <SEO title="Page two" />
@@ -34,12 +32,14 @@ const PageHome = () => (
           <Event01 />
         </div>
 
-        <Chart01 />
-        <Chart02 />
+        <div className="heading-block row">
+          <div className="col-12">
+            <h2>Milestones</h2>
+          </div>
+        </div>
 
-      <Document01 />
-      <Document02 />
-      <Document03 />
+        <TimeLine01 />
+        <TimeLine02 />
       </div>
     </main>
 

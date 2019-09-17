@@ -1,0 +1,123 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.timeline {
+  position: relative;
+  // overflow: hidden;
+  min-height: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: $grey-3;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 210px;
+  }
+
+  &-group:nth-of-type(2n + 1) {
+    .timeline-label {
+      position: absolute;
+      top: -80px;
+      &::after {
+        content: "";
+        border-right: 1px dashed $grey-3;
+        height: 100%;
+        position: absolute;
+        width: 1px;
+        z-index: -1;
+      }
+    }
+  }
+  &-group:nth-of-type(2n) {
+    flex-direction: column-reverse;
+    .timeline-label {
+      position: absolute;
+      top: 10px;
+      justify-content: flex-end;
+      &::before {
+        content: "";
+        border-right: 1px dashed $grey-3;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &-label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 210px;
+    text-align: center;
+    height: 80px;
+    span {
+      border-radius: 11px;
+      border: 1px solid $primary;
+      background-color: $primary;
+      padding: 4px 13px;
+      font-family: "Roboto-Medium";
+      font-weight: 500;
+      font-size: 12px;
+      color: $white;
+      width: 200px;
+    }
+  }
+
+  &-point {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    background-color: $primary;
+  }
+  &-date {
+    font-family: "Oswald-Bold";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    color: $secondary;
+    background-color: $white;
+    padding: 3px 9px;
+  }
+}
+
+@media (max-width: 992px) {
+  .timeline {
+    flex-direction: column;
+    // align-items: flex-start;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-color: $grey-3;
+      width: 1px;
+      z-index: -1;
+    }
+    &-group {
+      position: relative;
+      .timeline-label {
+        position: relative;
+        &::before,
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
