@@ -17,6 +17,7 @@ import Partnerships01 from "../components/Partnerships/Partnership-01";
 import Partnerships02 from "../components/Partnerships/Partnership-02";
 import Chart01 from "../components/Charts/Chart-01";
 import Chart02 from "../components/Charts/Chart-02";
+import Comment from "../components/Comment";
 const PageHome = () => (
   <>
     <SEO title="Page two" />
@@ -41,6 +42,7 @@ const PageHome = () => (
         <Chart01 />
         <Chart02 />
 
+      <Comment />
       </div>
     </main>
 
