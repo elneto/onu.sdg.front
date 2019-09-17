@@ -1,0 +1,22 @@
+.partnership-block {
+  .partner-03 {
+    &.card-partnership > a {
+      border-radius: 3px 0px 0px 3px;
+    }
+  }
+  .partner-04 {
+    &.card-partnership > a {
+      border-radius: 0px 3px 3px 0px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .partnership-block {
+    .partner-04 {
+      &.card-partnership > a {
+        border-left: none;
+      }
+    }
+  }
+}

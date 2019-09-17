@@ -13,10 +13,11 @@ import Publications01 from "../components/Publications/Publications-01";
 import Publications02 from "../components/Publications/Publications-02";
 import Topic01 from "../components/Topics/Topic-01";
 import Topic02 from "../components/Topics/Topic-02";
-import Partnerships01 from "../components/Partnerships/Partnerships-01";
-import Partnerships02 from "../components/Partnerships/Partnerships-02";
-import Partnerships03 from "../components/Partnerships/Partnerships-03";
+import Partnerships01 from "../components/Partnerships/Partnership-01";
+import Partnerships02 from "../components/Partnerships/Partnership-02";
+import Partnerships03 from "../components/Partnerships/Partnership-03";
 import Partnerships04 from "../components/Partnerships/Partnership-04";
+import PartnershipBlock from "../components/Partnerships/PartnershipBlock";
 
 const PageHome = () => (
   <>
@@ -39,7 +40,6 @@ const PageHome = () => (
           <Event01 />
         </div>
 
-
         <div className="container">
           <div className="heading-related row">
             <div className="col-12">
@@ -48,20 +48,15 @@ const PageHome = () => (
           </div>
           <div className="mb-5 row row-spacing">
             {[...Array(3).keys()].map(item => (
-            <Partnerships01 />
+              <Partnerships01 />
             ))}
           </div>
           <div className="mb-5 row row-spacing">
             {[...Array(3).keys()].map(item => (
-            <Partnerships02 />
+              <Partnerships02 />
             ))}
           </div>
         </div>
-  
-  <Partnerships03 />
-  <Partnerships04 />
-
-            
 
         <div className="container">
           <div className="heading-related row">
@@ -71,13 +66,11 @@ const PageHome = () => (
           </div>
           <div className="mb-5 row row-spacing">
             {[...Array(3).keys()].map(item => (
-             <Topic02 />
+              <Topic02 />
             ))}
           </div>
         </div>
-  
-                 
-
+        <PartnershipBlock />
       </div>
     </main>
 
