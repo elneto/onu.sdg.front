@@ -8,8 +8,7 @@ import NewsHome from "../components/News/NewsHome";
 import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
-import TimeLine01 from "../components/Timeline/Timeline-01";
-import TimeLine02 from "../components/Timeline/Timeline-02";
+import TimeLine from "../components/Timeline/";
 
 const PageHome = () => (
   <>
@@ -38,8 +37,8 @@ const PageHome = () => (
           </div>
         </div>
 
-        <TimeLine01 />
-        <TimeLine02 />
+        <TimeLine />
+       
       </div>
     </main>
 

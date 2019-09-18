@@ -3,7 +3,7 @@
 
 .timeline {
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
   min-height: 210px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    width: 210px;
+    width: 250px;
   }
 
   &-group:nth-of-type(2n + 1) {
@@ -62,11 +62,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 210px;
+    max-width: 250px;
     text-align: center;
     height: 80px;
     span {
-      border-radius: 11px;
+      border-radius: 18px;
       border: 1px solid $primary;
       background-color: $primary;
       padding: 4px 13px;
@@ -74,7 +74,7 @@
       font-weight: 500;
       font-size: 12px;
       color: $white;
-      width: 200px;
+      // width: 200px;
     }
   }
 
@@ -99,7 +99,7 @@
 @media (max-width: 992px) {
   .timeline {
     flex-direction: column;
-    // align-items: flex-start;
+    margin-bottom: 0;
     &::before {
       content: "";
       position: absolute;
@@ -109,15 +109,62 @@
       width: 1px;
       z-index: -1;
     }
-    &-group {
-      position: relative;
+
+    &-group:nth-of-type(2n + 1) {
       .timeline-label {
         position: relative;
-        &::before,
+        justify-content: center;
+        top: 0;
         &::after {
           content: none;
         }
       }
+    }
+    &-group:nth-of-type(2n) {
+      .timeline-label {
+        position: relative;
+        top: 0;
+        justify-content: center;
+        &::before {
+          content: none;
+        }
+      }
+    }
+
+    &-group:nth-of-type(1) {
+      .timeline-label {
+        justify-content: flex-start;
+      }
+    }
+    &-label {
+      max-width: 100%;
+    }
+    &-point {
+      display: none;
+    }
+  }
+
+  .timeline-block {
+    .timeline:not(:first-child) {
+      padding-top: 30px;
+      .timeline-date:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline {
+    align-items: flex-start;
+
+    &::before {
+      left: 25px;
+    }
+
+    &-group {
+      align-items: flex-start;
+      width: 100%;
     }
   }
 }
