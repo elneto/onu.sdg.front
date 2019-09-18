@@ -26,8 +26,9 @@
     border: solid 1px $status-3;
   }
 
-  &.grey {
+  &.transparent {
     color: $white;
+    border: 1px solid $white;
     background-color: rgba(77, 77, 77, 0.25);
   }
 }

@@ -1,0 +1,27 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.contmodule-01 {
+  &.contmodule {
+    .contmodule-image {
+      background: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid $grey-8;
+      border-left: 1px solid $grey-8;
+      border-right: 1px solid $grey-8;
+      .add {
+        border-radius: 50%;
+        background-color: $primary;
+        width: 97px;
+        height: 97px;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 70px;
+      }
+    }
+  }
+}

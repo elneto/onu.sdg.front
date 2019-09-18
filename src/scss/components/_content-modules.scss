@@ -1,0 +1,48 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.contmodule {
+  > a {
+    display: block;
+    height: 100%;
+    &:hover {
+      text-decoration: none;
+      .contmodule-title {
+        color: $primary;
+      }
+    }
+  }
+
+  &-image {
+    background-size: cover;
+    margin-bottom: 15px;
+    min-height: 220px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 6px;
+      background: $primary;
+      width: 100%;
+    }
+  }
+  &-title {
+    font-family: "Oswald-Bold";
+    font-size: 18px;
+    line-height: 1.22;
+    color: $secondary;
+    margin-bottom: 6px;
+  }
+  &-text {
+    font-size: 14px;
+    color: $grey-1;
+    margin-bottom: 0;
+  }
+  &-type {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+  }
+}
