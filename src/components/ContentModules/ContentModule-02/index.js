@@ -6,7 +6,8 @@ const ContentModule02 = () => (
       <div
         className="contmodule-image"
         style={{
-          background: 'url("/assets/content-image.jpg") center center no-repeat'
+          backgroundImage: 'url("/assets/content-image.jpg")'
+
         }}
       >
         <div className="contmodule-type">

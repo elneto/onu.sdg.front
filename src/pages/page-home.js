@@ -9,6 +9,7 @@ import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
 import TimeLine from "../components/Timeline/";
+import State from "../components/States/State";
 
 const PageHome = () => (
   <>
@@ -33,13 +34,14 @@ const PageHome = () => (
 
         <div className="heading-block row">
           <div className="col-12">
-            <h2>Milestones</h2>
+            <h2>STATES</h2>
           </div>
         </div>
-
-        <TimeLine />
-
-       
+        <div className="mb-5 row row-spacing ">
+          {[...Array(40).keys()].map(goal => (
+            <State />
+          ))}
+        </div>
       </div>
     </main>
     <FooterV2 />
