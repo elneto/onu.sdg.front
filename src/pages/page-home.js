@@ -41,7 +41,6 @@ const PageHome = () => (
        
       </div>
     </main>
-
     <FooterV2 />
   </>
 );

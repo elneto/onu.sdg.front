@@ -3,7 +3,7 @@ import "./style.scss";
 
 const Document03 = () => (
   <div className="col-sm-12 col-lg-8 document-03 document-card">
-    <div class="card">
+    <div class="card card-dropdown">
       <div class="card-body">
         <button
           type="button"
@@ -24,7 +24,7 @@ const Document03 = () => (
 
         <div
           id="documentNotes2"
-          className="document-collapse collapse"
+          className="dropwdown-collapse collapse"
           aria-labelledby="document2"
         >
           <div className="document-group">

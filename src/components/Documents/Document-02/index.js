@@ -1,7 +1,7 @@
 import React from "react";
 const Document02 = () => (
   <div className="col-sm-12 col-lg-8 document-card">
-    <div class="card">
+    <div class="card card-dropdown">
       <div class="card-body">
         <div className="document-group">
           <div className="document-icon"></div>

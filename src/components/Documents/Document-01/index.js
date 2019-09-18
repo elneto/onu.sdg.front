@@ -1,7 +1,7 @@
 import React from "react";
 const Document01 = () => (
   <div className="col-sm-12 col-lg-8 document-card">
-    <div class="card">
+    <div class="card card-dropdown">
       <div class="card-body">
         <button
           type="button"
@@ -17,7 +17,7 @@ const Document01 = () => (
 
         <div
           id="documentNotes"
-          className="document-collapse collapse"
+          className="dropwdown-collapse collapse"
           aria-labelledby="document"
         >
           <div className="document-group">

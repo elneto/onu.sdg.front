@@ -1,0 +1,51 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.card {
+  &.card-dropdown {
+    border-radius: 3px;
+    border: 1px solid $grey-8;
+    .card-body {
+      padding: 0;
+    }
+    h4 {
+      font-family: "Oswald-Bold";
+      font-size: 20px;
+      color: $secondary;
+      margin-bottom: 0;
+    }
+    .dropwdown-collapse {
+      border-top: 1px solid $grey-8;
+    }
+    .dropdown-toggle {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px 1.25rem;
+      white-space: normal;
+      &::after {
+        color: $secondary;
+        transition: 0.4s;
+        transform: rotate(180deg);
+      }
+      &.collapsed {
+        &::after {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    &.card-dropdown {
+      h4 {
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+}
