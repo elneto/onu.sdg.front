@@ -3,13 +3,13 @@ import "./style.scss";
 
 const Goal = ({ goal }) => (
   <div
-    className={`card card-goal ${goal} col-6 col-sm-4 col-md-3 col-lg-2`}
+    className={`card card-goal goal-${goal} col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2`}
     data-toggle="modal"
-    data-target={`#${goal}`}
+    data-target={`#goal-${goal}`}
   >
-    <div
+    {/* <div
       className="modal fade d-xs-none "
-      id={goal}
+      id={`goal-${goal}`}
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
@@ -27,7 +27,7 @@ const Goal = ({ goal }) => (
 
         <div class="modal-body">
           <div className="card-body">
-            <span className="goal-number">8</span>
+            <span className="goal-number">{goal}</span>
             <h3 className="goal-title">
               SAMOA Pathway High-Level Midterm Review 2019
             </h3>
@@ -59,12 +59,16 @@ const Goal = ({ goal }) => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
-    <a href="#">
-      <img src='/assets/goals/images/img-goal-1.jpg' className="goal-image" alt="goal image" />
+    <a
+      href="#"
+      style={{
+        backgroundImage: `url('/assets/goals/images/img-goal-${goal}.jpg')`
+      }}
+    >
       <div className="card-body">
-        <span className="goal-number">8</span>
+        <span className="goal-number">{goal}</span>
         <h3 className="goal-title">
           SAMOA Pathway High-Level Midterm Review 2019
         </h3>
@@ -95,7 +99,11 @@ const Goal = ({ goal }) => (
         </button>
       </div>
 
-      <img className="goal-logo" src='/assets/goals/goal-1.jpg' alt="goal logo" />
+      <img
+        className="goal-logo"
+        src={`/assets/goals/logos/goal-logo-${goal}.jpg`}
+        alt="goal logo"
+      />
     </a>
   </div>
 );

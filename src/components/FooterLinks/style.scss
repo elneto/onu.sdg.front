@@ -1,0 +1,92 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  .nav-link {
+    color: $grey-1;
+    padding: 8px 22px 0px 0px;
+    &.important {
+      color: $secondary;
+      position: relative;
+      outline: none;
+      text-align: left;
+      cursor: default;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 33px;
+        height: 1px;
+        background-color: $primary;
+        top: -20px;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .footer-links {
+    .dropwdown-collapse {
+      display: block !important;
+      transition: none;
+      height: initial;
+      overflow: initial;
+      pointer-events: none;
+    }
+    .dropdown-toggle {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include dropdown-toggle-animate($secondary);
+
+    .nav:last-child {
+      .important.collapsed {
+        border-bottom: 1px solid $grey-3;
+      }
+      .dropwdown-collapse {
+        .nav-item:last-child {
+          .nav-link {
+            border-bottom: 1px solid $grey-3;
+          }
+        }
+      }
+    }
+    .important {
+      cursor: pointer;
+      border-bottom: none;
+      border-top: 1px solid $grey-3;
+      background-color: transparent;
+    }
+    .important:not(.collapsed) {
+      background-color: $grey-4;
+    }
+    h5 {
+      margin-bottom: 0;
+    }
+    .nav-link:not(.important) {
+      border-top: 1px solid $grey-3;
+    }
+    .nav-link {
+      color: $grey-1;
+      padding: 15px 7.5px;
+      border-right: 1px solid $grey-3;
+      border-left: 1px solid $grey-3;
+      &.important {
+        color: $secondary;
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+}

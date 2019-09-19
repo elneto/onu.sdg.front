@@ -1,12 +1,36 @@
 @import "src/scss/theme/variables.scss";
 @import "src/scss/theme/mixins.scss";
+.goals-wrapper {
+  margin-bottom: 100px;
+  .heading-block {
+    .headinginfo-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
 
 @media (max-width: 576px) {
   .goals-wrapper {
     background-color: $secondary;
+    margin-bottom: 30px;
     .heading-block {
       h2 {
         color: $white;
+        margin-bottom: 20px;
+      }
+      .headinginfo-wrapper {
+        display: flex;
+        width: 100%;
+      }
+      .headinginfo {
+        &-number {
+          font-size: 26px;
+          color: $white;
+        }
+        &-text {
+          font-size: 12px;
+        }
       }
     }
   }
