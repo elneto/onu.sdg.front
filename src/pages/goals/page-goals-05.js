@@ -1,10 +1,11 @@
 import React from "react";
 import GoalTarget from "../../components/Goals/Targets/GoalTarget";
+import Container from "../../components/container";
 
 const Goal05Page = () => (
-  <div className="container">
+  <Container>
     <GoalTarget />
-  </div>
+  </Container>
 );
 
 export default Goal05Page;

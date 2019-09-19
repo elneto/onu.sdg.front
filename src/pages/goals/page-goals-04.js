@@ -1,10 +1,11 @@
 import React from "react";
 import GoalRegister from "../../components/Goals/Register/GoalRegister";
+import Container from "../../components/container";
 
 const Goal04Page = () => (
-  <div className="container">
+  <Container>
     <GoalRegister goal={1} />
-  </div>
+  </Container>
 );
 
 export default Goal04Page;

@@ -8,6 +8,8 @@
   font-weight: 500;
   border-radius: 3px;
   display: inline-block;
+  min-width: 70px;
+  text-align: center;
 
   &.completed {
     color: $status-1;

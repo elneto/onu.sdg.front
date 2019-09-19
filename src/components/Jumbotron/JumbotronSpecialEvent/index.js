@@ -1,6 +1,4 @@
 import React from "react";
-import Link from "src/components/Common/Link";
-import logoNetworks from "src/assets/images/logo-networks.png";
 import "./style.scss";
 
 const JumbotronSpecialEvent = ({}) => (

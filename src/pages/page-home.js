@@ -8,7 +8,6 @@ import NewsHome from "../components/News/NewsHome";
 import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
 import Button from "../components/Common/Button";
-import State from "../components/States/State";
 
 const PageHome = () => (
   <>
@@ -29,17 +28,6 @@ const PageHome = () => (
           <Event01 />
           <Event01 />
           <Event01 />
-        </div>
-
-        <div className="heading-block row">
-          <div className="col-12">
-            <h2>STATES</h2>
-          </div>
-        </div>
-        <div className="mb-5 row row-spacing ">
-          {[...Array(40).keys()].map(goal => (
-            <State />
-          ))}
         </div>
       </div>
     </main>

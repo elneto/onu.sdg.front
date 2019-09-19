@@ -1,5 +1,4 @@
 import React from "react";
-import logoSmart from "src/assets/images/logo-smart.svg";
 import "./style.scss";
 
 const JumbotronAbout = ({}) => (
