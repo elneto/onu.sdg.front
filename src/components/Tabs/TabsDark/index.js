@@ -60,7 +60,7 @@ const TabsDark = ({ children }) => (
           role="tabpanel"
           aria-labelledby="home-tab"
         >
-          {children[0]}
+          {children && children[0]}
         </div>
         <div
           className="tab-pane fade"
@@ -68,7 +68,7 @@ const TabsDark = ({ children }) => (
           role="tabpanel"
           aria-labelledby="profile-tab"
         >
-          {children[1]}
+          {children && children[1]}
         </div>
         <div
           className="tab-pane fade"
@@ -76,7 +76,7 @@ const TabsDark = ({ children }) => (
           role="tabpanel"
           aria-labelledby="contact-tab"
         >
-          {children[2]}
+          {children && children[2]}
         </div>
       </div>
     </div>
