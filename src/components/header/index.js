@@ -12,7 +12,7 @@ class Header extends React.Component {
       <header>
         <LanguageNavBar />
         <HeaderBannerV2 />
-        <NavBarFull />
+        <NavBar />
       </header>
     );
   }
