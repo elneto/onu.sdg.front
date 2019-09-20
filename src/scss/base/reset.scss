@@ -50,4 +50,10 @@ button {
   padding: 0;
   outline: none;
   border: none;
+
+}
+
+button, [type="button"], [type="reset"], [type="submit"] { 
+  -webkit-appearance: none !important;
+  background: transparent;
 }
