@@ -7,7 +7,6 @@ import FooterV2 from "../components/FooterV2";
 import NewsHome from "../components/News/NewsHome";
 import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
-import Button from "../components/Common/Button";
 import GoalsWrapper from "../components/Goals/GoalsWrapper";
 import FooterLinks from "../components/FooterLinks";
 import Heading from "../components/Heading";

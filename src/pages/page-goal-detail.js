@@ -15,7 +15,7 @@ import Partnership01 from "../components/Partnerships/Partnership-01";
 
 const PageGoalDetail = () => (
   <>
-    <SEO title="ON-SDGS" />
+    <SEO title="Goal Detail" />
     <Header />
     <JumbotronGoals goal={3} />
     <main>
@@ -34,6 +34,9 @@ const PageGoalDetail = () => (
       <TabsDark>
         <>
           <Heading text="overview" textButton="More info" size="small" />
+          <div className="goal-overview">
+            <img src="/assets/goals/goals-overview.jpg" />
+          </div>
           <Heading text="events" textButton="See all events" size="small" />
           <div className="mb-5 row row-spacing">
             {[...Array(4).keys()].map(event => (
@@ -52,10 +55,14 @@ const PageGoalDetail = () => (
               <News03 image="/assets/news-02.jpg" />
             ))}
           </div>
-          <Heading text="partnertships" textButton="See all partnertships" size="small" />
+          <Heading
+            text="partnertships"
+            textButton="See all partnertships"
+            size="small"
+          />
           <div className="mb-5 row row-spacing">
             {[...Array(3).keys()].map(pub => (
-              <Partnership01/>
+              <Partnership01 />
             ))}
           </div>
         </>

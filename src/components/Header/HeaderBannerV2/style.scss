@@ -74,11 +74,33 @@
     }
   }
 
+  .header-title {
+    font-size: 23px;
+    font-family: "RobotoCondensed-Bold";
+    color: $grey-1;
+    margin-left: 16px;
+    margin-bottom: 0;
+    span {
+      display: block;
+      font-family: "RobotoCondensed";
+    }
+  }
+
   .actions {
     display: flex;
     justify-content: center;
     button:not(:last-child) {
       margin-right: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .header-banner {
+    .header-title {
+      font-size: 20px;
+      text-align: center;
     }
   }
 }

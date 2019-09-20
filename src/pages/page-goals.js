@@ -7,7 +7,7 @@ import Document02 from "../components/Documents/Document-02";
 
 const PageGoals = () => (
   <>
-    <SEO title="ON-SDGS" />
+    <SEO title="Goals" />
     <Header />
     <main>
       <GoalsWrapper goals={17} />
