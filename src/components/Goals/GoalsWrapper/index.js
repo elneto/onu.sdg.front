@@ -8,14 +8,11 @@ const GoalsWrapper = ({ goals }) => (
   <div className="goals-wrapper">
     <div className="container">
       <div className="heading-block">
-        <div className="row">
-          <div className="col-12 col-sm-6 col-md-5 col-lg-3">
+        <div className="row justify-content-between">
+          <div className="col-12 col-sm-6 col-lg-4">
             <h2>THE 17 GOALS</h2>
           </div>
-          <div className="separator col-1">
-            <hr></hr>
-          </div>
-          <div className="col-12 col-sm-5 col-md-6 col-lg-8 headinginfo-wrapper">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-7 headinginfo-wrapper">
             <HeadingInfo number={340} text="Events" />
             <HeadingInfo number={860} text="Publications" />
             <HeadingInfo number={750} text="Partnerships" />

@@ -1,12 +1,15 @@
 import React from "react";
-import Button from "../../Common/Button";
 import "./style.scss";
 
-const TabsDark = ({}) => (
+const TabsDark = ({ children }) => (
   <div className="tabs tabs-dark">
     <div className="nav-tabs-un">
       <div className="container">
-        <ul className="nav nav-tabs flex-column flex-lg-row" id="myTab" role="tablist">
+        <ul
+          className="nav nav-tabs flex-column flex-lg-row"
+          id="myTab"
+          role="tablist"
+        >
           <li className="nav-item">
             <a
               className="nav-link active"
@@ -57,10 +60,7 @@ const TabsDark = ({}) => (
           role="tabpanel"
           aria-labelledby="home-tab"
         >
-          <div className="d-flex justify-content-between align-items-cente">
-            <h2>OVERVIEW</h2>
-            <Button color="primary">More info</Button>
-          </div>
+          {children[0]}
         </div>
         <div
           className="tab-pane fade"
@@ -68,10 +68,7 @@ const TabsDark = ({}) => (
           role="tabpanel"
           aria-labelledby="profile-tab"
         >
-          <div className="d-flex justify-content-between align-items-center">
-            <h2>TARGETS & INDICATORS</h2>
-            <Button color="primary">More info</Button>
-          </div>
+          {children[1]}
         </div>
         <div
           className="tab-pane fade"
@@ -79,10 +76,7 @@ const TabsDark = ({}) => (
           role="tabpanel"
           aria-labelledby="contact-tab"
         >
-          <div className="d-flex justify-content-between align-items-cente">
-            <h2>PROGRESS & INFO</h2>
-            <Button color="primary">More info</Button>
-          </div>
+          {children[2]}
         </div>
       </div>
     </div>
