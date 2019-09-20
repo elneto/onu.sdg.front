@@ -10,7 +10,7 @@ const TabsDark = ({ children }) => (
           id="myTab"
           role="tablist"
         >
-          <li className="nav-item">
+          <li className="nav-item ">
             <a
               className="nav-link active"
               id="home-tab"
