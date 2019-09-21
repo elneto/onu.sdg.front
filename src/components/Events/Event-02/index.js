@@ -3,7 +3,7 @@ import LabelNumeric from "src/components/Labels/LabelNumeric";
 import LabelNumericGroup from "src/components/Labels/LabelNumericGroup";
 
 const Event02 = ({}) => (
-  <div className="card card-events events-02 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  <div className="card card-events events-02 col-sm-6 col-lg-3">
     <a href="#">
       <div className="card-body">
         <span className="event-day">8</span>

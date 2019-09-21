@@ -1,8 +1,7 @@
 import React from "react";
-import Button from "../../Common/Button";
 import "./style.scss";
 
-const TabsDark = ({children}) => (
+const TabsDark = ({ children }) => (
   <div className="tabs tabs-dark">
     <div className="nav-tabs-un">
       <div className="container">

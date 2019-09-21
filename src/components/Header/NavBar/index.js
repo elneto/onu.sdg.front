@@ -3,7 +3,7 @@ import MegaMenu from "../MegaMenu";
 import "./style.scss";
 
 const NavBar = ({}) => (
-  <nav className="navbar navbar-expand-lg navbar-custom">
+  <nav className="navbar navbar-expand-md navbar-custom">
     <div className="container d-flex">
       <button
         className="navbar-toggler"
@@ -17,10 +17,10 @@ const NavBar = ({}) => (
         <span className="navbar-toggler-icon"></span>
       </button>
       <div
-        className="collapse navbar-collapse order-3 order-2"
+        className="collapse navbar-collapse"
         id="navbarToggle"
       >
-        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <a className="nav-link" href="#">
               Home <span className="sr-only">(current)</span>
@@ -35,7 +35,7 @@ const NavBar = ({}) => (
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Goals
+              SDGs
             </a>
             <div className="dropdown-menu w-100" aria-labelledby="goals">
               <div className="container d-flex justify-content-center flex-lg-row flex-column">
@@ -137,6 +137,7 @@ const NavBar = ({}) => (
           </li>
         </ul>
       </div>
+      {/*
       <form className="order-2 order-sm-3">
         <input
           className="form-control"
@@ -148,6 +149,7 @@ const NavBar = ({}) => (
           <img src="/assets/images/search.svg" />
         </button>
       </form>
+      */}
     </div>
   </nav>
 );

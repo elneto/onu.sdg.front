@@ -1,13 +1,10 @@
 import React from "react";
 import GoalTarget from "../GoalTarget";
+import Heading from "../../../Heading";
 
 const GoalsTargetBlock = () => (
   <div className="container goals-related-block">
-    <div className="heading-block row">
-      <div className="col-12">
-        <h2>TARGETS & INDICATORS</h2>
-      </div>
-    </div>
+    <Heading text="TARGETS & INDICATORS" size="big" />
     <div className="mb-5 row row-spacing">
       {[...Array(4).keys()].map(item => (
         <GoalTarget id={item} />

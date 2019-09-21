@@ -9,16 +9,21 @@
   &.button-circle {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    border: 1px solid $grey-2;
     position: relative;
-    .svg {
-      path {
-        fill: $grey-2;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    &.user {
+      background-image: url('/assets/images/user.svg');
+      &:hover {
+        background-image: url('/assets/images/user-hover.svg');
       }
     }
-    &:hover {
-      border: 1px solid $primary;
+    &.bell {
+      background-image: url('/assets/images/bell.svg');
+      &:hover {
+        background-image: url('/assets/images/bell-hover.svg');
+      }
     }
   }
 }

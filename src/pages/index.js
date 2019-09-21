@@ -7,9 +7,7 @@ const IndexPage = () => (
   <Layout>
     <div className="d-flex justify-content-around container">
       <div>
-        <div className="heading-block">
-          <h2>Components</h2>
-        </div>
+        <h2>COMPONENTS</h2>
         <nav class="nav flex-column">
           <li>
             <Link to="/page-header/">Header</Link>
@@ -388,12 +386,19 @@ const IndexPage = () => (
         </nav>
       </div>
       <div>
-        <div className="heading-block">
-          <h2>Views</h2>
-        </div>
+        <h2>VIEWS</h2>
         <nav class="nav flex-column">
           <li>
             <Link to="/page-home">Home</Link>
+          </li>
+          <li>
+            <Link to="/page-goals">Goals</Link>
+          </li>
+          <li>
+            <Link to="/page-goal-detail">Goal Detail</Link>
+          </li>
+          <li>
+            <Link to="/page-topics">Topics</Link>
           </li>
         </nav>
       </div>
