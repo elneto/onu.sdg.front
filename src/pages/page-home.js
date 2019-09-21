@@ -12,7 +12,7 @@ import FooterLinks from "../components/FooterLinks";
 import Heading from "../components/Heading";
 
 const PageHome = () => (
-  <>
+  <div>
     <SEO title="ON-SDGS" />
     <Header />
     <JumbotronHome />
@@ -33,7 +33,7 @@ const PageHome = () => (
       </div>
     </main>
     <FooterV2 />
-  </>
+  </div>
 );
 
 export default PageHome;
