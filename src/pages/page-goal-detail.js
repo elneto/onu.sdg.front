@@ -14,7 +14,7 @@ import News03 from "../components/News/News-03";
 import Partnership01 from "../components/Partnerships/Partnership-01";
 
 
-const tabTexts = [
+const tabs = [
   { label: "Overview", id: "overview" },
   { label: "Targets and Indicators", id: "targets" },
   { label: "Progress and Info", id: "progress" },
@@ -38,7 +38,7 @@ const PageGoalDetail = () => (
           ))}
         </div>
       </div>
-      <TabsDark tabTexts={tabTexts}>
+      <TabsDark tabs={tabs}>
         <>
           <Heading text="overview" textButton="More info" size="small" />
           <div className="goal-overview">

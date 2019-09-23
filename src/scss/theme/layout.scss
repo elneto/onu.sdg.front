@@ -53,6 +53,12 @@ body {
     padding-bottom: $grid-gutter-width;
   }
 }
+.spacing {
+  > div {
+    padding-bottom: $grid-gutter-width/2;
+  }
+}
+
 
 @media (max-width: 768px) {
   .row-spacing {

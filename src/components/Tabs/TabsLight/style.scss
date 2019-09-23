@@ -7,6 +7,11 @@
   .nav-tabs {
     background-color: $white;
     border-bottom: 1px solid $grey-8;
+    .nav-item :first-child {
+      .nav-link {
+        padding-left: 0;
+      }
+    }
     .nav-link {
       font-family: "Oswald";
       color: $grey-2;

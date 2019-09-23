@@ -14,7 +14,7 @@ import Event04 from "../components/Events/Event-04";
 import News03 from "../components/News/News-03";
 import Publications01 from "../components/Publications/Publications-01";
 
-const tabTexts = [
+const tabs = [
   { label: "Description", id: "description" },
   { label: "Decisions", id: "decisions" },
   { label: "Publications", id: "publications" },
@@ -29,7 +29,7 @@ const PageTopicDetail = () => (
     <JumbotronTopics />
     <main>
       <GoalsRelatedBlock goals={6} />
-      <TabsDark tabTexts={tabTexts}>
+      <TabsDark tabs={tabs}>
         <>
           <Heading text="events" textButton="See all events" size="small" />
           <div className="mb-5 row row-spacing">

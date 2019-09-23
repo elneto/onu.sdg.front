@@ -1,82 +1,50 @@
 import React from "react";
-import Button from "../../Common/Button";
+import classNames from 'classnames';
 import "./style.scss";
 
-const TabsLight = ({}) => (
-  <div className="container">
-    <div className="tabs tabs-light">
-        <ul
-          className="nav nav-tabs flex-column flex-lg-row"
-          id="myTab"
-          role="tablist"
-        >
-          <li className="nav-item">
+const TabsLight = ({ tabs, children }) => (
+  <div className="tabs tabs-light">
+    <ul
+      className="nav nav-tabs flex-column flex-lg-row"
+      id="myTab"
+      role="tablist"
+    >
+      {tabs &&
+        tabs.map((item, index) => (
+          <li className="nav-item ">
             <a
-              className="nav-link active"
-              id="tab-light-1"
+              className={classNames("nav-link", {
+                active: index === 0
+              })}
+              id={`${item.id}-tab`}
               data-toggle="tab"
-              href="#home"
+              href={`#${item.id}`}
               role="tab"
-              aria-controls="home"
+              aria-controls={item.id}
               aria-selected="true"
             >
-              Overview
+              {item.label}
             </a>
           </li>
-          <li className="nav-item">
-            <a
-              className="nav-link"
-              id="tab-light-2"
-              data-toggle="tab"
-              href="#profile"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-            >
-              TARGETS & INDICATORS
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link"
-              id="tab-light-3"
-              data-toggle="tab"
-              href="#contact"
-              role="tab"
-              aria-controls="contact"
-              aria-selected="false"
-            >
-              PROGRESS & INFO
-            </a>
-          </li>
-        </ul>
+        ))}
+    </ul>
+    {children && (
       <div className="tab-content" id="myTabContent">
-        <div
-          className="tab-pane fade show active "
-          id="home"
-          role="tabpanel"
-          aria-labelledby="tab-light-1"
-        >
-          lorem
-        </div>
-        <div
-          className="tab-pane fade"
-          id="profile"
-          role="tabpanel"
-          aria-labelledby="tab-light-2"
-        >
-          lorem
-        </div>
-        <div
-          className="tab-pane fade"
-          id="contact"
-          role="tabpanel"
-          aria-labelledby="tab-light-3"
-        >
-          lorem
-        </div>
+        {tabs.map((item, index) => (
+          <div
+            className="tab-pane fade"
+            className={classNames("tab-pane fade", {
+              "show active": index === 0
+            })}
+            id={item.id}
+            role="tabpanel"
+            aria-labelledby={`${item.id}-tab`}
+          >
+            {children[index]}
+          </div>
+        ))}
       </div>
-    </div>
+    )}
   </div>
 );
 

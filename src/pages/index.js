@@ -403,6 +403,18 @@ const IndexPage = () => (
           <li>
             <Link to="/page-topic-detail">Topic Detail</Link>
           </li>
+          <li>
+            <Link to="/view-events">Events</Link>
+          </li>
+          <li>
+            <Link to="/view-event-type-1">Event Type 1</Link>
+          </li>
+          <li>
+            <Link to="/view-event-type-2">Event Type 2</Link>
+          </li>
+          <li>
+            <Link to="/view-event-type-3">Event Type 3</Link>
+          </li>
         </nav>
       </div>
     </div>

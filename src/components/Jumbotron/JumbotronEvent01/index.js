@@ -20,7 +20,15 @@ const JumbotronEvent01 = ({ color }) => (
         </div>
         <div className="goals">
           <h3>Related</h3>
-          <div className="goals-content"></div>
+          <div className="goals-content">
+            {[...Array(17).keys()].map(goal => (
+              <img
+                className="goal-logo"
+                src={`/assets/goals/logos/goal-logo-${goal+1}.jpg`}
+                alt="goal logo"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 import React from "react";
+import classNames from 'classnames';
 import "./style.scss";
 
-const Event05 = ({}) => (
+const Event05 = ({color}) => (
   <div className="card card-events event-05 col-12">
     <a href="#">
       <div className="card-body">
@@ -15,7 +16,7 @@ const Event05 = ({}) => (
           <span className="room">Conference Room 2, UNHQ</span>
           <span className="city">New York</span>
         </div>
-        <span className="event-label orange">Special Event</span>
+        <span className={classNames("event-label", color)}>Special Event</span>
       </div>
     </a>
   </div>

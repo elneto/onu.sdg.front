@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import classNames from 'classnames';
 
-const TabsDark = ({ tabTexts, children }) => (
+const TabsDark = ({ tabs, children }) => (
   <div className="tabs tabs-dark">
     <div className="nav-tabs-un">
       <div className="container">
@@ -11,8 +11,8 @@ const TabsDark = ({ tabTexts, children }) => (
           id="myTab"
           role="tablist"
         >
-          {tabTexts &&
-            tabTexts.map((item, index) => (
+          {tabs &&
+            tabs.map((item, index) => (
               <li className="nav-item ">
                 <a
                   className={classNames("nav-link", {
@@ -35,9 +35,9 @@ const TabsDark = ({ tabTexts, children }) => (
     {children && (
       <div className="container">
         <div className="tab-content" id="myTabContent">
-          {tabTexts.map((item, index) => (
+          {tabs.map((item, index) => (
             <div
-              className="tab-pane fade "
+              className="tab-pane fade"
               className={classNames("tab-pane fade", {
                 "show active": index === 0
               })}

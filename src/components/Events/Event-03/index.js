@@ -4,7 +4,7 @@ import LabelNumericGroup from "src/components/Labels/LabelNumericGroup";
 import "./style.scss";
 
 const Event03 = ({}) => (
-  <div className="card card-events event-03 col-xl-3 col-lg-3 col-md-3 col-sm-12">
+  <div className="card card-events event-03 col-sm-6 col-lg-3">
     <a href="#">
       <div className="card-body">
         <span className="event-day">8</span>

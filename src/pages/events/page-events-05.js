@@ -4,7 +4,7 @@ import Container from "../../components/container";
 
 const Event05Page = () => (
     <Container>
-      <Event05 />
+      <Event05 color="orange" />
     </Container>
   );
 

@@ -1,59 +1,49 @@
 import React from "react";
+import classNames from "classnames";
 import "./style.scss";
 
-const TabsButton = ({}) => (
-    <div className="tabs-button">
-      <ul
-        className="nav nav-pills d-flex justify-content-end"
-        id="pills-tab"
-        role="tablist"
-      >
-        <li className="nav-item">
-          <a
-            className="nav-link active"
-            id="pills-home-tab"
-            data-toggle="pill"
-            href="#pills-home"
-            role="tab"
-            aria-controls="pills-home"
-            aria-selected="true"
-          >
-            By years
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="nav-link"
-            id="pills-profile-tab"
-            data-toggle="pill"
-            href="#pills-profile"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-          >
-            By SDGS
-          </a>
-        </li>
+const TabsButton = ({ tabs, children, title }) => (
+  <div className="tabs-button">
+    <div className="col">
+      <ul className="nav nav-pills d-flex w-100" id="pills-tab" role="tablist">
+        {title && <h4 className="title">{title}</h4>}
+        {tabs &&
+          tabs.map((tab, index) => (
+            <li className="nav-item">
+              <a
+                className={classNames("nav-link", {
+                  active: index === 0
+                })}
+                id={`${tab.id}-tab`}
+                data-toggle="pill"
+                href={`#${tab.id}`}
+                role="tab"
+                aria-controls={tab.id}
+                aria-selected="true"
+              >
+                {tab.label}
+              </a>
+            </li>
+          ))}
       </ul>
-      <div className="tab-content" id="pills-tabContent">
-        <div
-          className="tab-pane fade show active"
-          id="pills-home"
-          role="tabpanel"
-          aria-labelledby="pills-home-tab"
-        >
-          1
-        </div>
-        <div
-          className="tab-pane fade"
-          id="pills-profile"
-          role="tabpanel"
-          aria-labelledby="pills-profile-tab"
-        >
-          2
-        </div>
-      </div>
     </div>
+    {children && (
+      <div className="tab-content" id="pills-tabContent">
+        {tabs.map((tab, index) => (
+          <div
+            className={classNames("tab-pane fade", {
+              "show active": index === 0
+            })}
+            id={`${tab.id}`}
+            role="tabpanel"
+            aria-labelledby={`${tab.id}-tab`}
+          >
+            {children[index]}
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
 );
 
 export default TabsButton;

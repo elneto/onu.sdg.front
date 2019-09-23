@@ -1,24 +1,25 @@
 import React from "react";
-const Document01 = () => (
-  <div className="col-sm-12 col-lg-8 document-card">
+import classNames from "classnames";
+const Document01 = ({ className, id }) => (
+  <div className={classNames("document-card", className)}>
     <div class="card card-dropdown">
       <div class="card-body">
         <button
           type="button"
           className="btn dropdown-toggle collapsed"
-          id="document"
+          id={`${id}-collapse`}
           data-toggle="collapse"
-          data-target="#documentNotes"
+          data-target={`#${id}`}
           aria-expanded="true"
-          aria-controls="documentNotes"
+          aria-controls={id}
         >
           <h4>Concept notes</h4>
         </button>
 
         <div
-          id="documentNotes"
+          id={id}
           className="dropwdown-collapse collapse"
-          aria-labelledby="document"
+          aria-labelledby={`${id}-collapse`}
         >
           <div className="document-group">
             <div className="document-icon"></div>
