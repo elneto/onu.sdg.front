@@ -21,7 +21,7 @@ const ViewEvents = () => (
       <div className="container">
         <Heading text="featured events" size="big" />
         <div className="mb-5 row row-spacing">
-          {[...Array(4).keys()].map(event => (
+          {[...Array(4)].map(event => (
             <Event03 />
           ))}
         </div>
@@ -32,7 +32,7 @@ const ViewEvents = () => (
           <div>calendar</div>
           <div>
             <div className="mb-5 row row-spacing">
-              {[...Array(4).keys()].map(event => (
+              {[...Array(4)].map(event => (
                 <div className="events-block w-100 mb-5">
                   <div className="col-12">
                     <h4 className="month">June 2019</h4>

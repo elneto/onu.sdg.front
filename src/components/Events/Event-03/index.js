@@ -1,5 +1,5 @@
 import React from "react";
-import LabelNumeric from "src/components/Labels/LabelNumeric";
+
 import LabelNumericGroup from "src/components/Labels/LabelNumericGroup";
 import "./style.scss";
 
@@ -20,10 +20,7 @@ const Event03 = ({}) => (
           <span className="city">New York</span>
         </div>
 
-        <LabelNumericGroup>
-          <LabelNumeric color={"goal-15"}>15</LabelNumeric>
-          <LabelNumeric color={"goal-16"}>16</LabelNumeric>
-        </LabelNumericGroup>
+        <LabelNumericGroup goals={3} />
       </div>
     </a>
   </div>

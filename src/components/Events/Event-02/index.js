@@ -1,5 +1,4 @@
 import React from "react";
-import LabelNumeric from "src/components/Labels/LabelNumeric";
 import LabelNumericGroup from "src/components/Labels/LabelNumericGroup";
 
 const Event02 = ({}) => (
@@ -14,12 +13,7 @@ const Event02 = ({}) => (
           <span className="room">Conference Room 2, UNHQ</span>
           <span className="city">New York</span>
         </div>
-
-        <LabelNumericGroup>
-          <LabelNumeric color={"goal-4"}>6</LabelNumeric>
-          <LabelNumeric color={"goal-11"}>11</LabelNumeric>
-          <LabelNumeric color={"goal-15"}>15</LabelNumeric>
-        </LabelNumericGroup>
+        <LabelNumericGroup goals={3} />
       </div>
     </a>
   </div>

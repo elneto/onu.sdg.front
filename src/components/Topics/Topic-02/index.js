@@ -1,6 +1,5 @@
 import React from "react";
 import LabelNumericGroup from "../../Labels/LabelNumericGroup";
-import LabelNumeric from "../../Labels/LabelNumeric";
 import "./style.scss";
 
 const Topic02 = ({}) => (
@@ -11,11 +10,7 @@ const Topic02 = ({}) => (
         <h4 className="card-title">
           Food security and nutrition and sustainable agriculture
         </h4>
-        <LabelNumericGroup>
-          <LabelNumeric color={"goal-1"}>6</LabelNumeric>
-          <LabelNumeric color={"goal-3"}>3</LabelNumeric>
-          <LabelNumeric color={"goal-9"}>12</LabelNumeric>
-        </LabelNumericGroup>
+        <LabelNumericGroup goals={3} />
       </div>
     </a>
   </div>

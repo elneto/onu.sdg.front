@@ -5,9 +5,9 @@ import Layout from "../components/layout";
 
 const IndexPage = () => (
   <Layout>
-    <div className="d-flex justify-content-around container">
+    <div className="d-flex justify-content-around container flex-column flex-sm-row mt-5">
       <div>
-        <h2>COMPONENTS</h2>
+        <h3>COMPONENTS</h3>
         <nav class="nav flex-column">
           <li>
             <Link to="/page-header/">Header</Link>
@@ -386,7 +386,7 @@ const IndexPage = () => (
         </nav>
       </div>
       <div>
-        <h2>VIEWS</h2>
+        <h3>VIEWS</h3>
         <nav class="nav flex-column">
           <li>
             <Link to="/page-home">Home</Link>
@@ -404,16 +404,25 @@ const IndexPage = () => (
             <Link to="/page-topic-detail">Topic Detail</Link>
           </li>
           <li>
-            <Link to="/view-events">Events</Link>
+            <Link to="/page-events">Events</Link>
           </li>
           <li>
-            <Link to="/view-event-type-1">Event Type 1</Link>
+            <Link to="/page-event-type-1">Event Type 1</Link>
           </li>
           <li>
-            <Link to="/view-event-type-2">Event Type 2</Link>
+            <Link to="/page-event-type-2">Event Type 2</Link>
           </li>
           <li>
-            <Link to="/view-event-type-3">Event Type 3</Link>
+            <Link to="/page-event-type-3">Event Type 3</Link>
+          </li>
+          <li>
+            <Link to="/page-register">Register</Link>
+          </li>
+          <li>
+            <Link to="/page-news">News</Link>
+          </li>
+          <li>
+            <Link to="/page-news-article">News Article</Link>
           </li>
         </nav>
       </div>

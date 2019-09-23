@@ -1,0 +1,57 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+.form-register {
+  .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .label {
+    font-family: "Roboto-Bold";
+    font-size: 14px;
+    color: $grey-1;
+    margin-bottom: 0;
+    display: block;
+  }
+  .form-title {
+    margin-bottom: 0;
+  }
+  .sub-label {
+    font-size: 13px;
+    color: $grey-2;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .form-label {
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    color: $grey-1;
+  }
+  .form-group {
+    input,
+    textarea {
+      border-radius: 3px;
+      border: 1px solid $grey-8;
+      background-color: rgba(242, 242, 242, 0.11);
+      font-family: "Roboto";
+      font-size: 14px;
+      color: $grey-2;
+      margin-bottom: 5px;
+      outline: none;
+      &:focus {
+        border: 1px solid $primary;
+        color: $secondary;
+      }
+      &::-webkit-input-placeholder {
+        @include input-form-placeholder;
+      }
+      &:-ms-input-placeholder {
+        @include input-form-placeholder;
+      }
+      &::placeholder {
+        @include input-form-placeholder;
+      }
+    }
+  }
+}

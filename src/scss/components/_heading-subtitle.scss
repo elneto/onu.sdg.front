@@ -8,4 +8,7 @@
         color: $secondary;
         margin-bottom: 0;
     }
+    &.border {
+        border-bottom: 1px solid $grey-8;
+    }
 }

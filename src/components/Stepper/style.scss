@@ -2,6 +2,8 @@
 @import "src/scss/theme/mixins.scss";
 
 .stepper {
+  margin-top: 30px;
+  margin-bottom: 60px;
   .nav-pills {
     justify-content: space-between;
   }

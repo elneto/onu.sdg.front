@@ -1,5 +1,4 @@
 import React from "react";
-import LabelNumeric from "../../Labels/LabelNumeric";
 import LabelNumericGroup from "../../Labels/LabelNumericGroup";
 import LabelPoints from "../../Labels/LabelPoints";
 import LabelStatus from "../../Labels/LabelStatus";
@@ -18,11 +17,7 @@ const Partnerships02 = ({}) => (
         <span className="partnership-date">27 May 2019</span>
 
         <div className="d-flex justify-content-between align-items-end mb-2 mt-auto">
-          <LabelNumericGroup>
-            <LabelNumeric color={"goal-4"}>6</LabelNumeric>
-            <LabelNumeric color={"goal-11"}>11</LabelNumeric>
-            <LabelNumeric color={"goal-15"}>15</LabelNumeric>
-          </LabelNumericGroup>
+          <LabelNumericGroup goals={3} />
           <LabelPoints status={"completed"} />
         </div>
         <div className="d-flex justify-content-end partnership-actions">

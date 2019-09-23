@@ -19,6 +19,8 @@
 @import "components/content-modules.scss";
 @import "components/goal-overview.scss";
 @import "components/events-block.scss";
+@import "components/form.scss";
+@import "components/news-article.scss";
 
 body {
   font-size: 13px !important;
@@ -36,6 +38,16 @@ body {
   margin: 0 auto;
   .row > [class*="col-"] {
     padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.no-padding {
+  &.row > [class*="col-"]:first-child {
+    padding-left: 0;
+  }
+
+  &.row > [class*="col-"]:last-child {
     padding-right: 0;
   }
 }
@@ -58,7 +70,6 @@ body {
     padding-bottom: $grid-gutter-width/2;
   }
 }
-
 
 @media (max-width: 768px) {
   .row-spacing {
