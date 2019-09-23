@@ -400,6 +400,9 @@ const IndexPage = () => (
           <li>
             <Link to="/page-topics">Topics</Link>
           </li>
+          <li>
+            <Link to="/page-topic-detail">Topic Detail</Link>
+          </li>
         </nav>
       </div>
     </div>

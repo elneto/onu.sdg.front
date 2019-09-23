@@ -13,6 +13,13 @@ import Publications01 from "../components/Publications/Publications-01";
 import News03 from "../components/News/News-03";
 import Partnership01 from "../components/Partnerships/Partnership-01";
 
+
+const tabTexts = [
+  { label: "Overview", id: "overview" },
+  { label: "Targets and Indicators", id: "targets" },
+  { label: "Progress and Info", id: "progress" },
+];
+
 const PageGoalDetail = () => (
   <>
     <SEO title="Goal Detail" />
@@ -31,7 +38,7 @@ const PageGoalDetail = () => (
           ))}
         </div>
       </div>
-      <TabsDark>
+      <TabsDark tabTexts={tabTexts}>
         <>
           <Heading text="overview" textButton="More info" size="small" />
           <div className="goal-overview">

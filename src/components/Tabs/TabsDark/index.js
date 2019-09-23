@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.scss";
+import classNames from 'classnames';
 
-const TabsDark = ({ children }) => (
+const TabsDark = ({ tabTexts, children }) => (
   <div className="tabs tabs-dark">
     <div className="nav-tabs-un">
       <div className="container">
@@ -10,76 +11,46 @@ const TabsDark = ({ children }) => (
           id="myTab"
           role="tablist"
         >
-          <li className="nav-item ">
-            <a
-              className="nav-link active"
-              id="home-tab"
-              data-toggle="tab"
-              href="#home"
-              role="tab"
-              aria-controls="home"
-              aria-selected="true"
-            >
-              Overview
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link"
-              id="profile-tab"
-              data-toggle="tab"
-              href="#profile"
-              role="tab"
-              aria-controls="profile"
-              aria-selected="false"
-            >
-              TARGETS & INDICATORS
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link"
-              id="contact-tab"
-              data-toggle="tab"
-              href="#contact"
-              role="tab"
-              aria-controls="contact"
-              aria-selected="false"
-            >
-              PROGRESS & INFO
-            </a>
-          </li>
+          {tabTexts &&
+            tabTexts.map((item, index) => (
+              <li className="nav-item ">
+                <a
+                  className={classNames("nav-link", {
+                    active: index === 0
+                  })}
+                  id={`${item.id}-tab`}
+                  data-toggle="tab"
+                  href={`#${item.id}`}
+                  role="tab"
+                  aria-controls={item.id}
+                  aria-selected="true"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
         </ul>
       </div>
     </div>
-    <div className="container">
-      <div className="tab-content" id="myTabContent">
-        <div
-          className="tab-pane fade show active "
-          id="home"
-          role="tabpanel"
-          aria-labelledby="home-tab"
-        >
-          {children && children[0]}
-        </div>
-        <div
-          className="tab-pane fade"
-          id="profile"
-          role="tabpanel"
-          aria-labelledby="profile-tab"
-        >
-          {children && children[1]}
-        </div>
-        <div
-          className="tab-pane fade"
-          id="contact"
-          role="tabpanel"
-          aria-labelledby="contact-tab"
-        >
-          {children && children[2]}
+    {children && (
+      <div className="container">
+        <div className="tab-content" id="myTabContent">
+          {tabTexts.map((item, index) => (
+            <div
+              className="tab-pane fade "
+              className={classNames("tab-pane fade", {
+                "show active": index === 0
+              })}
+              id={item.id}
+              role="tabpanel"
+              aria-labelledby={`${item.id}-tab`}
+            >
+              {children[index]}
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    )}
   </div>
 );
 
