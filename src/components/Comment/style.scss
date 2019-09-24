@@ -1,9 +1,16 @@
 @import "src/scss/theme/variables.scss";
 @import "src/scss/theme/mixins.scss";
 
+
+
+.comment-block {
+  .comment-card:first-child {
+    border-top: 1px solid $grey-8;
+  }
+}
+
 .comment-card {
   .card {
-    border-top: 1px solid $grey-8;
     border-bottom: 1px solid $grey-8;
     color: $grey-1;
     flex-direction: row;

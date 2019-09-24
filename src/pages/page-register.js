@@ -18,7 +18,7 @@ const PageRegister = () => (
       <div className="container mb-5">
         <Heading text="Register" size="small" />
         <Stepper />
-        <form className="form-register">
+        <form className="form-register form-un">
           <div className="col-12 col-md-6">
             <div className="form-header">
               <h3 className="form-title">Basic information</h3>

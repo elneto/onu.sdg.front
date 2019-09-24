@@ -9,6 +9,8 @@ import GoalsRelatedBlock from "../components/Goals/Related/GoalRelatedBlock";
 import TabsDark from "../components/Tabs/TabsDark";
 import ProgressReport from "../components/ProgressReport";
 import Link from "../components/Common/Link";
+import Comment from "../components/Comment";
+import TextArea from "../components/Form/TextArea";
 
 const tabs = [
   { label: "Description", id: "description" },
@@ -91,6 +93,18 @@ const PagePartnershipsDescription = () => (
               the Mauritius Strategy for Implementation (MSI) at the
               sub-national, national, sub-regional and international levels.
             </p>
+            <form className="form-un mb-3">
+              <TextArea
+                label="Comments"
+                subLabel="Add comments here"
+                placeholder="Text"
+              />
+            </form>
+            <div className="comment-block">
+              <Comment />
+              <Comment />
+              <Comment />
+            </div>
           </div>
           <div className="col-12 col-lg-4">
             <div>
@@ -110,7 +124,7 @@ const PagePartnershipsDescription = () => (
               </div>
               <div className="card card-border">
                 <div className="card-body">
-                  <h5>Time frame: 0000-00-00 - February 2015</h5>
+                  <h6>Time frame: 0000-00-00 - February 2015</h6>
                   <Link>Website</Link>
                 </div>
               </div>
@@ -121,12 +135,12 @@ const PagePartnershipsDescription = () => (
               </div>
               <div className="card card-border">
                 <div className="card-body">
-                  <h5>The Mas Kagin Tapani Association Inc</h5>
+                  <h6>The Mas Kagin Tapani Association Inc</h6>
                 </div>
               </div>
               <div className="card card-border">
                 <div className="card-body">
-                  <h5>WWF International</h5>
+                  <h6>WWF International</h6>
                 </div>
               </div>
             </div>
@@ -138,7 +152,7 @@ const PagePartnershipsDescription = () => (
                 <div className="card-body">
                   <div className="d-flex">
                     <img className="image" src="/assets/flag.jpg" />
-                    <h5>Australia</h5>
+                    <h6>Australia</h6>
                   </div>
                 </div>
               </div>
@@ -146,7 +160,7 @@ const PagePartnershipsDescription = () => (
                 <div className="card-body">
                   <div className="d-flex">
                     <img className="image" src="/assets/flag.jpg" />
-                    <h5>Australia</h5>
+                    <h6>Australia</h6>
                   </div>
                 </div>
               </div>
@@ -157,7 +171,7 @@ const PagePartnershipsDescription = () => (
               </div>
               <div className="card card-border">
                 <div className="card-body">
-                  <h5>Wenceslaus Magun, National Coordinator</h5>
+                  <h6>Wenceslaus Magun, National Coordinator</h6>
                   <Link>magun.wences@gmail.com</Link>
                 </div>
               </div>
