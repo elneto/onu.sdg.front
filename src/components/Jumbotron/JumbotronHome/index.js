@@ -7,7 +7,7 @@ const JumbotronHome = ({ id, label }) => (
     <div className="container h-100 d-flex align-items-center">
       <div className="col-lg-5 col-md-6 col-sm-12">
         <h1>MAKE THE SDGS A <span>REALITY</span></h1>
-        <Button color="transparent">
+        <Button className="btn-transparent">
             Discover The Goals
         </Button>
       </div>

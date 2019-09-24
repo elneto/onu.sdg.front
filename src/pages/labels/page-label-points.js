@@ -5,9 +5,9 @@ import LabelPoints from "../../components/Labels/LabelPoints";
 
 const LabelPointsPage = () => (
   <Container>
-    <LabelPoints status="completed"/>
-    <LabelPoints status="on-track"/>
-    <LabelPoints status="cancelled"/>
+    <LabelPoints className="completed"/>
+    <LabelPoints className="on-track"/>
+    <LabelPoints className="cancelled"/>
   </Container>
 );
 

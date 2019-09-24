@@ -24,7 +24,7 @@ const Partnerships03 = ({}) => (
 
         <div className="d-flex justify-content-between align-items-end mb-2 mt-auto">
           <LabelNumericGroup goals={3} />
-          <LabelPoints status={"completed"} />
+          <LabelPoints className={"completed"} />
         </div>
         <div className="partnership-firm">
           <span className="partnership-label">Partners</span>

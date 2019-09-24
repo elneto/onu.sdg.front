@@ -2,6 +2,10 @@
 @import "src/scss/theme/mixins.scss";
 
 .document-card {
+  .card-dropdown {
+    border-radius: 3px;
+    border: 1px solid $grey-8;
+  }
   .document-icon {
     background-image: url("/assets/images/document.svg");
     background-repeat: no-repeat;

@@ -60,6 +60,12 @@ body {
   }
 }
 
+.container-background {
+  background-color: $grey-4;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
 .row-spacing {
   > [class*="col-"] {
     padding-bottom: $grid-gutter-width;

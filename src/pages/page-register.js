@@ -52,7 +52,7 @@ const PageRegister = () => (
         </form>
         <GoalsRegisterBlock goals={17} />
         <div className="d-flex justify-content-end">
-          <Button color="primary">Next step</Button>
+          <Button className="btn-primary">Next step</Button>
         </div>
       </div>
     </main>

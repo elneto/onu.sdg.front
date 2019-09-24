@@ -1,6 +1,6 @@
 import React from "react";
 const InfoLink01 = () => (
-  <div className="col-sm-12 col-lg-8 card-dropdown infolink">
+  <div className="col-sm-12 col-lg-8 infolink">
     <div class="card card-dropdown">
       <div class="card-body">
         <button

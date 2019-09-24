@@ -51,6 +51,11 @@ $h5-font-size: 18px;
 $border-color: $grey-8;
 
 
+//Card
+
+// $card-border-radius: 3px;
+// $card-border-width: 1px;
+// $card-border-color: $grey-8;
 
 
 
@@ -60,18 +65,4 @@ $border-color: $grey-8;
 
 // .row > [class*="col-"]:last-child {
 //   padding-right: 0;
-// }
-
-
-// @media (max-width: 768px) {
-//   .row {
-//     > .col-xs-12,
-//     > .col-sm-12,
-//     > .col-md-12,
-//     > .col-lg-12,
-//     > .col-xl-12 {
-//       padding-left: 0;
-//       padding-right: 0;
-//     }
-//   }
 // }

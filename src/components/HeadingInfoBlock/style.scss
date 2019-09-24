@@ -1,0 +1,16 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 1px solid $grey-8;
+    border-bottom: 1px solid $grey-8;
+}
+
+@media (max-width: 768px) {
+    .info-block {
+        flex-direction: column;
+    }
+}

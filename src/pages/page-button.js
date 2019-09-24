@@ -4,7 +4,7 @@ import Button from "../components/Common/Button";
 
 const ButtonPage = () => (
   <Container>
-    <Button color="primary">See all events</Button>
+    <Button className="btn-primary">See all events</Button>
   </Container>
 );
 

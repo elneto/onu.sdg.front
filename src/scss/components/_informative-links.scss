@@ -2,6 +2,10 @@
 @import "src/scss/theme/mixins.scss";
 
 .infolink {
+  .card-dropdown {
+    border-radius: 3px;
+    border: 1px solid $grey-8;
+  }
   .dropwdown-collapse {
     padding: 15px 1.25rem;
   }

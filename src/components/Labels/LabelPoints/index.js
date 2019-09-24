@@ -1,8 +1,9 @@
 import React from "react";
+import classNames from "classnames";
 import "./style.scss";
 
-const LabelPoints = ({ status }) => (
-  <span className={`label-points ${status}`}>
+const LabelPoints = ({ className }) => (
+  <span className={classNames('label-points', className)}> 
     <span className="oval"></span>
     <span className="oval"></span>
     <span className="oval"></span>

@@ -424,6 +424,12 @@ const IndexPage = () => (
           <li>
             <Link to="/page-news-article">News Article</Link>
           </li>
+          <li>
+            <Link to="/page-partnerships ">Partnerships</Link>
+          </li>
+          <li>
+            <Link to="/page-partnerships-general ">Partnerships General</Link>
+          </li>
         </nav>
       </div>
     </div>

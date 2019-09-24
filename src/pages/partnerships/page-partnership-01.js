@@ -4,7 +4,7 @@ import Container from "../../components/container";
 
 const Partnership01Page = () => (
   <Container>
-    <Partnership01 />
+    <Partnership01 className="col-12 col-sm-6 col-lg-4"/>
   </Container>
 );
 

@@ -17,7 +17,7 @@ class Heading extends React.Component {
           </div>
           {textButton && (
             <div className="heading-button col-12 col-sm-3">
-              <Button color="primary">{textButton}</Button>
+              <Button className="btn-primary">{textButton}</Button>
             </div>
           )}
         </div>

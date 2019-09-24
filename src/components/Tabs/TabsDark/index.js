@@ -1,6 +1,7 @@
 import React from "react";
-import "./style.scss";
 import classNames from 'classnames';
+import "./style.scss";
+
 
 const TabsDark = ({ tabs, children }) => (
   <div className="tabs tabs-dark">

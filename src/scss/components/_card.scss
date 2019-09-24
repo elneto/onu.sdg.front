@@ -2,15 +2,16 @@
 @import "src/scss/theme/mixins.scss";
 
 .card {
-  &.card-dropdown {
+  &.card-border {
     border-radius: 3px;
     border: 1px solid $grey-8;
+    height: 100%;
+  }
+  &.card-dropdown {
     .card-body {
       padding: 0;
     }
-    h4 {
-      font-family: "Oswald-Bold";
-      font-size: 20px;
+    h4, h5 {
       color: $secondary;
       margin-bottom: 0;
     }

@@ -1,0 +1,25 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.card-progress {
+  &.center {
+    .label-points {
+      justify-content: center;
+      padding: 8px 0;
+    }
+  }
+  .card-body {
+    border-radius: 0px 0px 3px 3px;
+    border: 1px solid $grey-8;
+  }
+  .label-points {
+    width: 100%;
+    display: flex;
+    border-radius: 3px 3px 0px 0px;
+  }
+  .headinginfo {
+    &-number {
+      font-size: 30px;
+    }
+  }
+}
