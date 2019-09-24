@@ -43,7 +43,7 @@
 @media (max-width: 576px) {
   .card {
     &.card-dropdown {
-      h4 {
+      h4, h5 {
         font-size: 16px;
         text-align: left;
       }

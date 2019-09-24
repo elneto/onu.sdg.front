@@ -7,18 +7,13 @@
     -moz-appearance: none;
     appearance: none;
     outline: none;
-    border-radius: 3px;
     padding: 15px;
-    border: 1px solid $grey-8;
-    background-color: rgba(242, 242, 242, 0.11);
     background: url("/assets/images/arrow-down.svg") center right no-repeat;
     background-size: 17px 17px;
     background-origin: content-box;
     height: 50px;
     font-size: 14px;
-    &:focus {
-      border: 1px solid $primary;
-    }
+    cursor: pointer;
   }
 }
 

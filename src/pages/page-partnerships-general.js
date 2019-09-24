@@ -17,19 +17,46 @@ const PagePartnershipsGeneral = () => (
       <div className="container mt-5">
         <div className="row justify-content-between">
           <div className="col-sm-12 col-md-3">
-            <Dropdown title="SIDS" id="sids">
+            <Dropdown title="SIDS" id="sids" className="mb-5">
               {[...Array(14).keys()].map(goal => (
                 <Checkbox id={`goal-${goal}`} label={`Goal ${goal}`} />
               ))}
             </Dropdown>
+            <Dropdown title="Action networks & databases" id="networks">
+              {[...Array(14).keys()].map(index => (
+                <Checkbox id={`network-${index}`} label="Business for 2030" />
+              ))}
+            </Dropdown>
           </div>
           <div className="col-sm-12 col-md-8">
-            <h5 className="border-bottom pb-2"> 1450 results</h5>
-            <div className="d-flex">
-              <Input type="search" />
-              <Select id="short" />
+            <div className="row mb-3">
+              <div className="col">
+                <div className="d-flex border-bottom">
+                  <h5>1450 results</h5>
+                  <div className="d-flex ml-auto">
+                    <button className="btn btn-results group">
+                      <div className="rectangle"></div>
+                      <div className="rectangle"></div>
+                      <div className="rectangle"></div>
+                      <div className="rectangle"></div>
+                    </button>
+                    <button className="btn btn-results list">
+                      <div className="rectangle"></div>
+                      <div className="rectangle"></div>
+                      <div className="rectangle"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-
+            <div className="row">
+              <div className="col-12 col-md-6">
+                <Input type="search" label="Search" />
+              </div>
+              <div className="col-12 col-md-6">
+                <Select id="short" label="Short by" />
+              </div>
+            </div>
             <div className="row row-spacing">
               {[...Array(14)].map(topic => (
                 <Partnerships01 className="col-12 col-sm-12 col-lg-6" />

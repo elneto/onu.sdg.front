@@ -13,5 +13,9 @@
     outline: none;
     height: 50px;
   }
+  input[type="search"] {
+    background: url("/assets/images/search-blue.svg") center right no-repeat;
+    background-size: 17px 17px;
+    background-origin: content-box;
+  }
 }
-
