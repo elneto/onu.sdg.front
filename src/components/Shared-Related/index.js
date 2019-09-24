@@ -3,12 +3,16 @@ import classNames from "classnames";
 import LabelNumericGroup from "../Labels/LabelNumericGroup";
 import SocialIcon from "../Common/SocialIcon";
 import "./style.scss";
-const SharedRelated = ({ related }) => (
+const SharedRelated = ({ related, className }) => (
   <div
-    className={classNames("related-card col-12 d-flex", {
-      "justify-content-between": related,
-      "justify-content-end": !related
-    })}
+    className={classNames(
+      "related-card col-12 d-flex",
+      {
+        "justify-content-between": related,
+        "justify-content-end": !related
+      },
+      className
+    )}
   >
     {related && (
       <div className="related">

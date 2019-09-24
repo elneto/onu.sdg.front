@@ -5,7 +5,6 @@
   &.center {
     .label-points {
       justify-content: center;
-      padding: 8px 0;
     }
   }
   .card-body {
@@ -16,6 +15,7 @@
     width: 100%;
     display: flex;
     border-radius: 3px 3px 0px 0px;
+    padding: 8px 10px;
   }
   .headinginfo {
     &-number {
