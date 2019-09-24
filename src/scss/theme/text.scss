@@ -4,7 +4,8 @@ h1,
 h2,
 h3,
 h4,
-h5, h6 {
+h5,
+h6 {
   font-family: "Oswald-Bold";
 }
 
@@ -41,7 +42,6 @@ h5, h6 {
   }
 }
 
-
 .page-title {
   margin-top: 15px;
   text-decoration: underline;
@@ -49,3 +49,10 @@ h5, h6 {
   margin-bottom: 60px;
 }
 
+@media (max-width: 576px) {
+  .news-article {
+    .page-title {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -433,6 +433,9 @@ const IndexPage = () => (
           <li>
             <Link to="/page-partnerships-description ">Partnerships Description</Link>
           </li>
+          <li>
+            <Link to="/page-states-block ">States</Link>
+          </li>
         </nav>
       </div>
     </div>

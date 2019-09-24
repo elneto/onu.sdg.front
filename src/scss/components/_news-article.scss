@@ -9,3 +9,13 @@
     height: 488px;
   }
 }
+
+@media (max-width: 576px) {
+  .news-article {
+    .image-full {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
