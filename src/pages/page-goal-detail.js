@@ -32,7 +32,7 @@ const PageGoalDetail = () => (
             <h3>Related Topics</h3>
           </div>
         </div>
-        <div className="mb-5 row row-spacing">
+        <div className="row row-spacing">
           {[...Array(3).keys()].map(goal => (
             <Topic02 />
           ))}

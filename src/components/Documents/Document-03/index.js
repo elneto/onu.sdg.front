@@ -1,8 +1,9 @@
 import React from "react";
+import classNames from "classnames";
 import "./style.scss";
 
-const Document03 = () => (
-  <div className="col-sm-12 col-lg-8 document-03 document-card">
+const Document03 = ({className}) => (
+  <div className={classNames('document-03 document-card', className)}>
     <div class="card card-dropdown">
       <div class="card-body">
         <button

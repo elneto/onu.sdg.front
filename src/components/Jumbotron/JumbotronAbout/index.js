@@ -13,15 +13,12 @@ const JumbotronAbout = ({}) => (
     }}
   >
     <div className="container">
-      <div className="  col-xl-4 col-lg-4 col-md-6 col-sm-12">
-        <h2 className="separator-bottom">ACTION NETWORKS FOR THE SDGS</h2>
-        <h5>
-          Driving actions towards achievement of the Sustainable Development
-          Goals
-        </h5>
+      <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <h2 className="separator-bottom">ABOUT THE EVENT</h2>
+        <h5>Second Sustainable Development Transport Conference</h5>
         <div className="place">
-          <span>Conference Room 2, UNHQ</span>
-          <span>New York</span>
+          <span>Mon 5 - Wed 7 May 2020</span>
+          <span>Beijing, China</span>
         </div>
       </div>
     </div>

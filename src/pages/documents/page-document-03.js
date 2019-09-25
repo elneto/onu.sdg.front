@@ -4,7 +4,7 @@ import Document03 from "../../components/Documents/Document-03";
 
 const Document03Page = () => (
   <Container>
-    <Document03 />
+    <Document03 className="col-sm-12 col-lg-8"/>
   </Container>
 );
 
