@@ -9,7 +9,7 @@
     background-color: $grey-4;
   }
 
-  // .jumbotron-content {
+  // .  {
   //   padding-right: 0;
   //   padding-left: 0;
   // }
@@ -23,18 +23,12 @@
     margin-bottom: 50px;
     display: inline-block;
   }
-  h1 {
+  h2 {
     line-height: 59px;
-    font-family: "Oswald-Bold";
-    font-size: 45px;
-    font-weight: bold;
     line-height: 1.31;
     color: $secondary;
   }
-  h2 {
-    font-family: "Oswald-Bold";
-    font-size: 18px;
-    font-weight: bold;
+  h5 {
     line-height: 1.22;
     color: $secondary;
     margin-bottom: 20px;

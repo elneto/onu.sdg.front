@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.scss";
 
-const JumbotronAbout = ({}) => (
+const JumbotronActionNetworks = ({}) => (
   <div
-    className="jumbotron-event jumbotron-about"
+    className="jumbotron-action"
     style={{
       background:
         "linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),url('/assets/news-02.jpg')",
@@ -13,19 +13,15 @@ const JumbotronAbout = ({}) => (
     }}
   >
     <div className="container">
-      <div className="  col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div className="col-md-6 col-sm-12 col-lg-4 ">
         <h2 className="separator-bottom">ACTION NETWORKS FOR THE SDGS</h2>
         <h5>
           Driving actions towards achievement of the Sustainable Development
           Goals
         </h5>
-        <div className="place">
-          <span>Conference Room 2, UNHQ</span>
-          <span>New York</span>
-        </div>
       </div>
     </div>
   </div>
 );
 
-export default JumbotronAbout;
+export default JumbotronActionNetworks;

@@ -49,6 +49,32 @@ h6 {
   margin-bottom: 60px;
 }
 
+.separator-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  &:after {
+    content: "";
+    width: 50px;
+    height: 0.9px;
+    background-color: $primary;
+    margin-top: 20px;
+  }
+}
+
+.separator-top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  &:before {
+    content: "";
+    width: 50px;
+    height: 0.9px;
+    background-color: $primary;
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 576px) {
   .news-article {
     .page-title {

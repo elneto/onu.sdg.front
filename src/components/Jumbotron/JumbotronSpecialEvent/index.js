@@ -20,17 +20,17 @@ const JumbotronSpecialEvent = ({}) => (
       <div className="carousel-item active">
         <div className="jumbotron-event special-event">
           <div className="container">
-            <div className="jumbotron-content col-xl-6 col-lg-8 col-md-8 col-sm-12">
-              <h1>SUSTAINABLE TRANSPORT, SUSTAINABLE DEVELOPMENT</h1>
-              <h2>
+            <div className="  col-xl-6 col-lg-8 col-md-8 col-sm-12">
+              <h2 className="separator-bottom">SUSTAINABLE TRANSPORT, SUSTAINABLE DEVELOPMENT</h2>
+              <h5>
                 The global initiative to scale up action and impact on youth
                 employment.
-              </h2>
+              </h5>
               <div className="place">
                 <span>Conference Room 2, UNHQ</span>
                 <span>New York</span>
               </div>
-              <h2>Access for all</h2>
+              <h5>Access for all</h5>
             </div>
           </div>
         </div>
@@ -38,17 +38,17 @@ const JumbotronSpecialEvent = ({}) => (
       <div className="carousel-item">
         <div className="jumbotron-event special-event">
           <div className="container">
-            <div className="jumbotron-content col-xl-6 col-lg-8 col-md-8 col-sm-12">
-              <h1>SUSTAINABLE TRANSPORT, SUSTAINABLE DEVELOPMENT</h1>
-              <h2>
+            <div className="  col-xl-6 col-lg-8 col-md-8 col-sm-12">
+              <h2 className="separator-bottom">SUSTAINABLE TRANSPORT, SUSTAINABLE DEVELOPMENT</h2>
+              <h5>
                 The global initiative to scale up action and impact on youth
                 employment.
-              </h2>
+              </h5>
               <div className="place">
                 <span>Conference Room 2, UNHQ</span>
                 <span>New York</span>
               </div>
-              <h2>Access for all</h2>
+              <h5>Access for all</h5>
             </div>
           </div>
         </div>
@@ -56,17 +56,17 @@ const JumbotronSpecialEvent = ({}) => (
       <div className="carousel-item">
         <div className="jumbotron-event special-event">
           <div className="container">
-            <div className="jumbotron-content col-xl-6 col-lg-8 col-md-8 col-sm-12">
-              <h1>SUSTAINABLE TRANSPORT, SUSTAINABLE DEVELOPMENT</h1>
-              <h2>
+            <div className="  col-xl-6 col-lg-8 col-md-8 col-sm-12">
+              <h2 className="separator-bottom">SUSTAINABLE TRANSPORT, SUSTAINABLE DEVELOPMENT</h2>
+              <h5>
                 The global initiative to scale up action and impact on youth
                 employment.
-              </h2>
+              </h5>
               <div className="place">
                 <span>Conference Room 2, UNHQ</span>
                 <span>New York</span>
               </div>
-              <h2>Access for all</h2>
+              <h5>Access for all</h5>
             </div>
           </div>
         </div>

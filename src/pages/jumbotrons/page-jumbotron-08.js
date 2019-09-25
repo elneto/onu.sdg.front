@@ -1,6 +1,6 @@
 import React from "react";
-import JumbotronNetworks from "../../components/Jumbotron/JumbotronNetworks";
+import JumbotronActionNetworksDetail from "../../components/Jumbotron/JumbotronActionNetworksDetail";
 
-const Jumbotron08Page = () => <JumbotronNetworks />;
+const Jumbotron08Page = () => <JumbotronActionNetworksDetail />;
 
 export default Jumbotron08Page;

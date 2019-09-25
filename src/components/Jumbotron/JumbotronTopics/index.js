@@ -4,12 +4,12 @@ import "./style.scss";
 const JumbotronTopics = ({ color }) => (
   <div className="jumbotron-event jumbotron-topics grey">
     <div className="container">
-      <div className="jumbotron-content col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div className="  col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <a className="event-link" href="#" role="button">
           Topics
         </a>
-        <h1>HEALTH AND POPULATION</h1>
-        <h2>Ensure healthy lives and promote well-being for all at all ages</h2>
+        <h2 className="separator-bottom">HEALTH AND POPULATION</h2>
+        <h5>Ensure healthy lives and promote well-being for all at all ages</h5>
         <div className="d-flex">
           <button
             type="button"

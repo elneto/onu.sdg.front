@@ -11,7 +11,7 @@ const JumbotronGoals = ({ goal }) => (
           Goals
         </a>
         <div className="goal-number">{goal}</div>
-        <h1>GOOD HEALTH AND WELL-BEING</h1>
+        <h1 className="separator-bottom">GOOD HEALTH AND WELL-BEING</h1>
         <p className="lead">
           Ensure healthy lives and promote well-being for all at all ages
         </p>
