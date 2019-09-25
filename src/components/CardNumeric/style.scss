@@ -1,0 +1,26 @@
+@import "src/scss/theme/variables.scss";
+@import "src/scss/theme/mixins.scss";
+
+.card-numeric {
+  .card-body {
+    padding: 30px 0;
+    border-top: 1px solid $grey-8;
+    border-bottom: 1px solid $grey-8;
+    display: flex;
+    justify-content: space-between;
+  }
+  .number {
+    border-radius: 50%;
+    color: $primary;
+    border: 1px solid $primary;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    font-family: "Oswald";
+    font-size: 21px;
+    font-weight: 500;
+  }
+}

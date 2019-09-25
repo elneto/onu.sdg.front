@@ -1,8 +1,9 @@
 import React from "react";
+import classNames from "classnames";
 import "./style.scss";
 
-const Publications02 = ({}) => (
-  <div className="card publications-02 col-12">
+const Publications02 = ({ className }) => (
+  <div className={classNames("card publications-02", className)}>
     <a href="#">
       <div className="card-body">
         <img className="card-image" src="/assets/publications-01.jpg" />

@@ -454,6 +454,9 @@ const IndexPage = () => (
           <li>
             <Link to="/page-special-event-detail">Special Event Detail</Link>
           </li>
+          <li>
+            <Link to="/page-technology">Technology</Link>
+          </li>
         </nav>
       </div>
     </div>

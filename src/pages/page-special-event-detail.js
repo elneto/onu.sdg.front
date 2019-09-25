@@ -79,7 +79,7 @@ const PageSpecialEventDetail = () => (
                 <h3>Documents</h3>
               </div>
               <div className="row row-spacing">
-                {[...Array(2)].map(index => (
+                {[...Array(2).keys()].map(index => (
                   <Document03 className="col-12" id={`document-${index}`} />
                 ))}
               </div>

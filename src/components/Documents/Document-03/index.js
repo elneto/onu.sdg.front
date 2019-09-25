@@ -2,18 +2,18 @@ import React from "react";
 import classNames from "classnames";
 import "./style.scss";
 
-const Document03 = ({className}) => (
-  <div className={classNames('document-03 document-card', className)}>
+const Document03 = ({ className, id }) => (
+  <div className={classNames("document-03 document-card", className)}>
     <div class="card card-dropdown">
       <div class="card-body">
         <button
           type="button"
           className="btn dropdown-toggle collapsed"
-          id="document2"
+          id={`${id}-collapse`}
           data-toggle="collapse"
-          data-target="#documentNotes2"
+          data-target={`#${id}`}
           aria-expanded="true"
-          aria-controls="documentNotes2"
+          aria-controls={id}
         >
           <div className="d-flex align-items-center">
             <div className="document-icon"></div>
@@ -24,9 +24,9 @@ const Document03 = ({className}) => (
         </button>
 
         <div
-          id="documentNotes2"
+          id={id}
           className="dropwdown-collapse collapse"
-          aria-labelledby="document2"
+          aria-labelledby={`${id}-collapse`}
         >
           <div className="document-group">
             <a href="#" className="document-name">
