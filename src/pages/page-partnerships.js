@@ -16,6 +16,7 @@ import HeadingInfo from "../components/HeadingInfo";
 import Link from "../components/Common/Link";
 import Event07 from "../components/Events/Event-07";
 import Featured02 from "../components/Featured/Featured-02";
+import HeadingSubtitle from "../components/HeadingSubtitle";
 
 const tabs = [
   { label: "All", id: "all" },
@@ -43,100 +44,93 @@ const PagePartnerships = () => (
     <SEO title="Partnerships" />
     <Header />
     <main>
-      <div className="container">
+      <section className="container mb-5">
         <Heading
           text="PARTNERSHIPS"
           size="small"
           textButton="Search partnership"
         />
-        <div className="mb-5">
-          <TabsLight tabs={tabs}>
-            <>
-              <h5 className="border-left border-primary pl-3">
-                The Partnerships for SDGs online platform is United Nations'
-                global registry of voluntary commitments and multi-stakeholder
-                partnerships, facilitating global engagement of all stakeholders
-                in support of the implementation of the Sustainable Development
-                Goals.
-              </h5>
-            </>
-            <>
-              <h5 className="border-left border-primary pl-3">
-                The Partnerships for SDGs online platform is United Nations'
-                global registry of voluntary commitments and multi-stakeholder
-                partnerships, facilitating global engagement of all stakeholders
-                in support of the implementation of the Sustainable Development
-                Goals.
-              </h5>
-            </>
-            <>
-              <h5 className="border-left border-primary pl-3">
-                The Partnerships for SDGs online platform is United Nations'
-                global registry of voluntary commitments and multi-stakeholder
-                partnerships, facilitating global engagement of all stakeholders
-                in support of the implementation of the Sustainable Development
-                Goals.
-              </h5>
-            </>
-            <>
-              <h5 className="border-left border-primary pl-3">
-                The Partnerships for SDGs online platform is United Nations'
-                global registry of voluntary commitments and multi-stakeholder
-                partnerships, facilitating global engagement of all stakeholders
-                in support of the implementation of the Sustainable Development
-                Goals.
-              </h5>
-            </>
-          </TabsLight>
-        </div>
-        <div className="mb-4">
-          <HeadingInfoBlock items={headingInfo} />
-        </div>
-        <div className="mb-5 pb-5 border-bottom">
-          <TabsButton tabs={tabsButton}>
-            <Chart01 />
-            <Chart02 />
-          </TabsButton>
-        </div>
+        <TabsLight tabs={tabs}>
+          <>
+            <h5 className="border-left border-primary pl-3">
+              The Partnerships for SDGs online platform is United Nations'
+              global registry of voluntary commitments and multi-stakeholder
+              partnerships, facilitating global engagement of all stakeholders
+              in support of the implementation of the Sustainable Development
+              Goals.
+            </h5>
+          </>
+          <>
+            <h5 className="border-left border-primary pl-3">
+              The Partnerships for SDGs online platform is United Nations'
+              global registry of voluntary commitments and multi-stakeholder
+              partnerships, facilitating global engagement of all stakeholders
+              in support of the implementation of the Sustainable Development
+              Goals.
+            </h5>
+          </>
+          <>
+            <h5 className="border-left border-primary pl-3">
+              The Partnerships for SDGs online platform is United Nations'
+              global registry of voluntary commitments and multi-stakeholder
+              partnerships, facilitating global engagement of all stakeholders
+              in support of the implementation of the Sustainable Development
+              Goals.
+            </h5>
+          </>
+          <>
+            <h5 className="border-left border-primary pl-3">
+              The Partnerships for SDGs online platform is United Nations'
+              global registry of voluntary commitments and multi-stakeholder
+              partnerships, facilitating global engagement of all stakeholders
+              in support of the implementation of the Sustainable Development
+              Goals.
+            </h5>
+          </>
+        </TabsLight>
+      </section>
+      <section className="container mb-5">
+        <HeadingInfoBlock items={headingInfo} />
+      </section>
+      <section className="container mb-5 pb-5 border-bottom">
+        <TabsButton tabs={tabsButton}>
+          <Chart01 />
+          <Chart02 />
+        </TabsButton>
+      </section>
 
-        <div className="row">
-          <div className="col heading-subtitle">
-            <h3>Featured commitments & partnerships</h3>
-          </div>
-          <div className="col d-flex justify-content-end align-items-center">
+      <section className="container mb-5">
+        <HeadingSubtitle text="Featured commitments & partnerships">
+          <div className="d-flex flex-sm-row flex-column">
             <Button className="mr-2 btn-primary">Share an update</Button>
             <Button className="btn-primary">Register</Button>
           </div>
-        </div>
-        <div className="mb-4 row row-spacing">
+        </HeadingSubtitle>
+        <div className="row row-spacing">
           {[...Array(6)].map(topic => (
             <Partnerships01 className="col-12 col-sm-6 col-lg-4" />
           ))}
         </div>
+      </section>
 
-        <div className="row">
-          <div className="col heading-subtitle">
-            <h3>Featured action networks</h3>
-          </div>
-          <div className="col d-flex justify-content-end align-items-center">
-            <Button className="btn-primary">See all action networks</Button>
-          </div>
-        </div>
-        <div className="mb-4 row row-spacing">
+      <section className="container mb-5">
+        <HeadingSubtitle text="Featured action networks">
+          <Button className="btn-primary">See all action networks</Button>
+        </HeadingSubtitle>
+
+        <div className="row row-spacing">
           {[...Array(3)].map(topic => (
             <Partnerships01 className="col-12 col-sm-6 col-lg-4" />
           ))}
         </div>
+      </section>
 
-        <div className="row">
-          <div className="col heading-subtitle">
-            <h3>Status of progress reports</h3>
-          </div>
-          <div className="col d-flex justify-content-end align-items-center">
-            <Button className="btn-primary">Submit progress report</Button>
-          </div>
-        </div>
-        <div className="mb-4 row row-spacing">
+      <section className="container mb-5">
+        <HeadingSubtitle text="Status of progress reports">
+          <Button className="btn-primary">Submit progress report</Button>
+        </HeadingSubtitle>
+
+        <div className="row row-spacing">
           {[...Array(3)].map(topic => (
             <ProgressReport className="col-6 col-md-2 center">
               <HeadingInfo number={175} text="Submitted on time" />
@@ -155,8 +149,9 @@ const PagePartnerships = () => (
             </div>
           </div>
         </div>
-      </div>
-      <div className="container-background mb-5">
+      </section>
+
+      <section className="container-background mb-5">
         <div className="container">
           <div className="row">
             <div className="col heading-subtitle">
@@ -165,19 +160,16 @@ const PagePartnerships = () => (
             <Event07 />
           </div>
         </div>
-      </div>
-      <div className="container">
-        <div className="row">
-          <div className="col heading-subtitle">
-            <h3>Featured</h3>
-          </div>
-        </div>
-        <div className="mb-5 row row-spacing">
+      </section>
+
+      <section className="container mb-5">
+        <HeadingSubtitle text="Featured" />
+        <div className=" row row-spacing">
           {[...Array(3)].map(topic => (
             <Featured02 />
           ))}
         </div>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>

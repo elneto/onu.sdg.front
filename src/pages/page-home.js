@@ -19,18 +19,20 @@ const PageHome = () => (
     <main>
       <NewsHome />
       <FeaturedHome />
-      <div className="container">
+      {/* Block */}
+      <section className="container mb-5">
         <Heading text="Events" textButton="See all events" size="small" />
-        <div className="row row-spacing mb-5">
+        <div className="row row-spacing">
           <Event01 />
           <Event01 />
           <Event01 />
         </div>
-      </div>
+      </section>
       <GoalsWrapper goals={17} />
-      <div className="container">
+      {/* Block */}
+      <section className="container">
         <FooterLinks />
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </div>

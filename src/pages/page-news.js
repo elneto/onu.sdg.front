@@ -12,19 +12,21 @@ const PageNews = () => (
     <SEO title="News" />
     <Header />
     <main>
-      <div className="container">
+      <section className="container mb-5">
         <Heading text="News" size="small" />
-        <div className="mb-5 row row-spacing">
+        <div className="row row-spacing">
           {[...Array(2)].map(item => (
-            <News02 image="/assets/news-02.jpg"  />
+            <News02 image="/assets/news-02.jpg" />
           ))}
         </div>
-        <div className="mb-5 row row-spacing">
+      </section>
+      <section className="container mb-5">
+        <div className="row row-spacing">
           {[...Array(14)].map(item => (
             <News03 image="/assets/news-02.jpg" />
           ))}
         </div>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>

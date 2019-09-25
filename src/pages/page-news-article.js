@@ -5,13 +5,14 @@ import FooterV2 from "../components/FooterV2";
 import SharedRelated from "../components/Shared-Related";
 import News05 from "../components/News/News-05";
 import Document02 from "../components/Documents/Document-02";
+import HeadingSubtitle from "../components/HeadingSubtitle";
 
 const PageNewsArticle = () => (
   <>
     <SEO title="News Article" />
     <Header />
     <main>
-      <div className="container news-article">
+      <section className="container news-article">
         <div className="row">
           <div className="col">
             <h5 className="page-title">News</h5>
@@ -83,26 +84,26 @@ const PageNewsArticle = () => (
             </ul>
           </div>
           <div className="col-12 col-lg-4">
-            <div>
-              <div className="heading-subtitle">
-                <h3>Documents</h3>
+            <section>
+              <HeadingSubtitle text="Documents" />
+              <div className="row">
+                <Document02 className="col-12 mb-2" />
+                <Document02 className="col-12 mb-2" />
+                <Document02 className="col-12 mb-2" />
               </div>
-              <Document02 className="col-12 mb-2" />
-              <Document02 className="col-12 mb-2" />
-              <Document02 className="col-12 mb-2" />
-            </div>
-            <div>
-              <div className="heading-subtitle border-bottom">
-                <h3>Related news</h3>
+            </section>
+            <section>
+              <HeadingSubtitle text="Related news" className="border-bottom" />
+              <div className="row">
+                <News05 image="assets/news-02.jpg" className="col-12 mb-2" />
+                <News05 image="assets/news-02.jpg" className="col-12 mb-2" />
+                <News05 image="assets/news-02.jpg" className="col-12 mb-2" />
               </div>
-              <News05 image="assets/news-02.jpg" className="col-12 mb-2" />
-              <News05 image="assets/news-02.jpg" className="col-12 mb-2" />
-              <News05 image="assets/news-02.jpg" className="col-12 mb-2" />
-            </div>
+            </section>
           </div>
         </div>
         <SharedRelated />
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>

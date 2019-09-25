@@ -10,12 +10,13 @@ import Input from "../components/Form/Input";
 import TextArea from "../components/Form/TextArea";
 import Button from "../components/Common/Button";
 
+
 const PageRegister = () => (
   <>
     <SEO title="Register" />
     <Header />
     <main>
-      <div className="container mb-5">
+      <section className="container mb-5">
         <Heading text="Register" size="small" />
         <Stepper />
         <form className="form-register form-un">
@@ -54,7 +55,7 @@ const PageRegister = () => (
         <div className="d-flex justify-content-end">
           <Button className="btn-primary">Next step</Button>
         </div>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>

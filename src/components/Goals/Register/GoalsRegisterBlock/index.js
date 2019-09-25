@@ -3,7 +3,7 @@ import "./style.scss";
 import GoalRegister from "../GoalRegister";
 
 const GoalsRegisterBlock = ({ goals }) => (
-  <div className="goals-register-block">
+  <section className="goals-register-block">
     <div className="heading row">
       <div className="col-md-7 col-sm-12">
         <h3>Sustainable development goals</h3>
@@ -19,7 +19,7 @@ const GoalsRegisterBlock = ({ goals }) => (
         <GoalRegister goal={goal + 1} />
       ))}
     </div>
-  </div>
+  </section>
 );
 
 export default GoalsRegisterBlock;

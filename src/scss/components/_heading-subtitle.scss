@@ -1,14 +1,32 @@
 @import "src/scss/theme/variables.scss";
 @import "src/scss/theme/mixins.scss";
 
-
 .heading-subtitle {
-    padding: 30px 0;
-    h3 {
-        color: $secondary;
-        margin-bottom: 0;
+  padding: 30px 0;
+  h3 {
+    color: $secondary;
+    margin-bottom: 0;
+  }
+  &.border {
+    border-bottom: 1px solid $grey-8;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-subtitle {
+    .content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
     }
-    &.border {
-        border-bottom: 1px solid $grey-8;
+    .btn-un {
+      width: 100%;
+      display: block;
+      margin-top: 20px;
     }
+  }
 }

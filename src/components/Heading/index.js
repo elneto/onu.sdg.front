@@ -11,7 +11,7 @@ class Heading extends React.Component {
       "col-12 col-sm-8 col-lg-6": size === "big"
     });
     return (
-      <div className="heading-block ">
+      <div className="heading-block">
         <div className="row">
           <div className={textClass}>
             <h2>{text}</h2>

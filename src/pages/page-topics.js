@@ -8,12 +8,12 @@ import Topic01 from "../components/Topics/Topic-01";
 
 const PageTopics = () => (
   <>
-    <SEO title="Topics" />
+    <SEO title="Topics"/>
     <Header />
     <main>
-      <div className="container">
+      <div className="container mb-5">
         <Heading text="Topics" size="small" />
-        <div className="mb-5 row row-spacing">
+        <div className="row row-spacing">
           {[...Array(20).keys()].map(topic => (
             <Topic01 />
           ))}

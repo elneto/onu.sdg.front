@@ -18,32 +18,34 @@ const ViewEvents = () => (
     <SEO title="Events" />
     <Header />
     <main>
-      <div className="container">
+      {/* Block */}
+      <section className="container mb-5">
         <Heading text="featured events" size="big" />
-        <div className="mb-5 row row-spacing">
+        <div className="row row-spacing">
           {[...Array(4)].map(event => (
             <Event03 />
           ))}
         </div>
-      </div>
-      <div className="container">
+      </section>
+      {/* Block */}
+      <section className="container mb-5">
         <Heading text="events" size="small" />
         <TabsButton tabs={tabs} title="Agenda">
           <div>calendar</div>
-          <div>
+          <>
             <div className="mb-5 row row-spacing">
               {[...Array(4)].map(event => (
                 <div className="events-block w-100 mb-5">
                   <div className="col-12">
                     <h4 className="month">June 2019</h4>
                   </div>
-                  <Event04 featured/>
+                  <Event04 featured />
                 </div>
               ))}
             </div>
-          </div>
+          </>
         </TabsButton>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>
