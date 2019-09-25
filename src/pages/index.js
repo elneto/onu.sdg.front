@@ -445,6 +445,9 @@ const IndexPage = () => (
           <li>
             <Link to="/page-action-networks-detail ">Action Networks Detail</Link>
           </li>
+          <li>
+            <Link to="/404">404</Link>
+          </li>
         </nav>
       </div>
     </div>
