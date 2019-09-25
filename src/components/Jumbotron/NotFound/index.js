@@ -12,7 +12,7 @@ const NotFound = () => (
     }}
   >
     <div className="container h-100 d-flex align-items-center">
-      <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="col-lg-4 col-sm-6 col-12">
         <h1>
           <span>404</span>
         </h1>
