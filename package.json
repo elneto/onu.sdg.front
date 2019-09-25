@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export && node scripts/postbuild",
+    "dev": "webpack --watch & next dev && fg",
+    "build": "next build && next export && node scripts/postbuild && webpack -p",
     "start": "next start",
+    "watch": "webpack --watch",
     "out": "http-server out"
   },
   "dependencies": {
@@ -22,6 +23,9 @@
     "glob": "^7.1.4",
     "http-server": "^0.11.1",
     "path": "^0.12.7",
-    "rimraf": "^3.0.0"
+    "rimraf": "^3.0.0",
+    "vue": "^2.6.10",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
