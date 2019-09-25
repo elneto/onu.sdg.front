@@ -89,6 +89,21 @@ body {
   }
 }
 
+
+.no-radius-right {
+  > a {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+ 
+}
+.no-radius-left {
+  > a {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
 // @media (min-width: 576px) {
 //   .container {
 //     padding: 0;

@@ -1,10 +1,16 @@
 import React from "react";
+import classNames from "classnames";
 import LabelNumericGroup from "../../Labels/LabelNumericGroup";
 import LabelPoints from "../../Labels/LabelPoints";
 import LabelStatus from "../../Labels/LabelStatus";
 
-const Partnerships03 = ({}) => (
-  <div className="card card-partnership partner-03 col-sm-12 col-lg-9">
+const Partnerships03 = ({ className }) => (
+  <div
+    className={classNames(
+      "card card-partnership partner-03 ",
+      className
+    )}
+  >
     <a href="#">
       <div className="card-body">
         <div className="d-flex justify-content-between align-items-center mb-2">

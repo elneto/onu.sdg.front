@@ -436,6 +436,9 @@ const IndexPage = () => (
           <li>
             <Link to="/page-states-block ">States</Link>
           </li>
+          <li>
+            <Link to="/page-state-detail ">State Detail</Link>
+          </li>
         </nav>
       </div>
     </div>

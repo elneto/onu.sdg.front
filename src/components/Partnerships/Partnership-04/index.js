@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "../../Common/Link";
+import classNames from "classnames";
 import "./style.scss";
 
-const Partnerships04 = ({}) => (
-  <div className="card card-partnership partner-04 col-12 col-sm-4 col-lg-3">
+const Partnerships04 = ({className}) => (
+  <div className={classNames('card card-partnership partner-04', className)}>
     <a href="#">
       <div className="card-body d-flex align-items-center justify-content-center  flex-column">
         <div className="partneship-logo"></div>
