@@ -15,6 +15,9 @@ const IndexPage = () => (
       <Link href="/page-header">Header</Link>
       <Link href="/page-footer">Footer</Link>
       <Link href="/page-news">News</Link>
+      <div v-example=''>
+        Pulsa aquí para probar una directiva vue
+      </div>
     </div>
   </Layout>
 );

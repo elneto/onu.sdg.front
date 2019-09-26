@@ -1,5 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+const isDev = process.env.NODE_ENV === 'development';
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -18,13 +20,17 @@ class MyDocument extends Document {
   }
 
   render() {
-    if (process.env.NODE_ENV === 'development') {
+    if (isDev) {
       return (
         <Html>
           <Head />
           <body>
-            <Main />
-            <NextScript />
+            <div id='un-sdg'>
+              <Main />
+              <NextScript />
+            </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src='/_next/static/un-sdg.js' />
           </body>
         </Html>
       );
@@ -33,7 +39,11 @@ class MyDocument extends Document {
       <Html>
         {this._head()}
         <body>
-          <Main />
+          <div id='un-sdg'>
+            <Main />
+          </div>
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src='/static/un-sdg.js' />
         </body>
       </Html>
     )
