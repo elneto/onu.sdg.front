@@ -86,7 +86,7 @@ const PageGoalDetail = () => (
             />
             <div className="mb-5 row row-spacing">
               {[...Array(3).keys()].map(pub => (
-                <Partnership01 />
+                <Partnership01 className="col-12 col-sm-6 col-lg-4"/>
               ))}
             </div>
           </section>

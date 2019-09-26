@@ -51,42 +51,30 @@ const PagePartnerships = () => (
           textButton="Search partnership"
         />
         <TabsLight tabs={tabs}>
-          <>
-            <h5 className="border-left border-primary pl-3">
-              The Partnerships for SDGs online platform is United Nations'
-              global registry of voluntary commitments and multi-stakeholder
-              partnerships, facilitating global engagement of all stakeholders
-              in support of the implementation of the Sustainable Development
-              Goals.
-            </h5>
-          </>
-          <>
-            <h5 className="border-left border-primary pl-3">
-              The Partnerships for SDGs online platform is United Nations'
-              global registry of voluntary commitments and multi-stakeholder
-              partnerships, facilitating global engagement of all stakeholders
-              in support of the implementation of the Sustainable Development
-              Goals.
-            </h5>
-          </>
-          <>
-            <h5 className="border-left border-primary pl-3">
-              The Partnerships for SDGs online platform is United Nations'
-              global registry of voluntary commitments and multi-stakeholder
-              partnerships, facilitating global engagement of all stakeholders
-              in support of the implementation of the Sustainable Development
-              Goals.
-            </h5>
-          </>
-          <>
-            <h5 className="border-left border-primary pl-3">
-              The Partnerships for SDGs online platform is United Nations'
-              global registry of voluntary commitments and multi-stakeholder
-              partnerships, facilitating global engagement of all stakeholders
-              in support of the implementation of the Sustainable Development
-              Goals.
-            </h5>
-          </>
+          <h5 className="border-left border-primary pl-3">
+            The Partnerships for SDGs online platform is United Nations' global
+            registry of voluntary commitments and multi-stakeholder
+            partnerships, facilitating global engagement of all stakeholders in
+            support of the implementation of the Sustainable Development Goals.
+          </h5>
+          <h5 className="border-left border-primary pl-3">
+            The Partnerships for SDGs online platform is United Nations' global
+            registry of voluntary commitments and multi-stakeholder
+            partnerships, facilitating global engagement of all stakeholders in
+            support of the implementation of the Sustainable Development Goals.
+          </h5>
+          <h5 className="border-left border-primary pl-3">
+            The Partnerships for SDGs online platform is United Nations' global
+            registry of voluntary commitments and multi-stakeholder
+            partnerships, facilitating global engagement of all stakeholders in
+            support of the implementation of the Sustainable Development Goals.
+          </h5>
+          <h5 className="border-left border-primary pl-3">
+            The Partnerships for SDGs online platform is United Nations' global
+            registry of voluntary commitments and multi-stakeholder
+            partnerships, facilitating global engagement of all stakeholders in
+            support of the implementation of the Sustainable Development Goals.
+          </h5>
         </TabsLight>
       </section>
       <section className="container mb-5">
@@ -153,12 +141,8 @@ const PagePartnerships = () => (
 
       <section className="container-background mb-5">
         <div className="container">
-          <div className="row">
-            <div className="col heading-subtitle">
-              <h3>2030 Agenda Partnership Accelerator</h3>
-            </div>
-            <Event07 />
-          </div>
+          <HeadingSubtitle text="2030 Agenda Partnership Accelerator" />
+          <Event07 />
         </div>
       </section>
 

@@ -14,15 +14,15 @@ const PagePartnershipsGeneral = () => (
     <SEO title="Partnerships General" />
     <Header />
     <main>
-      <div className="container mt-5">
-        <div className="row justify-content-between">
+      <section className="container mt-5">
+        <div className="row justify-content-between no-gutters ">
           <div className="col-sm-12 col-md-3">
-            <Dropdown title="SIDS" id="sids" className="mb-5">
+            <Dropdown title="SIDS" id="sids" className="col-12 mb-5">
               {[...Array(14).keys()].map(goal => (
                 <Checkbox id={`goal-${goal}`} label={`Goal ${goal}`} />
               ))}
             </Dropdown>
-            <Dropdown title="Action networks & databases" id="networks">
+            <Dropdown title="Action networks & databases" id="networks" className="col-12 mb-5">
               {[...Array(14).keys()].map(index => (
                 <Checkbox id={`network-${index}`} label="Business for 2030" />
               ))}
@@ -64,7 +64,7 @@ const PagePartnershipsGeneral = () => (
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>

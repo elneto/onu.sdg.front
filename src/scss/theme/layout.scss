@@ -23,7 +23,6 @@
 @import "components/news-article.scss";
 @import "components/special-event.scss";
 
-
 body {
   font-size: 13px !important;
 }
@@ -96,19 +95,30 @@ body {
   }
 }
 
-
 .no-radius-right {
   > a {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
- 
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .no-radius-left {
   > a {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.no-radius-top {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+.no-radius-bottom {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 // @media (min-width: 576px) {

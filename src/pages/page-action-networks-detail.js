@@ -4,9 +4,8 @@ import SEO from "../components/seo";
 import Header from "../components/header";
 import FooterV2 from "../components/FooterV2";
 import JumbotronActionNetworksDetail from "../components/Jumbotron/JumbotronActionNetworksDetail";
-import ContentModule04 from "../components/ContentModules/ContentModule-04";
-import Link from "../components/Common/Link";
 import Partnership03 from "../components/Partnerships/Partnership-03";
+import BodyContent from "../components/bodyContent";
 
 const PageActionNetworks = () => (
   <>
@@ -14,8 +13,8 @@ const PageActionNetworks = () => (
     <Header />
     <JumbotronActionNetworksDetail />
     <main>
-      <div className="container">
-        <div className="border-bottom pb-5 mb-5 mt-5 separator-top">
+      <section className="container">
+        <BodyContent className="border-bottom pb-5 mb-5 mt-5 separator-top">
           <p>
             When young women and men have access to decent, productive work,
             everyone benefits, and our future is more prosperous. Launched in
@@ -32,18 +31,20 @@ const PageActionNetworks = () => (
             across the world.
           </p>
           <p>
-            More information at 
+            More information at
             <a href="#" role="button">
               www.decentjobsforyouth.org
             </a>
           </p>
-        </div>
-        <div className="row row-spacing mb-5">
+        </BodyContent>
+      </section>
+      <section className="container mb-5">
+        <div className="row row-spacing">
           {[...Array(6)].map(index => (
             <Partnership03 className="col-sm-12 col-lg-9" />
           ))}
         </div>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>

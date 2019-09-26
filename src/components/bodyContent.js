@@ -1,8 +1,8 @@
 import React from "react";
-
-const BodyContent = ({ children }) => (
+import classNames from "classnames";
+const BodyContent = ({ children, className }) => (
   <div className="row">
-    <div className="col-12">{children}</div>
+    <div className={classNames("col-12", className)}>{children}</div>
   </div>
 );
 

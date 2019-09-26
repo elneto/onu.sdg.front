@@ -5,6 +5,7 @@ import FooterV2 from "../components/FooterV2";
 import JumbotronSpecialEvent from "../components/Jumbotron/JumbotronSpecialEvent";
 import Heading from "../components/Heading";
 import News03 from "../components/News/News-03";
+import BodyContent from "../components/bodyContent";
 const PageSpecialEvent = () => (
   <>
     <SEO title="Special Event" />
@@ -12,8 +13,8 @@ const PageSpecialEvent = () => (
     <JumbotronSpecialEvent />
     <main>
       <section className="special-block">
-        <div className="container">
-          <div className="border-bottom pb-5 mb-5 mt-5 separator-top">
+        <section className="container">
+          <BodyContent className="border-bottom pb-5 mb-5 mt-5 separator-top">
             <p>
               The United Nations Second Global Sustainable Transport Conference
               will be held from 05-07 May 2020 in Beijing, China. It provides an
@@ -24,17 +25,17 @@ const PageSpecialEvent = () => (
               for sustainable transport to help achieve the objectives of the
               2030 Agenda.
             </p>
-          </div>
-          <div
-            className="special-image mb-5"
-            style={{
-              backgroundImage: "url('/assets/special-event.jpg')"
-            }}
-          >
-            <h3>What is Sustainable Transport?</h3>
-          </div>
-        </div>
-        <div className="container-background mb-5">
+          </BodyContent>
+        </section>
+        <section
+          className="container special-image mb-5"
+          style={{
+            backgroundImage: "url('/assets/special-event.jpg')"
+          }}
+        >
+          <h3>What is Sustainable Transport?</h3>
+        </section>
+        <section className="container-background mb-5">
           <div className="container">
             <div className="container-small mb-5">
               <h3>Sustainable Transport, Sustainable Development</h3>
@@ -55,25 +56,23 @@ const PageSpecialEvent = () => (
               ></iframe>
             </div>
           </div>
-        </div>
-        <div className="container">
-          <div className="mb-5">
-            <Heading text="News" size="small" textButton="See all news" />
-            <div className="row row-spacing">
-              {[...Array(3)].map(item => (
-                <News03 image="/assets/news-02.jpg" />
-              ))}
-            </div>
+        </section>
+        <section className="container mb-5">
+          <Heading text="News" size="small" textButton="See all news" />
+          <div className="row row-spacing">
+            {[...Array(3)].map(item => (
+              <News03 image="/assets/news-02.jpg" />
+            ))}
           </div>
-          <div className="mb-5">
-            <Heading text="Latests" size="small" />
-            <div className="row row-spacing">
-              {[...Array(3)].map(item => (
-                <News03 image="/assets/news-02.jpg" />
-              ))}
-            </div>
+        </section>
+        <section className="container mb-5">
+          <Heading text="Latests" size="small" />
+          <div className="row row-spacing">
+            {[...Array(3)].map(item => (
+              <News03 image="/assets/news-02.jpg" />
+            ))}
           </div>
-        </div>
+        </section>
       </section>
     </main>
     <FooterV2 />

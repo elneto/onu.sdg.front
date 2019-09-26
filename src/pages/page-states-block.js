@@ -11,14 +11,14 @@ const PageStatesBlock = () => (
     <SEO title="States" />
     <Header />
     <main>
-      <div className="container">
+      <section className="container mb-5">
         <Heading text="States" size="small" input/>
-        <div className="mb-5 row row-spacing">
+        <div className="row row-spacing">
           {[...Array(40).keys()].map(topic => (
            <State />
           ))}
         </div>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>

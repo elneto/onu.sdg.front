@@ -5,6 +5,7 @@ import Header from "../components/header";
 import FooterV2 from "../components/FooterV2";
 import JumbotronActionNetworks from "../components/Jumbotron/JumbotronActionNetworks";
 import ContentModule04 from "../components/ContentModules/ContentModule-04";
+import BodyContent from "../components/bodyContent";
 
 const PageActionNetworks = () => (
   <>
@@ -12,8 +13,8 @@ const PageActionNetworks = () => (
     <Header />
     <JumbotronActionNetworks />
     <main>
-      <div className="container">
-        <div className="border-bottom pb-5 mb-5 mt-5 separator-top">
+      <section className="container">
+        <BodyContent className="border-bottom pb-5 mb-5 mt-5 separator-top">
           <p>
             Action Networks for SDGs are action-oriented networks that are
             maintained by other UN system entities or actors that focus on
@@ -34,13 +35,15 @@ const PageActionNetworks = () => (
             together with the relevant intergovernmental processes or
             conferences.
           </p>
-        </div>
-        <div className="row row-spacing mb-5">
+        </BodyContent>
+      </section>
+      <section className="container mb-5">
+        <div className="row row-spacing">
           {[...Array(12)].map(event => (
             <ContentModule04 />
           ))}
         </div>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>
