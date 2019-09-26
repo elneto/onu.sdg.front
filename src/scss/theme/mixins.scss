@@ -41,9 +41,9 @@
 
 @mixin tabs {
   .tabs {
-    .nav-tabs {
-      border-bottom: none;
-    }
+    // .nav-tabs {
+    //   border-bottom: none;
+    // }
     .nav-link {
       text-transform: uppercase;
       border-radius: 0;

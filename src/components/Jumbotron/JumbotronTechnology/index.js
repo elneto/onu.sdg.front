@@ -6,7 +6,7 @@ const JumbotronTechnology = () => (
     className="jumbotron-event jumbotron-technology"
     style={{
       background:
-        "linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),url('/assets/news-02.jpg')",
+        "linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),url('/assets/technology.jpg')",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundPosition: "center center"
@@ -18,11 +18,17 @@ const JumbotronTechnology = () => (
         <h5>
           Facilitation mechanism.
           <br></br>
+          <br></br>
           Harnessing Science, Technology and Innovation to achieve the
           Sustainable Development Goals
         </h5>
       </div>
     </div>
+    <img
+      className="event-logo"
+      src="/assets/images/technology-logo.png"
+      alt="technology logo"
+    />
   </div>
 );
 

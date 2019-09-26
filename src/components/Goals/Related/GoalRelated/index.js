@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 
 const GoalRelated = ({ goal }) => (
-  <div className={`card goal-related goal-${goal} col-xs-12 col-md-6 col-lg-4`}>
+  <div className={`card goal-related goal-${goal} col-12 col-sm-6 col-lg-4`}>
     <a href="#">
       <div className="card-body">
         <span className="goal-number">{goal}</span>

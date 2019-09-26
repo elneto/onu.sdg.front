@@ -31,7 +31,7 @@ const PageActionNetworks = () => (
             across the world.
           </p>
           <p>
-            More information at
+            More information at  
             <a href="#" role="button">
               www.decentjobsforyouth.org
             </a>

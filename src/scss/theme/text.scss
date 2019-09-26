@@ -9,6 +9,14 @@ h6 {
   font-family: "Oswald-Bold";
 }
 
+p {
+  font-size: 14px;
+}
+
+li, p {
+  color: $grey-1;
+}
+
 .heading-border {
   padding-bottom: 12px;
   border-bottom: 1px solid $grey-2;

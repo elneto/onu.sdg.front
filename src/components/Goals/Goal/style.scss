@@ -68,6 +68,7 @@
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid rgba($color: $white, $alpha: 0.4);
+    color: $white;
   }
 
   .goal-title {
@@ -91,11 +92,13 @@
       font-size: 25px;
       display: inline-block;
       line-height: 1.1;
+      color: $white;
     }
     .feature {
       font-family: "Roboto-Medium";
       font-size: 12px;
       margin-bottom: 0;
+      color: $white;
     }
   }
 

@@ -23,7 +23,7 @@ const HeaderBanner = ({}) => (
             <button className="button button-circle bell">
               <Notification>10</Notification>
             </button>
-            <button className="button button-circle user"></button>
+            <button className="button button-circle user" data-toggle="modal" data-target="#exampleModal"></button>
           </div>
         </div>
       </div>
