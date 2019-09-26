@@ -121,8 +121,21 @@ body {
   border-bottom-right-radius: 0 !important;
 }
 
-// @media (min-width: 576px) {
-//   .container {
-//     padding: 0;
-//   }
-// }
+.HomePage {
+  @media (min-width: 576px) {
+    .home-video {
+      display: block;
+    }
+    .home-banner {
+      display: none;
+    }
+  }
+  @media (max-width: 576px) {
+    .home-video {
+      display: none;
+    }
+    .home-banner {
+      display: block;
+    }
+  }
+}

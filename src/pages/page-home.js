@@ -10,12 +10,14 @@ import Event01 from "../components/Events/Event-01";
 import GoalsWrapper from "../components/Goals/GoalsWrapper";
 import FooterLinks from "../components/FooterLinks";
 import Heading from "../components/Heading";
+import JumbotronHomeVideo from "../components/Jumbotron/JumbotronHomeVideo";
 
 const PageHome = () => (
-  <div>
+  <div className="HomePage">
     <SEO title="ON-SDGS" />
     <Header />
     <JumbotronHome />
+    <JumbotronHomeVideo />
     <main>
       <NewsHome />
       <FeaturedHome />
