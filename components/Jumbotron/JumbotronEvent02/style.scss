@@ -1,13 +1,8 @@
+@import "../../../scss/theme/variables.scss";
+@import "../../../scss/theme/mixins.scss";
+
 .jumbotron-event-02 {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
-    ),
-    url("/static/content/news-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
-  h1 {
+  h2 {
     margin-bottom: 20px;
   }
 }

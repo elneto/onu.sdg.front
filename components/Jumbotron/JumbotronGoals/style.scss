@@ -5,20 +5,18 @@
   font-family: "Oswald";
   padding: 13px 0 30px;
   position: relative;
-  &.green {
-    background: 
-    linear-gradient(90deg, $goal-3 68%, rgba(76,161,70,0.6082808123249299) 100%),
-    url('/static/assets/goal-02.jpg');
-    background-repeat: no-repeat;
-    background-position: center right;
-  }
-  &.orange {
-    background-color: $goal-2;
-    background: 
-    linear-gradient(90deg, $goal-2 68%, rgba(221,167,58,0.6082808123249299) 100%),
-    url('/static/assets/goal-02.jpg');
-    background-repeat: no-repeat;
-    background-position: center right;
+
+  @for $i from 1 through length($goals) {
+    &.goal-#{$i} {
+      background: linear-gradient(
+          90deg,
+          nth($goals, $i) 68%,
+          rgba(76, 161, 70, 0.6082808123249299) 100%
+        ),
+        url("/static/assets/goal-02.jpg");
+      background-repeat: no-repeat;
+      background-position: center right;
+    }
   }
   .goals-link {
     font-size: 15px;
@@ -38,22 +36,12 @@
     margin-bottom: 10px;
   }
   h1 {
-    font-family: "Oswald-Bold";
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 0.98;
     color: $white;
     margin-bottom: 50px;
     position: relative;
     &::after {
       content: "";
-      height: 1px;
-      position: absolute;
-      width: 100%;
-      bottom: -30px;
-      left: 0;
       background-color: $white;
-      width: 50px;
     }
   }
   .lead {
@@ -74,18 +62,17 @@
 
 @media (max-width: 992px) {
   .goals-banner {
-      &.green {
-        background: $goal-3;
-      }
-      &.orange {
-        background: $goal-2;
-      }
+    &.green {
+      background: $goal-3;
+    }
+    &.orange {
+      background: $goal-2;
+    }
     .goal-logo {
-        position: absolute;
-        right: 30px;
-        top: 13px;
-        width: 80px;
-      }
-
+      position: absolute;
+      right: 30px;
+      top: 13px;
+      width: 80px;
+    }
   }
 }

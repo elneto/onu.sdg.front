@@ -1,0 +1,14 @@
+@import "../../../scss/theme/variables.scss";
+@import "../../../scss/theme/mixins.scss";
+
+.form-group {
+  textarea {
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    min-height: 160px;
+  }
+}

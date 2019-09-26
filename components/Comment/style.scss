@@ -1,0 +1,51 @@
+@import "../../scss/theme/variables.scss";
+@import "../../scss/theme/mixins.scss";
+
+.comment-block {
+  .comment-card:first-child {
+    border-top: 1px solid $grey-8;
+  }
+}
+
+.comment-card {
+  .card {
+    border-bottom: 1px solid $grey-8;
+    color: $grey-1;
+    flex-direction: row;
+    padding: 1.25rem 0;
+
+    .card-body {
+      padding: 0 1.25rem;
+    }
+
+    .user-image {
+      background: url("/static/assets/user-image.jpg") center center no-repeat;
+      background-size: contain;
+      min-width: 37px;
+      height: 37px;
+    }
+
+    .user-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: $grey-1;
+      font-family: "Roboto-Medium";
+      display: block;
+    }
+
+    .comment-date {
+      font-size: 12px;
+      color: $grey-1;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .link {
+      color: $grey-1;
+      text-decoration: underline;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

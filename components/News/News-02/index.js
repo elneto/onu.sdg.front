@@ -1,6 +1,5 @@
 import React from "react";
 import LabelNumericGroup from "../../Labels/LabelNumericGroup";
-import LabelNumeric from "../../Labels/LabelNumeric";
 import "./style.scss";
 
 
@@ -17,17 +16,7 @@ const News02 = ({ image }) => (
           the theme, “Partnerships driving inclusive implementation of the
           SDGs”.
         </p>
-        <LabelNumericGroup>
-          <LabelNumeric color={"goal-1"}>6</LabelNumeric>
-          <LabelNumeric color={"goal-3"}>3</LabelNumeric>
-          <LabelNumeric color={"goal-4"}>4</LabelNumeric>
-          <LabelNumeric color={"goal-6"}>6</LabelNumeric>
-          <LabelNumeric color={"goal-8"}>8</LabelNumeric>
-          <LabelNumeric color={"goal-10"}>10</LabelNumeric>
-          <LabelNumeric color={"goal-11"}>10</LabelNumeric>
-          <LabelNumeric color={"goal-15"}>10</LabelNumeric>
-          <LabelNumeric color={"goal-16"}>16</LabelNumeric>
-        </LabelNumericGroup>
+        <LabelNumericGroup goals={10} />
       </div>
     </a>
   </div>

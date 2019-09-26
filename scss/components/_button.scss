@@ -1,0 +1,165 @@
+@import "../theme/variables.scss";
+@import "../theme/mixins.scss";
+
+
+
+.button {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+  &.button-circle {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    &.user {
+      background-image: url('/static/assets/images/user.svg');
+      &:hover {
+        background-image: url('/static/assets/images/user-hover.svg');
+      }
+    }
+    &.bell {
+      background-image: url('/static/assets/images/bell.svg');
+      &:hover {
+        background-image: url('/static/assets/images/bell-hover.svg');
+      }
+    }
+  }
+}
+
+.btn {
+  &.btn-outline-light,
+  &.btn-outline-dark {
+    font-family: "Oswald";
+    font-size: 13px;
+    border-radius: 13.5px;
+    &.left {
+      margin-right: 7px;
+      &::before {
+        content: "";
+        background-origin: content-box;
+        background-position: center right;
+        width: 17px;
+        height: 14px;
+        background-size: contain;
+        margin-right: 5px;
+        transform: rotate(-180deg);
+      }
+    }
+    &.right {
+      &::after {
+        content: "";
+
+        background-origin: content-box;
+        background-position: center right;
+        width: 17px;
+        height: 14px;
+        background-size: contain;
+        margin-left: 5px;
+      }
+    }
+  }
+  &.btn-outline-dark {
+    &:hover {
+      &.left {
+        margin-right: 7px;
+        &::before {
+          content: "";
+          background: url("/static/assets/images/arrow-right.svg") center
+            no-repeat;
+        }
+      }
+      &.right {
+        &::after {
+          content: "";
+          background: url("/static/assets/images/arrow-right.svg") center
+            no-repeat;
+        }
+      }
+    }
+    &.left {
+      margin-right: 7px;
+      &::before {
+        content: "";
+        background: url("/static/assets/images/arrow-black.svg") center no-repeat;
+      }
+    }
+    &.right {
+      &::after {
+        content: "";
+        background: url("/static/assets/images/arrow-black.svg") center no-repeat;
+      }
+    }
+  }
+  &.btn-outline-light {
+    &:hover {
+      &.left {
+        margin-right: 7px;
+        &::before {
+          content: "";
+          background: url("/static/assets/images/arrow-black.svg") center
+            no-repeat;
+        }
+      }
+      &.right {
+        &::after {
+          content: "";
+          background: url("/static/assets/images/arrow-black.svg") center
+            no-repeat;
+        }
+      }
+    }
+    &.left {
+      margin-right: 7px;
+      &::before {
+        content: "";
+        background: url("/static/assets/images/arrow-right.svg") center no-repeat;
+      }
+    }
+    &.right {
+      &::after {
+        content: "";
+        background: url("/static/assets/images/arrow-right.svg") center no-repeat;
+      }
+    }
+  }
+  &.btn-results {
+    width: 25px;
+    height: 25px;
+    border-radius: 2.3px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    &.group {
+      border: solid 1px rgba(0, 173, 239, 0.3);
+      background-color: rgba(0, 173, 239, 0.03);
+      margin-right: 6px;
+      .rectangle {
+        width: 6px;
+        height: 6px;
+        border: solid 1px $primary;
+        margin: 1.6px;
+      }
+    }
+    &.list {
+      border: solid 0.8px $grey-1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .rectangle:not(:last-child) {
+        margin-bottom: 2px;
+      }
+      .rectangle {
+        width: 15px;
+        height: 3px;
+        border: solid 1px $grey-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+@import "../../scss/theme/variables.scss";
+@import "../../scss/theme/mixins.scss";
+.popover {
+  padding: 20px;
+  box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  max-width: 320px;
+
+  .arrow {
+    display: none;
+  }
+  .popover-header {
+    font-family: "Oswald-Bold";
+    font-size: 18px;
+    color: $secondary;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    margin-bottom: 8px;
+  }
+  .popover-body {
+    font-size: 14px;
+    color: $secondary;
+    padding: 0;
+  }
+}
+
+.timeline {
+  position: relative;
+  overflow: hidden;
+  min-height: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background-color: $grey-3;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &-link {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+  }
+
+  &-group:nth-of-type(2n + 1) {
+    .timeline-label {
+      position: absolute;
+      top: -80px;
+      &::after {
+        content: "";
+        border-right: 1px dashed $grey-3;
+        height: 100%;
+        position: absolute;
+        width: 1px;
+        z-index: -1;
+      }
+    }
+  }
+  &-group:nth-of-type(2n) {
+    flex-direction: column-reverse;
+    .timeline-label {
+      position: absolute;
+      top: 10px;
+      justify-content: flex-end;
+      &::before {
+        content: "";
+        border-right: 1px dashed $grey-3;
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &-label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 250px;
+    text-align: center;
+    height: 80px;
+    span {
+      border-radius: 18px;
+      border: 1px solid $primary;
+      background-color: $primary;
+      padding: 4px 13px;
+      font-family: "Roboto-Medium";
+      font-weight: 500;
+      font-size: 12px;
+      color: $white;
+      display: inline-block;
+    }
+  }
+
+  &-point {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    background-color: $primary;
+  }
+  &-date {
+    font-family: "Oswald-Bold";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    color: $secondary;
+    background-color: $white;
+    padding: 3px 9px;
+  }
+}
+
+@media (max-width: 992px) {
+  .timeline {
+    flex-direction: column;
+    margin-bottom: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      background-color: $grey-3;
+      width: 1px;
+      z-index: -1;
+    }
+
+    &-group:nth-of-type(2n + 1) {
+      .timeline-label {
+        position: relative;
+        justify-content: center;
+        top: 0;
+        &::after {
+          content: none;
+        }
+      }
+    }
+    &-group:nth-of-type(2n) {
+      .timeline-label {
+        position: relative;
+        top: 0;
+        justify-content: center;
+        &::before {
+          content: none;
+        }
+      }
+    }
+
+    &-group:nth-of-type(1) {
+      .timeline-label {
+        justify-content: flex-start;
+      }
+    }
+    &-label {
+      max-width: 100%;
+    }
+    &-point {
+      display: none;
+    }
+  }
+
+  .timeline-block {
+    .timeline:not(:first-child) {
+      padding-top: 30px;
+      .timeline-date:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline {
+    align-items: flex-start;
+
+    &::before {
+      left: 25px;
+    }
+
+    &-group {
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+}

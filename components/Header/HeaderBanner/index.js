@@ -2,7 +2,6 @@ import React from "react";
 import Notification from "../../Common/Notification";
 import "./style.scss";
 
-
 const HeaderBanner = ({}) => (
   <div className="container">
     <div className="row header-banner">
@@ -20,13 +19,12 @@ const HeaderBanner = ({}) => (
       </div>
       <div className="col">
         <div className="actions d-xs-flex  justify-content-md-end">
-          <button className="button button-circle grey">
-            <img className="svg" src="/static/assets/images/bell.svg" alt="bell image" />
-            <Notification>10</Notification>
-          </button>
-          <button className="button button-circle grey">
-            <img className="svg" src="/static/assets/images/user.svg" alt="user image" />
-          </button>
+          <div className="actions d-xs-flex  justify-content-md-end">
+            <button className="button button-circle bell">
+              <Notification>10</Notification>
+            </button>
+            <button className="button button-circle user" data-toggle="modal" data-target="#exampleModal"></button>
+          </div>
         </div>
       </div>
     </div>

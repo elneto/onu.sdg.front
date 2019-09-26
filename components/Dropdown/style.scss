@@ -1,0 +1,20 @@
+@import "../../scss/theme/variables.scss";
+@import "../../scss/theme/mixins.scss";
+
+.dropdown {
+  .card.card-dropdown {
+    .dropdown-toggle {
+      border-bottom: 1px solid $grey-8;
+      border-radius: 0;
+      padding: 0;
+    }
+    .dropwdown-collapse {
+      border-top: none;
+    }
+  }
+  .form-check {
+    padding-left: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid $grey-4;
+  }
+}

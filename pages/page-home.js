@@ -1,39 +1,43 @@
 import React from "react";
 
+ 
 import Header from "../components/header";
 import JumbotronHome from "../components/Jumbotron/JumbotronHome";
 import FooterV2 from "../components/FooterV2";
 import NewsHome from "../components/News/NewsHome";
 import FeaturedHome from "../components/Featured/FeaturedHome";
 import Event01 from "../components/Events/Event-01";
-import Button from "../components/Common/Button";
-import GoalRelatedBlock from "../components/Goals/Related/GoalRelatedBlock";
-import GoalsRegisterBlock from "../components/Goals/Register/GoalsRegisterBlock";
+import GoalsWrapper from "../components/Goals/GoalsWrapper";
+import FooterLinks from "../components/FooterLinks";
+import Heading from "../components/Heading";
+import JumbotronHomeVideo from "../components/Jumbotron/JumbotronHomeVideo";
 
 const PageHome = () => (
-  <>
+  <div className="HomePage">
+    {/* <SEO title="ON-SDGS" /> */}
     <Header />
     <JumbotronHome />
+    <JumbotronHomeVideo />
     <main>
       <NewsHome />
       <FeaturedHome />
-      <div className="container">
-        <div className="heading-block">
-          <h2>Events</h2>
-          <Button color="primary">See all events</Button>
-        </div>
-        <div className="row row-spacing mb-5">
+      {/* Block */}
+      <section className="container mb-5">
+        <Heading text="Events" textButton="See all events" size="small" />
+        <div className="row row-spacing">
           <Event01 />
           <Event01 />
           <Event01 />
         </div>
-      </div>
+      </section>
+      <GoalsWrapper goals={17} />
+      {/* Block */}
+      <section className="container">
+        <FooterLinks />
+      </section>
     </main>
-    {/**/}
-    <GoalRelatedBlock goals={17} />
-    <GoalsRegisterBlock goals={17} />
     <FooterV2 />
-  </>
+  </div>
 );
 
 export default PageHome;

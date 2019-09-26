@@ -1,6 +1,5 @@
 @import "../../../scss/theme/variables.scss";
 @import "../../../scss/theme/mixins.scss";
-
 .label-status {
   padding: 6px 7px;
   font-family: "Roboto";
@@ -8,6 +7,8 @@
   font-weight: 500;
   border-radius: 3px;
   display: inline-block;
+  min-width: 70px;
+  text-align: center;
 
   &.completed {
     color: $status-1;
@@ -26,8 +27,9 @@
     border: solid 1px $status-3;
   }
 
-  &.grey {
+  &.transparent {
     color: $white;
+    border: 1px solid $white;
     background-color: rgba(77, 77, 77, 0.25);
   }
 }

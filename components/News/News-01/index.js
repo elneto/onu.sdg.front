@@ -1,6 +1,5 @@
 import React from "react";
-import LabelNumeric from "../../Labels/LabelNumeric";
-import Link from "../..//Common/Link";
+import Link from "../../Common/Link";
 import LabelNumericGroup from "../../Labels/LabelNumericGroup";
 import "./style.scss";
 
@@ -19,11 +18,7 @@ const News01 = ({}) => (
           Stakeholders.
         </p>
         <Link>Read More</Link>
-        <LabelNumericGroup>
-          <LabelNumeric color={"goal-4"}>6</LabelNumeric>
-          <LabelNumeric color={"goal-11"}>11</LabelNumeric>
-          <LabelNumeric color={"goal-15"}>15</LabelNumeric>
-        </LabelNumericGroup>
+        <LabelNumericGroup goals={3} />
       </div>
     </a>
   </div>

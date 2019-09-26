@@ -1,6 +1,7 @@
 @import "../../../scss/theme/variables.scss";
 @import "../../../scss/theme/mixins.scss";
 
+
 .news-01 {
   border: solid 1px $grey-8;
   background-color: $white;
@@ -10,6 +11,7 @@
   }
   &:hover {
     background-color: $primary;
+    border: solid 1px $primary;
     .card-title,
     .card-date,
     .card-text,

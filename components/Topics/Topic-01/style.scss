@@ -1,0 +1,35 @@
+@import "../../../scss/theme/variables.scss";
+@import "../../../scss/theme/mixins.scss";
+.topic-01 {
+  > a {
+    height: 100%;
+    background: url("/static/assets/topic-01.jpg") center no-repeat;
+    background-size: cover;
+    height: 380px;
+    border-bottom: 6px solid $primary;
+    transition: 0.4s;
+    &:hover {
+      background: $primary;
+    }
+  }
+
+  .card-body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-title {
+    color: $white;
+    position: relative;
+    &:before {
+      content: "";
+      background-color: $white;
+      height: 1px;
+      width: 30px;
+      position: absolute;
+      left: 0;
+      top: -20px;
+    }
+  }
+}

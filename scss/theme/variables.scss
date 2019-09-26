@@ -3,8 +3,8 @@ $primary: #00adef;
 $secondary: #333333;
 
 $grey-1: #4d4d4d;
-$grey-2: #9f9f9f;
-$grey-3: #cecece;
+$grey-2: #757575;
+$grey-3: #9F9F9F;
 $grey-4: #f2f2f2;
 $grey-5: #4d4d4d;
 
@@ -60,3 +60,23 @@ $lateral-padding-mobile: 0 20px;
 $goals: $goal-1, $goal-2, $goal-3, $goal-4, $goal-5, $goal-6, $goal-7, $goal-8,
   $goal-9, $goal-10, $goal-11, $goal-12, $goal-13, $goal-14, $goal-15, $goal-16,
   $goal-17;
+
+:export {
+  goal1: $goal-1;
+  goal2: $goal-2;
+  goal3: $goal-3;
+  goal4: $goal-4;
+  goal5: $goal-5;
+  goal6: $goal-6;
+  goal7: $goal-7;
+  goal8: $goal-8;
+  goal9: $goal-9;
+  goal10: $goal-10;
+  goal11: $goal-11;
+  goal12: $goal-12;
+  goal13: $goal-13;
+  goal14: $goal-14;
+  goal15: $goal-15;
+  goal16: $goal-16;
+  goal17: $goal-17;
+}

@@ -41,9 +41,9 @@
 
 @mixin tabs {
   .tabs {
-    .nav-tabs {
-      border-bottom: none;
-    }
+    // .nav-tabs {
+    //   border-bottom: none;
+    // }
     .nav-link {
       text-transform: uppercase;
       border-radius: 0;
@@ -53,6 +53,29 @@
     }
     .tab-content {
       padding-top: 40px;
+    }
+  }
+}
+
+
+@mixin dropdown-toggle-animate($color) {
+  .dropdown-toggle {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 1.25rem;
+    white-space: normal;
+    &::after {
+      color: $color;
+      transition: 0.4s;
+      transform: rotate(180deg);
+    }
+    &.collapsed {
+      &::after {
+        transform: rotate(0deg);
+      }
     }
   }
 }

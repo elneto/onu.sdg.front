@@ -1,22 +1,473 @@
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 import Layout from "../components/layout";
 
 const IndexPage = () => (
   <Layout>
-    <div className="container">
-      <div className="heading-block">
-        <h2>List of components</h2>
+    <div className="d-flex justify-content-around container flex-column flex-sm-row mt-5">
+      <div>
+        <h3>COMPONENTS</h3>
+        <nav class="nav flex-column">
+          <li>
+            <Link href="/page-header/">Header</Link>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#navbar"
+              data-toggle="collapse"
+              data-target="#navbar"
+            >
+              Navbar
+            </a>
+            <div className="collapse" id="navbar" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="header/page-navbar/">Navbar</Link>
+                <Link href="header/page-navbarV2/">NavbarV2</Link>
+                <Link href="header/page-language-navbar/">Language Navbar</Link>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <Link href="/page-footer/">Footer</Link>
+          </li>
+          <li>
+            <Link href="/page-footer-links/">Footer Links</Link>
+          </li>
+          <li>
+            <Link href="/page-button/">Button</Link>
+          </li>
+          <li>
+            <Link href="/page-social-icons/">Social Icons</Link>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#form"
+              data-toggle="collapse"
+              data-target="#form"
+            >
+              Form
+            </a>
+            <div className="collapse" id="form" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="form/page-input/">Input</Link>
+                <Link href="form/page-select/">Select</Link>
+                <Link href="form/page-checkbox/">Checkbox</Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#labels"
+              data-toggle="collapse"
+              data-target="#labels"
+            >
+              Labels
+            </a>
+            <div className="collapse" id="labels" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="labels/page-label-points/">Label Points</Link>
+                <Link href="labels/page-label-status/">Label Status</Link>
+                <Link href="labels/page-label-goal/">Label Goal</Link>
+                <Link href="labels/page-label-likes/">Label Likes</Link>
+                <Link href="labels/page-label-related-goals/">
+                  Label Related Goals
+                </Link>
+                <Link href="labels/page-label-numeric-light/">
+                  Label Numeric Light
+                </Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#tabs"
+              data-toggle="collapse"
+              data-target="#tabs"
+            >
+              Tabs
+            </a>
+            <div className="collapse" id="tabs" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="tabs/page-tabs-01/">Tabs-01 - Horizontal Tab</Link>
+                <Link href="tabs/page-tabs-02/">Tabs-02 - Light Tab</Link>
+                <Link href="tabs/page-tabs-03/">Tabs-03 - Buttons Tab</Link>
+                <Link href="tabs/page-tabs-04/">Tabs-04 - Vertical Tab</Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <Link href="/page-stepper/">Stepper</Link>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#news"
+              data-toggle="collapse"
+              data-target="#news"
+            >
+              News
+            </a>
+            <div className="collapse" id="news" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="news/page-news-01">News-01</Link>
+                <Link href="news/page-news-02/">News-02</Link>
+                <Link href="news/page-news-03/">News-03</Link>
+                <Link href="news/page-news-04/">News-04</Link>
+                <Link href="news/page-news-05/">News-05</Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#events"
+              data-toggle="collapse"
+              data-target="#events"
+            >
+              Events
+            </a>
+            <div className="collapse" id="events" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="events/page-events-01">Event-01</Link>
+                <Link href="events/page-events-02/">Event-02</Link>
+                <Link href="events/page-events-03/">Event-03</Link>
+                <Link href="events/page-events-04/">Event-04</Link>
+                <Link href="events/page-events-05/">Event-05</Link>
+                <Link href="events/page-events-06/">Event-06</Link>
+                <Link href="events/page-events-07/">Event-07</Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#goals"
+              data-toggle="collapse"
+              data-target="#goals"
+            >
+              Goals
+            </a>
+            <div className="collapse" id="goals" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="goals/page-goals-01">Goal-01</Link>
+                <Link href="goals/page-goals-02">Goal-02</Link>
+                <Link href="goals/page-goals-03">Goal-03 - Related</Link>
+                <Link href="goals/page-goals-04">Goal-04 - Register</Link>
+                <Link href="goals/page-goals-05">Goal-05 - Targets </Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#featured"
+              data-toggle="collapse"
+              data-target="#featured"
+            >
+              Featured
+            </a>
+            <div className="collapse" id="featured" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="featured/page-featured-01">Featured-01</Link>
+                <Link href="featured/page-featured-02">Featured-02</Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#jumbotrons"
+              data-toggle="collapse"
+              data-target="#jumbotrons"
+            >
+              Jumbotrons
+            </a>
+            <div className="collapse" id="jumbotrons" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="jumbotrons/page-jumbotron-01">
+                  Jumbotron-01 - Home
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-02">
+                  Jumbotron-02 - Goals
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-03">
+                  Jumbotron-03 - Event type 1
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-04">
+                  Jumbotron-04 - Event type 2
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-05">
+                  Jumbotron-05 - Event type 3
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-06">
+                  Jumbotron-06 - Partnerships
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-07">
+                  Jumbotron-07 - Topics
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-08">
+                  Jumbotron-08 - Action Networks
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-09">
+                  Jumbotron-09 - Special Event
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-10">
+                  Jumbotron-10 - Special Event (about)
+                </Link>
+                <Link href="jumbotrons/page-jumbotron-11">
+                  Jumbotron-11 - States
+                </Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#publications"
+              data-toggle="collapse"
+              data-target="#publications"
+            >
+              Publications
+            </a>
+            <div className="collapse" id="publications" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="publications/page-publications-01">
+                  Publication-01
+                </Link>
+                <Link href="publications/page-publications-02">
+                  Publication-02
+                </Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#topics"
+              data-toggle="collapse"
+              data-target="#topics"
+            >
+              Topics
+            </a>
+            <div className="collapse" id="topics" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="topics/page-topic-01">Topic-01</Link>
+                <Link href="topics/page-topic-02">Topic-02 - Related</Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#partnerships"
+              data-toggle="collapse"
+              data-target="#partnerships"
+            >
+              Partnerships
+            </a>
+            <div className="collapse" id="partnerships" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="partnerships/page-partnership-01">
+                  Partnership-01
+                </Link>
+                <Link href="partnerships/page-partnership-02">
+                  Partnership-02
+                </Link>
+                <Link href="partnerships/page-partnership-03">
+                  Partnership-03
+                </Link>
+                <Link href="partnerships/page-partnership-04">
+                  Partnership-04
+                </Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#charts"
+              data-toggle="collapse"
+              data-target="#charts"
+            >
+              Charts
+            </a>
+            <div className="collapse" id="charts" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="charts/page-chart-01">Chart-01 </Link>
+                <Link href="charts/page-chart-02">
+                  Chart-02 - Partnerships - By years
+                </Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <Link href="/page-comment/">Comment</Link>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#documents"
+              data-toggle="collapse"
+              data-target="#documents"
+            >
+              Documents
+            </a>
+            <div className="collapse" id="documents" aria-expanded="false">
+              <div className="d-flex flex-column pl-4">
+                <Link href="documents/page-document-01">Document-01</Link>
+                <Link href="documents/page-document-02">Document-02</Link>
+                <Link href="documents/page-document-03">Document-03</Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#informative-links"
+              data-toggle="collapse"
+              data-target="#informative-links"
+            >
+              Informative Links
+            </a>
+            <div
+              className="collapse"
+              id="informative-links"
+              aria-expanded="false"
+            >
+              <div className="d-flex flex-column pl-4">
+                <Link href="infolinks/page-infolink-01">
+                  Informative Link-01
+                </Link>
+                <Link href="infolinks/page-infolink-02">
+                  Informative Link-02
+                </Link>
+                <Link href="infolinks/page-infolink-03">
+                  Informative Link-03
+                </Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <Link href="/page-timeline/">TimeLine</Link>
+          </li>
+          <li>
+            <a
+              className="dropdown-toggle"
+              href="#content-modules"
+              data-toggle="collapse"
+              data-target="#content-modules"
+            >
+              Content Modules
+            </a>
+            <div
+              className="collapse"
+              id="content-modules"
+              aria-expanded="false"
+            >
+              <div className="d-flex flex-column pl-4">
+                <Link href="content-modules/page-content-module-01">
+                  Content Module-01
+                </Link>
+                <Link href="content-modules/page-content-module-02">
+                  Content Module-02
+                </Link>
+                <Link href="content-modules/page-content-module-03">
+                  Content Module-03
+                </Link>
+                <Link href="content-modules/page-content-module-04">
+                  Content Module-04
+                </Link>
+              </div>
+            </div>
+          </li>
+          <li>
+            <Link href="/page-states/">States</Link>
+          </li>
+        </nav>
       </div>
-    </div>
-    <div className="d-flex flex-column container">
-      <Link href="/page-home">Home</Link>
-      <Link href="/page-header">Header</Link>
-      <Link href="/page-footer">Footer</Link>
-      <Link href="/page-news">News</Link>
-      <div v-example=''>
-        Pulsa aquí para probar una directiva vue
+      <div>
+        <h3>VIEWS</h3>
+        <nav class="nav flex-column">
+          <li>
+            <Link href="/page-home">Home</Link>
+          </li>
+          <li>
+            <Link href="/page-goals">Goals</Link>
+          </li>
+          <li>
+            <Link href="/page-goal-detail">Goal Detail</Link>
+          </li>
+          <li>
+            <Link href="/page-topics">Topics</Link>
+          </li>
+          <li>
+            <Link href="/page-topic-detail">Topic Detail</Link>
+          </li>
+          <li>
+            <Link href="/page-events">Events</Link>
+          </li>
+          <li>
+            <Link href="/page-event-type-1">Event Type 1</Link>
+          </li>
+          <li>
+            <Link href="/page-event-type-2">Event Type 2</Link>
+          </li>
+          <li>
+            <Link href="/page-event-type-3">Event Type 3</Link>
+          </li>
+          <li>
+            <Link href="/page-register">Register</Link>
+          </li>
+          <li>
+            <Link href="/page-news">News</Link>
+          </li>
+          <li>
+            <Link href="/page-news-article">News Article</Link>
+          </li>
+          <li>
+            <Link href="/page-partnerships ">Partnerships</Link>
+          </li>
+          <li>
+            <Link href="/page-partnerships-general ">Partnerships General</Link>
+          </li>
+          <li>
+            <Link href="/page-partnerships-description ">
+              Partnerships Description
+            </Link>
+          </li>
+          <li>
+            <Link href="/page-states-block ">States</Link>
+          </li>
+          <li>
+            <Link href="/page-state-detail ">State Detail</Link>
+          </li>
+          <li>
+            <Link href="/page-action-networks ">Action Networks</Link>
+          </li>
+          <li>
+            <Link href="/page-action-networks-detail ">
+              Action Networks Detail
+            </Link>
+          </li>
+          <li>
+            <Link href="/404">404</Link>
+          </li>
+          <li>
+            <Link href="/page-special-event">Special Event</Link>
+          </li>
+          <li>
+            <Link href="/page-special-event-detail">Special Event Detail</Link>
+          </li>
+          <li>
+            <Link href="/page-technology">Technology</Link>
+          </li>
+        </nav>
       </div>
     </div>
   </Layout>

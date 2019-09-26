@@ -1,6 +1,7 @@
 @import "../../../../scss/theme/variables.scss";
 @import "../../../../scss/theme/mixins.scss";
 
+
 .goal-register {
   &:hover {
     .card-body {
@@ -194,7 +195,7 @@
     .goal-header {
       flex-direction: column;
       align-items: flex-start;
-      > div:first-child {
+      >div:first-child {
         margin-bottom: 20px;
       }
       .btn {
@@ -208,4 +209,5 @@
   .modal-dialog {
     max-width: 1140px;
   }
+ 
 }

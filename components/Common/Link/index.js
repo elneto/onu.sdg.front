@@ -1,7 +1,13 @@
 import React from "react";
+import classNames from "classnames";
 import "./style.scss";
-const Link = ({ children }) => (
-  <a className="link" href="#" role="button">
+
+const Link = ({ children, className, href }) => (
+  <a
+    className={classNames("link", className)}
+    href={href ? href : "#"}
+    role="button"
+  >
     {children}
   </a>
 );

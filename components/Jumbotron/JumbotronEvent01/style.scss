@@ -2,15 +2,6 @@
 @import "../../../scss/theme/mixins.scss";
 
 .jumbotron-event-01 {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.8)
-    ),
-    url("/static/content/news-02.jpg");
-
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
   .goals {
     h3 {
       font-family: "Oswald-Bold";
@@ -42,6 +33,15 @@
       line-height: 1.78;
       color: $secondary;
       margin-bottom: 15px;
+    }
+    &-content {
+      .goal-logo:not(:last-child) {
+        margin-right: 5px;
+      }
+      .goal-logo {
+        width: 45px;
+        margin-bottom: 5px;
+      }
     }
   }
 }

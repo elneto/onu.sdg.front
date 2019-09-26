@@ -1,0 +1,46 @@
+@import "../../../scss/theme/variables.scss";
+@import "../../../scss/theme/mixins.scss";
+
+.publications-01 {
+  > a {
+    height: 100%;
+    background: url("/static/assets/publications-01.jpg") center no-repeat;
+    background-size: cover;
+    height: 380px;
+    border-bottom: 6px solid $primary;
+    transition: 0.4s;
+    &:hover {
+      background: $primary;
+      .card-text {
+        visibility: visible;
+      }
+      .link {
+          text-decoration: underline;
+      }
+    }
+  }
+
+  .card-text {
+      color: $white;
+      visibility: hidden;
+  }
+
+  .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .card-title,
+  .link {
+    color: $white;
+  }
+}

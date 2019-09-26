@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 
+
 const FooterV2 = ({}) => (
   <footer className="footer-dark">
     <div className="container">
@@ -9,7 +10,7 @@ const FooterV2 = ({}) => (
         <div className="footer-actions">
           <div className="d-flex align-items-center">
             <span className="">Join the conversation:</span>
-            <img className="" src="/static/assets/images/facebook-app-logo.svg" alt="facebook logo" />
+            <img className="" src='/static/assets/images/facebook-app-logo.svg' alt="facebook logo" />
           </div>
           <a
             href="#"

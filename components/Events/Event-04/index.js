@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const Event04 = ({}) => (
+const Event04 = ({ featured }) => (
   <div className="card card-events event-04 col-12">
     <a href="#">
       <div className="card-body">
@@ -10,8 +10,7 @@ const Event04 = ({}) => (
             <span className="event-date">WED</span>
             <span className="event-day">10</span>
           </div>
-          <div className="separator">
-          </div>
+          <div className="separator"></div>
           <div>
             <span className="event-date">TUE</span>
             <span className="event-day">18</span>
@@ -29,7 +28,7 @@ const Event04 = ({}) => (
           <span className="room">Conference Room 2, UNHQ</span>
           <span className="city">New York</span>
         </div>
-        <span className="featured">Featured</span>
+        {featured && <span className="featured">Featured</span>}
       </div>
     </a>
   </div>

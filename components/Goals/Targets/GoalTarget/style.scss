@@ -1,0 +1,93 @@
+@import "../../../../scss/theme/variables.scss";
+@import "../../../../scss/theme/variables.scss";
+.goal-target {
+  .card-body {
+    border-radius: 3px 0px 3px;
+    border: 1px solid $grey-8;
+  }
+
+  .goal-header {
+    display: flex;
+  }
+  .goal-logo {
+    margin-right: 20px;
+    width: 77px;
+    height: 77px;
+  }
+
+  .target {
+    font-family: "Oswald";
+    font-size: 14px;
+    color: $grey-2;
+  }
+
+  .goal-title {
+    font-family: "Oswald-Bold";
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.14;
+    color: $secondary;
+  }
+  .goal-text {
+    font-size: 14px;
+    color: $grey-5;
+    margin-bottom: 0;
+  }
+  .indicators {
+    border-right: 1px solid $grey-8;
+    border-left: 1px solid $grey-8;
+    border-bottom: 1px solid $grey-8;
+    > div {
+      padding: 15px 115px;
+    }
+  }
+
+  .indicators-header {
+    .btn {
+      font-size: 14px;
+      font-family: "Oswald";
+      color: $grey-2;
+      padding: 0;
+      &::after {
+        color: $secondary;
+        margin-left: 15px;
+        transition: 0.4s;
+        transform: rotate(180deg);
+      }
+      &.collapsed {
+        &::after {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+
+  .indicators-collapse {
+    background-color: $grey-4;
+    border-top: 1px solid $grey-8;
+    .goal-indicator:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    .goal-indicator {
+      .goal-title {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .goal-target {
+    .goal-logo {
+      margin-bottom: 15px;
+    }
+    .goal-header {
+      flex-direction: column;
+    }
+    .indicators {
+      > div {
+        padding: 1.25rem;
+      }
+    }
+  }
+}

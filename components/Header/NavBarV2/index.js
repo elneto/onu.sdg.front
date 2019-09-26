@@ -36,7 +36,7 @@ const NavBarV2 = ({}) => (
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Goals
+            SDGs
             </a>
             <div className="dropdown-menu w-100" aria-labelledby="goals">
               <div className="container d-flex justify-content-center flex-lg-row flex-column">

@@ -1,0 +1,47 @@
+@import "../theme/variables.scss";
+@import "../theme/mixins.scss";
+
+.heading-related {
+  padding: 25px 0;
+  @for $i from 1 through length($goals) {
+    &.goal-#{$i} {
+      h3 {
+        &::before {
+          background-color: nth($goals, $i);
+        }
+      }
+    }
+  }
+
+  h3 {
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    color: $secondary;
+    &::before {
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-color: $primary;
+      margin-right: 15px;
+    }
+  }
+}
+
+
+// @media (max-width: 576px) {
+//     .heading-related {
+//       h3 {
+//         align-items: flex-start;
+//         flex-direction: column;
+//         &::before {
+//           content: "";
+//           height: 1px;
+//           width: 50px;
+//           margin-right: 0;
+//           margin-bottom: 15px;
+//         }
+//       }
+//     }
+//   }
+  

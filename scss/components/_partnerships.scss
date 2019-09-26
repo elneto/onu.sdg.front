@@ -1,0 +1,152 @@
+@import "../theme/variables.scss";
+@import "../theme/mixins.scss";
+
+.card-partnership {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  > a {
+    border: 1px solid $grey-8;
+    border-radius: 3px;
+    height: 100%;
+    &:hover {
+      background: $primary;
+      color: $white;
+      text-decoration: none;
+      .partnership-iniciatives,
+      .partnership-actions {
+        visibility: visible;
+      }
+      .label-group-text,
+      .partnership-date,
+      .partnership-hashtag,
+      .partnership-title,
+      .partnership-text,
+      .label-status,
+      .partnership-firm .partnership-label, .firm {
+        color: $white;
+      }
+      .label-points,
+      .badge {
+        background-color: $white;
+      }
+      .badge {
+        color: $primary;
+      }
+      .label-status {
+        border: 1px solid $white;
+      }
+      .label-points {
+        .oval {
+          background-color: transparent;
+          border: 1px solid $primary;
+        }
+        &.completed {
+          .oval:nth-child(1) {
+            background-color: $primary;
+          }
+        }
+        &.on-track {
+          .oval:nth-child(2) {
+            background-color: $primary;
+          }
+        }
+        &.cancelled {
+          .oval:nth-child(3) {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .partnership-title {
+    font-family: "Oswald-Bold";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22;
+    color: $secondary;
+  }
+
+  .partnership-hashtag {
+    font-family: "Oswald";
+    font-size: 14px;
+    line-height: 1.57;
+    color: $grey-2;
+  }
+  .partnership-date {
+    font-size: 13px;
+    color: $grey-1;
+    display: inline-block;
+  }
+
+  .partnership-iniciatives {
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-end;
+    color: $white;
+    font-size: 12px;
+  }
+
+  .partnership-text {
+    font-size: 14px;
+    line-height: 1.57;
+    color: $grey-2;
+  }
+
+  .partnership-actions {
+    visibility: hidden;
+    > span {
+      display: flex;
+      align-items: center;
+    }
+    > span:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  .partnership-icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    background-position: center center;
+    margin-right: 4px;
+    &.likes {
+      background-image: url("/static/assets/images/like-white.svg");
+    }
+    &.comments {
+      background-image: url("/static/assets/images/comment-white.svg");
+    }
+    &.checks {
+      background-image: url("/static/assets/images/check-white.svg");
+    }
+  }
+
+  .partnership-label {
+    color: $grey-1;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .partnership-firm {
+    border-top: 1px solid $grey-8;
+    padding-top: 20px;
+    margin-top: 20px;
+    span {
+      display: block;
+    }
+    .firm {
+      font-size: 12px;
+      line-height: 1.33;
+      color: $grey-2;
+    }
+  }
+}

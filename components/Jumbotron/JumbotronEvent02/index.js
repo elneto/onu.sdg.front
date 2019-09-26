@@ -3,13 +3,22 @@ import "./style.scss";
 import Link from "../../Common/Link";
 
 const JumbotronEvent02 = ({ color }) => (
-  <div className="jumbotron-event jumbotron-event-02">
+  <div
+    className="jumbotron-event jumbotron-event-02"
+    style={{
+      background:
+        "linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),url('/static/assets/news-02.jpg')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "center center"
+    }}
+  >
     <div className="container">
-      <div className="jumbotron-content col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div className="  col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <a className="event-link" href="#" role="button">
           Events
         </a>
-        <h1>ECOSOC PARTNERSHIP FORUM</h1>
+        <h2>ECOSOC PARTNERSHIP FORUM</h2>
         <span className="date">11 April 2019</span>
         <div className="place">
           <span>UNHQ</span>

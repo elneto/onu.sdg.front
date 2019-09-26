@@ -1,0 +1,45 @@
+@import "../theme/variables.scss";
+@import "../theme/mixins.scss";
+
+.document-card {
+  .card-dropdown {
+    border-radius: 3px;
+    border: 1px solid $grey-8;
+  }
+  .document-icon {
+    background-image: url("/static/assets/images/document.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 19px;
+    height: 24px;
+    background-size: contain;
+    margin-right: 15px;
+  }
+  .document-name {
+    font-size: 14px;
+    line-height: 1.57;
+    color: $grey-2;
+  }
+
+  .dropwdown-collapse {
+    .document-group:not(:last-child) {
+      border-bottom: 1px solid $grey-8;
+    }
+  }
+
+  .document-group {
+    display: flex;
+    align-items: center;
+    padding: 10px 1.25rem;
+    &:hover {
+      background-color: $primary;
+      .document-icon {
+        background-image: url("/static/assets/images/document-white.svg");
+      }
+      .document-name {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}

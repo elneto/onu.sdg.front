@@ -1,0 +1,38 @@
+.special-block {
+  .special-image {
+    width: 100%;
+    height: 375px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.33);
+    position: relative;
+    display: flex;
+    align-items: center;
+    h3 {
+      color: $white;
+      margin-left: 70px;
+    }
+  }
+  .special-video {
+    height: 570px;
+    iframe {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .special-block {
+    .special-image {
+      width: 100%;
+      height: 250px;
+      h3 {
+        color: $white;
+        margin-left: 20px;
+      }
+    }
+    .special-video {
+      height: auto;
+    }
+  }
+}
