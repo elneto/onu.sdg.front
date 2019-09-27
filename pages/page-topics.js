@@ -11,14 +11,14 @@ const PageTopics = () => (
     {/* <SEO title="Topics"/> */}
     <Header />
     <main>
-      <div className="container mb-5">
+      <section className="container mb-5">
         <Heading text="Topics" size="small" />
         <div className="row row-spacing">
           {[...Array(20).keys()].map(topic => (
             <Topic01 />
           ))}
         </div>
-      </div>
+      </section>
     </main>
     <FooterV2 />
   </>

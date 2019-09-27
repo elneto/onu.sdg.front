@@ -9,11 +9,11 @@ export default class Timeline extends Component {
 
   render() {
     return (
-      <div className="timeline-block" v-popover="">
+      <div className="timeline-block">
         <div className="timeline">
           <div className="timeline-group">
             <div
-              className="timeline-label"
+              className="timeline-label" v-popover=""
             >
               <a
                 tabindex="0"

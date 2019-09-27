@@ -98,9 +98,11 @@
 
 @media (max-width: 768px) {
   .header-banner {
+    padding: 15px 0;
     .header-title {
-      font-size: 20px;
+      font-size: 16px;
       text-align: center;
+      margin-left: 0;
     }
   }
 }
