@@ -1,11 +1,11 @@
 import React from "react";
 
 import Container from "../../components/container";
-import LabelGoal from "../../components/Labels/LabelGoal";
+import LabelToast from "../../components/Labels/LabelToast";
 
 const LabelGoalPage = () => (
   <Container>
-    <LabelGoal>Goal 1</LabelGoal>
+    <LabelToast>Goal 1</LabelToast>
   </Container>
 );
 

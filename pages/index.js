@@ -72,7 +72,7 @@ const IndexPage = () => (
               <div className="d-flex flex-column pl-4">
                 <Link href="labels/page-label-points/">Label Points</Link>
                 <Link href="labels/page-label-status/">Label Status</Link>
-                <Link href="labels/page-label-goal/">Label Goal</Link>
+                <Link href="labels/page-label-toast/">Label Toast</Link>
                 <Link href="labels/page-label-likes/">Label Likes</Link>
                 <Link href="labels/page-label-related-goals/">
                   Label Related Goals
