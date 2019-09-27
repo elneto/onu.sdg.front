@@ -28,9 +28,7 @@
           </nav>
           <div class="container">
             <div class="row header-banner header-form">
-              <div class="col-lg-8 col-md-12 d-flex flex-column flex-md-row mb-3 mb-lg-0"><img class="d-none d-md-block logo" src="/static/assets/images/logo.svg" alt="logo" /><img class="d-md-none logo-mobile mb-3" src="/static/assets/images/logo_mobile.svg" alt="logo" />
-                <h1 class="header-title">Department of Economic and Social Affairs<span>Sustainable Development</span></h1>
-              </div>
+              <div class="col-lg-8 col-md-12 d-flex flex-column flex-md-row mb-3 mb-lg-0"><img class="d-none d-md-block logo" src="/static/assets/images/logo.svg" alt="logo" /><img class="d-md-none logo-mobile mb-3" src="/static/assets/images/logo_mobile.svg" alt="logo" /><span class="header-title">Department of Economic and Social Affairs<span>Sustainable Development</span></span></div>
               <div class="col-lg-4 col-md-12">
                 <div class="row align-items-center">
                   <div class="col-8">
@@ -125,8 +123,14 @@
                       <div class="sign-content">
                         <h3 class="title">Sign in</h3>
                         <form>
-                          <div class="form-group"><label class="label">Username/E-mail</label><input type="text" class="form-control" placeholder="Username" /></div>
-                          <div class="form-group"><label class="label">Password</label><input type="password" class="form-control" placeholder="Password" /></div><button class="btn btn-un btn-secondary w-100">Sign in</button><a class="recover" href="#">Forgot password?</a>
+                          <div class="form-group"><label class="label">Username/E-mail
+                              <!-- --> </label><input type="text" class="form-control" placeholder="Username" />
+                            <div class="invalid-feedback">This field is required</div>
+                          </div>
+                          <div class="form-group"><label class="label">Password
+                              <!-- --> </label><input type="password" class="form-control" placeholder="Password" />
+                            <div class="invalid-feedback">This field is required</div>
+                          </div><button class="btn btn-un btn-secondary w-100">Sign in</button><a class="recover" href="#">Forgot password?</a>
                           <p class="help">If you have any questions, please
                             <!-- --> <a href="#">Contact us here </a></p>
                         </form>
@@ -136,14 +140,28 @@
                       <div class="create-content">
                         <h3 class="title">Create account</h3>
                         <form class="row">
-                          <div class="form-group col-sm-12 col-lg-6"><label class="label">First name</label><input type="text" class="form-control" placeholder="First name" /></div>
-                          <div class="form-group col-sm-12 col-lg-6"><label class="label">Last name</label><input type="text" class="form-control" placeholder="Last name" /></div>
-                          <div class="form-group col-sm-12 col-lg-6"><label class="label">Organization / entity</label><input type="text" class="form-control" placeholder="Organization" /></div>
-                          <div class="form-group col-sm-12 col-lg-6"><label class="label">E-mail</label><input type="mail" class="form-control" placeholder="E-mail" /></div>
+                          <div class="form-group col-sm-12 col-lg-6"><label class="label">First name
+                              <!-- --> </label><input type="text" class="form-control" placeholder="First name" />
+                            <div class="invalid-feedback">This field is required</div>
+                          </div>
+                          <div class="form-group col-sm-12 col-lg-6"><label class="label">Last name
+                              <!-- --> </label><input type="text" class="form-control" placeholder="Last name" />
+                            <div class="invalid-feedback">This field is required</div>
+                          </div>
+                          <div class="form-group col-sm-12 col-lg-6"><label class="label">Organization / entity
+                              <!-- --> </label><input type="text" class="form-control" placeholder="Organization" />
+                            <div class="invalid-feedback">This field is required</div>
+                          </div>
+                          <div class="form-group col-sm-12 col-lg-6"><label class="label">E-mail
+                              <!-- --> </label><input type="mail" class="form-control" placeholder="E-mail" />
+                            <div class="invalid-feedback">This field is required</div>
+                          </div>
                           <div class="col-12 d-flex">
                             <div class="code">8567</div><a href="#" class="recover">Code not readable? Change code in box.</a>
                           </div>
-                          <div class="form-group col-12"><label class="label"></label><label class="sub-label">Please enter code from above box</label><input type="text" class="form-control" placeholder="Code" /></div><button class="btn btn-un btn-secondary w-100">Create account</button>
+                          <div class="form-group col-12"><label class="label"> </label><label class="sub-label">Please enter code from above box</label><input type="text" class="form-control" placeholder="Code" />
+                            <div class="invalid-feedback">This field is required</div>
+                          </div><button class="btn btn-un btn-secondary w-100">Create account</button>
                           <p class="col-12 help">If you have any questions, please
                             <!-- --> <a href="#">Contact us here </a></p>
                         </form>
@@ -286,7 +304,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="timeline-block" v-popover="">
+                    <div class="timeline-block">
                       <div class="timeline">
                         <div class="timeline-group">
                           <div class="timeline-label"><a tabindex="0" id="poplink" class="timeline-link" data-trigger="focus" data-placement="bottom" data-toggle="popover" title="Global polio eradication initiative" data-content="The Global Polio Eradication Initiative began in 1988. At that time, polio was paralyzing more than 1000 children on a daily basis at global level. Thanks to the cooperation of more than 200 countries and 20 million volunteers, backed by an international investment of more than US$ 9 billion, more than 2.5 billion children have been immunized against polio since. "><span>WHO´S Constitution</span></a></div>

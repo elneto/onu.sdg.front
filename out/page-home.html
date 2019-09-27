@@ -29,9 +29,7 @@
             </nav>
             <div class="container">
               <div class="row header-banner header-form">
-                <div class="col-lg-8 col-md-12 d-flex flex-column flex-md-row mb-3 mb-lg-0"><img class="d-none d-md-block logo" src="/static/assets/images/logo.svg" alt="logo" /><img class="d-md-none logo-mobile mb-3" src="/static/assets/images/logo_mobile.svg" alt="logo" />
-                  <h1 class="header-title">Department of Economic and Social Affairs<span>Sustainable Development</span></h1>
-                </div>
+                <div class="col-lg-8 col-md-12 d-flex flex-column flex-md-row mb-3 mb-lg-0"><img class="d-none d-md-block logo" src="/static/assets/images/logo.svg" alt="logo" /><img class="d-md-none logo-mobile mb-3" src="/static/assets/images/logo_mobile.svg" alt="logo" /><span class="header-title">Department of Economic and Social Affairs<span>Sustainable Development</span></span></div>
                 <div class="col-lg-4 col-md-12">
                   <div class="row align-items-center">
                     <div class="col-8">
@@ -126,8 +124,14 @@
                         <div class="sign-content">
                           <h3 class="title">Sign in</h3>
                           <form>
-                            <div class="form-group"><label class="label">Username/E-mail</label><input type="text" class="form-control" placeholder="Username" /></div>
-                            <div class="form-group"><label class="label">Password</label><input type="password" class="form-control" placeholder="Password" /></div><button class="btn btn-un btn-secondary w-100">Sign in</button><a class="recover" href="#">Forgot password?</a>
+                            <div class="form-group"><label class="label">Username/E-mail
+                                <!-- --> </label><input type="text" class="form-control" placeholder="Username" />
+                              <div class="invalid-feedback">This field is required</div>
+                            </div>
+                            <div class="form-group"><label class="label">Password
+                                <!-- --> </label><input type="password" class="form-control" placeholder="Password" />
+                              <div class="invalid-feedback">This field is required</div>
+                            </div><button class="btn btn-un btn-secondary w-100">Sign in</button><a class="recover" href="#">Forgot password?</a>
                             <p class="help">If you have any questions, please
                               <!-- --> <a href="#">Contact us here </a></p>
                           </form>
@@ -137,14 +141,28 @@
                         <div class="create-content">
                           <h3 class="title">Create account</h3>
                           <form class="row">
-                            <div class="form-group col-sm-12 col-lg-6"><label class="label">First name</label><input type="text" class="form-control" placeholder="First name" /></div>
-                            <div class="form-group col-sm-12 col-lg-6"><label class="label">Last name</label><input type="text" class="form-control" placeholder="Last name" /></div>
-                            <div class="form-group col-sm-12 col-lg-6"><label class="label">Organization / entity</label><input type="text" class="form-control" placeholder="Organization" /></div>
-                            <div class="form-group col-sm-12 col-lg-6"><label class="label">E-mail</label><input type="mail" class="form-control" placeholder="E-mail" /></div>
+                            <div class="form-group col-sm-12 col-lg-6"><label class="label">First name
+                                <!-- --> </label><input type="text" class="form-control" placeholder="First name" />
+                              <div class="invalid-feedback">This field is required</div>
+                            </div>
+                            <div class="form-group col-sm-12 col-lg-6"><label class="label">Last name
+                                <!-- --> </label><input type="text" class="form-control" placeholder="Last name" />
+                              <div class="invalid-feedback">This field is required</div>
+                            </div>
+                            <div class="form-group col-sm-12 col-lg-6"><label class="label">Organization / entity
+                                <!-- --> </label><input type="text" class="form-control" placeholder="Organization" />
+                              <div class="invalid-feedback">This field is required</div>
+                            </div>
+                            <div class="form-group col-sm-12 col-lg-6"><label class="label">E-mail
+                                <!-- --> </label><input type="mail" class="form-control" placeholder="E-mail" />
+                              <div class="invalid-feedback">This field is required</div>
+                            </div>
                             <div class="col-12 d-flex">
                               <div class="code">8567</div><a href="#" class="recover">Code not readable? Change code in box.</a>
                             </div>
-                            <div class="form-group col-12"><label class="label"></label><label class="sub-label">Please enter code from above box</label><input type="text" class="form-control" placeholder="Code" /></div><button class="btn btn-un btn-secondary w-100">Create account</button>
+                            <div class="form-group col-12"><label class="label"> </label><label class="sub-label">Please enter code from above box</label><input type="text" class="form-control" placeholder="Code" />
+                              <div class="invalid-feedback">This field is required</div>
+                            </div><button class="btn btn-un btn-secondary w-100">Create account</button>
                             <p class="col-12 help">If you have any questions, please
                               <!-- --> <a href="#">Contact us here </a></p>
                           </form>
@@ -164,7 +182,7 @@
               </div>
             </div>
           </div>
-          <div class="home-video"><video controls="" muted="" autoplay="">
+          <div class="home-video"><video controls="" muted="" autoplay="" v-home-video="">
               <source src="/static/assets/video/1920x1080-home-video.mp4" type="video/mp4" /></video></div>
           <main>
             <div class="container-full">
@@ -256,7 +274,7 @@
                   </a></div>
               </div>
             </section>
-            <div class="goals-wrapper">
+            <div class="goals-wrapper" v-resize="">
               <div class="container">
                 <div class="heading-block">
                   <div class="row justify-content-between">
@@ -286,329 +304,431 @@
               </div>
               <div class="container-full ">
                 <div class="mb-5 row">
-                  <div class="card card-goal goal-1 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-1"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-1.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">1</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-1.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-2 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-2"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-2.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">2</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-2.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-3 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-3"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-3.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">3</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-3.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-4 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-4"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-4.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">4</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-4.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-5 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-5"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-5.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">5</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-5.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-6 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-6"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-6.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">6</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-6.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-7 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-7"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-7.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">7</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-7.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-8 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-8"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-8.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">8</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-8.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-9 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-9"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-9.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">9</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-9.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-10 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-10"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-10.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">10</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-10.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-11 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-11"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-11.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">11</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-11.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-12 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-12"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-12.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">12</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-12.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-13 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-13"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-13.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">13</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-13.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-14 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-14"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-14.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">14</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-14.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-15 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-15"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-15.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">15</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-15.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-16 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-16"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-16.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">16</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-16.jpg" alt="goal logo" />
-                    </a></div>
-                  <div class="card card-goal goal-17 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-toggle="modal" data-target="#goal-17"><a href="#" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-17.jpg&#x27;)">
-                      <div class="card-body"><span class="goal-number">17</span>
-                        <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
-                        <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
-                        <div class="goal-info">
-                          <div class="col-6"><span class="number">15</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">608</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">20</span>
-                            <p class="feature">targets</p>
-                          </div>
-                          <div class="col-6"><span class="number">35</span>
-                            <p class="feature">targets</p>
-                          </div>
-                        </div><button type="button" class="btn btn-goal">More info</button></div><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-17.jpg" alt="goal logo" />
-                    </a></div>
+                  <div class="card card-mobile goal-1 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-1" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">1</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-1" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-1.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-1.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-2 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-2" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">2</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-2" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-2.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-2.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-3 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-3" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">3</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-3" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-3.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-3.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-4 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-4" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">4</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-4" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-4.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-4.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-5 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-5" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">5</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-5" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-5.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-5.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-6 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-6" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">6</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-6" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-6.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-6.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-7 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-7" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">7</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-7" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-7.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-7.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-8 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-8" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">8</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-8" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-8.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-8.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-9 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-9" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">9</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-9" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-9.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-9.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-10 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-10" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">10</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-10" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-10.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-10.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-11 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-11" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">11</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-11" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-11.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-11.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-12 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-12" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">12</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-12" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-12.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-12.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-13 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-13" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">13</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-13" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-13.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-13.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-14 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-14" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">14</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-14" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-14.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-14.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-15 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-15" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">15</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-15" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-15.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-15.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-16 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-16" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">16</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-16" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-16.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-16.jpg" alt="goal logo" /></a>
+                  </div>
+                  <div class="card card-mobile goal-17 col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div class="modal fade" id="goal-17" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog" role="document"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <div class="modal-body">
+                          <div class="card-body"><span class="goal-number">17</span>
+                            <h3 class="goal-title">SAMOA Pathway High-Level Midterm Review 2019</h3>
+                            <p class="goal-text">End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
+                            <div class="goal-info">
+                              <div class="col-6"><span class="number">15</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">608</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">20</span>
+                                <p class="feature">targets</p>
+                              </div>
+                              <div class="col-6"><span class="number">35</span>
+                                <p class="feature">targets</p>
+                              </div>
+                            </div><button type="button" class="btn btn-goal">More info</button></div>
+                        </div>
+                      </div>
+                    </div><a href="#" data-toggle="modal" data-target="#goal-17" style="background-image:url(&#x27;/static/assets/goals/images/img-goal-17.jpg&#x27;)"><img class="goal-logo" src="/static/assets/goals/logos/goal-logo-17.jpg" alt="goal logo" /></a>
+                  </div>
                   <div class="card  goal-global col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2"><a href="#"><img src="/static/assets/goals/global-goals.png" class="goal-image" alt="goal image" /><a class="link" href="#" role="button">See all</a></a></div>
                 </div>
               </div>

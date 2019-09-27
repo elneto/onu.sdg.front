@@ -12,7 +12,35 @@
     <div id="un-sdg">
       <div id="__next">
         <div class="container mt-5">
-          <div class="form-group"><label class="label"></label><input class="form-control" /></div>
+          <form class="form-un row">
+            <div class="form-group col-6"><label class="label" for="normall">Input
+                <!-- --> </label><input type="text" class="form-control" id="normall" placeholder="Text" />
+              <div class="invalid-feedback">This field is required</div>
+            </div>
+            <div class="form-group col-6"><label class="label" for="invalid">Input
+                <!-- -->
+                <!-- -->*</label><input type="text" class="form-control is-invalid" id="invalid" placeholder="Text" required="" />
+              <div class="invalid-feedback">This field is required</div>
+            </div>
+            <div class="form-group col-6"><label class="label">Input
+                <!-- --> </label><label class="sub-label">Please clearly describe how this initiative is carried out</label><input type="seach" class="form-control" placeholder="Text" />
+              <div class="invalid-feedback">This field is required</div>
+            </div>
+            <div class="form-group col-6"><label class="label">Input
+                <!-- --> </label><label class="sub-label">Please clearly describe how this initiative is governed</label><input type="text" class="form-control" placeholder="Text" />
+              <div class="invalid-feedback">This field is required</div>
+            </div>
+            <div class="form-group col-6"><label class="label">Start date
+                <!-- -->
+                <!-- -->*</label><label class="sub-label">Enter the star date (Year Month) of the iniciative</label><input type="date" class="form-control" placeholder="dd/mm/yyyy" required="" />
+              <div class="invalid-feedback">This field is required</div>
+            </div>
+            <div class="form-group col-7"><label class="label">TextArea
+                <!-- -->
+                <!-- -->*</label><label class="sub-label">Please describe as clearly as possible what the objective of this initiative/partnership/commitment is.</label><textarea name="textarea" class="form-control is-invalid" placeholder="Description (max. 100 words)"></textarea>
+              <div class="invalid-feedback">This field is required</div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
