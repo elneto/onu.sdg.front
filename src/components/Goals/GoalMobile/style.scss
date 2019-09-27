@@ -1,14 +1,14 @@
 @import "src/scss/theme/variables.scss";
 @import "src/scss/theme/mixins.scss";
 
-.card-goal {
+.card-mobile {
   position: relative;
   cursor: pointer;
   > a {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.33);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.33);
   }
 
   .goal-image {
@@ -18,32 +18,14 @@
     height: 100%;
   }
 
-  &:hover {
-    > a {
-      text-decoration: none;
-    }
-    .card-body {
-      opacity: 1;
-    }
-    .goal-image,
-    .goal-logo {
-      z-index: -1;
-    }
-    .goal-logo,
-    .goal-image {
-      visibility: hidden;
-    }
-  }
-
   .card-body {
     padding: 20px;
-    opacity: 0;
     position: relative;
     width: 100%;
     height: 100%;
     color: $white;
-    // transition: opacity 0.4s linear;
   }
+
   .goal-logo {
     position: absolute;
     max-width: 100px;
@@ -123,30 +105,31 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px ) {
   .card-goal {
     height: 500px;
   }
 }
 
+
 @media (max-width: 576px) {
-  .card-goal {
+  .card-mobile {
     height: 270px;
     pointer-events: auto;
     cursor: pointer;
-    &:hover {
-      .goal-image,
-      .goal-logo {
-        z-index: 1;
-      }
-      .goal-logo,
-      .goal-image {
-        visibility: visible;
-      }
+    .modal-dialog {
+      margin: 0;
+      height: 100%;
     }
-    .card-body {
-      opacity: 1;
-      display: none;
+    .close {
+      position: absolute;
+      right: 20px;
+      color: $white;
+      z-index: 1;
+    }
+    .modal-body {
+      height: 100%;
+      padding: 0;
     }
   }
 }
