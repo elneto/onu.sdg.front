@@ -8,7 +8,7 @@ const IndexPage = () => (
     <div className="d-flex justify-content-around container flex-column flex-sm-row mt-5">
       <div>
         <h3>COMPONENTS</h3>
-        <nav class="nav flex-column">
+        <nav className="nav flex-column">
           <li>
             <Link href="/page-header/">Header</Link>
           </li>
@@ -393,7 +393,7 @@ const IndexPage = () => (
       </div>
       <div>
         <h3>VIEWS</h3>
-        <nav class="nav flex-column">
+        <nav className="nav flex-column">
           <li>
             <Link href="/page-home">Home</Link>
           </li>

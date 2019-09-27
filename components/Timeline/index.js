@@ -13,7 +13,7 @@ export default class Timeline extends Component {
         <div className="timeline">
           <div className="timeline-group">
             <div
-              className="timeline-label" v-popover=""
+              className="timeline-label" 
             >
               <a
                 tabindex="0"

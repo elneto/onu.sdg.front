@@ -1,7 +1,8 @@
 .home-video {
+  height: calc(100vh - 200px);
   video {
     width: 100%;
-    height: calc(100vh - 200px);
+    height: 100%;
     object-fit: fill;
   }
 }

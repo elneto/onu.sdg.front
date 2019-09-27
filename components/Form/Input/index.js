@@ -9,20 +9,22 @@ const Input = ({
   label,
   className,
   required,
-  subLabel
+  subLabel,
+  invalid
 }) => (
   <div className={classNames("form-group", className)}>
     <label className="label" for={id}>
-      {label}
+      {label} {required && <>*</>}
     </label>
     {subLabel && <label className="sub-label">{subLabel}</label>}
     <input
       type={type}
-      class="form-control"
+      className={classNames("form-control", { "is-invalid": invalid })}
       id={id}
       placeholder={placeholder}
       required={required}
     />
+    <div className="invalid-feedback">This field is required</div>
   </div>
 );
 

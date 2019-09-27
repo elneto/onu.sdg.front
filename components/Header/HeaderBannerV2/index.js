@@ -16,10 +16,10 @@ const HeaderBannerV2 = ({}) => (
           src="/static/assets/images/logo_mobile.svg"
           alt="logo"
         />
-        <h1 className="header-title">
+        <span className="header-title">
           Department of Economic and Social Affairs
           <span>Sustainable Development</span>
-        </h1>
+        </span>
       </div>
       <div className="col-lg-4 col-md-12">
         <div className="row align-items-center">
