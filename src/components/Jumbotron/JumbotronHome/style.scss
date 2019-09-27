@@ -2,7 +2,7 @@
 @import "src/scss/theme/mixins.scss";
 
 .home-banner {
-  height: calc(100vh - 201px);
+  height: calc(100vh - 200px);
   h1 {
     color: $white;
     margin-bottom: 50px;
@@ -16,8 +16,9 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .home-banner {
+    height: 420px;
     h1 {
       font-size: 42px;
       line-height: 1;
