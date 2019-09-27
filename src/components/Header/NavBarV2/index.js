@@ -1,4 +1,3 @@
-
 import React from "react";
 import MegaMenu from "../MegaMenu";
 import "./style.scss";
@@ -17,10 +16,7 @@ const NavBarV2 = ({}) => (
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div
-        className="collapse navbar-collapse"
-        id="navbarToggle"
-      >
+      <div className="collapse navbar-collapse" id="navbarToggle">
         <ul className="navbar-nav w-100">
           <li className="nav-item">
             <a className="nav-link" href="#">
@@ -36,7 +32,7 @@ const NavBarV2 = ({}) => (
               aria-haspopup="true"
               aria-expanded="false"
             >
-            SDGs
+              SDGs
             </a>
             <div className="dropdown-menu w-100" aria-labelledby="goals">
               <div className="container d-flex justify-content-center flex-lg-row flex-column">
@@ -46,10 +42,30 @@ const NavBarV2 = ({}) => (
               </div>
             </div>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              id="states"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               Member States
             </a>
+            <div className="dropdown-menu w-100" aria-labelledby="states">
+              <div className="container">
+                <a className="dropdown-item" href="#">
+                  Action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Another action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </div>
+            </div>
           </li>
           <li className="nav-item dropdown">
             <a
@@ -143,4 +159,3 @@ const NavBarV2 = ({}) => (
 );
 
 export default NavBarV2;
-

@@ -58,3 +58,11 @@
     margin-right: 10px;
   }
 }
+
+@media (max-width: 576px) {
+  .login-modal {
+    .create-content {
+      max-width: 275px;
+    }
+  }
+}

@@ -16,10 +16,7 @@ const NavBar = ({}) => (
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div
-        className="collapse navbar-collapse"
-        id="navbarToggle"
-      >
+      <div className="collapse navbar-collapse" id="navbarToggle">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
             <a className="nav-link" href="#">
@@ -45,10 +42,30 @@ const NavBar = ({}) => (
               </div>
             </div>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              id="states"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               Member States
             </a>
+            <div className="dropdown-menu w-100" aria-labelledby="states">
+              <div className="container">
+                <a className="dropdown-item" href="#">
+                  Action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Another action
+                </a>
+                <a className="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </div>
+            </div>
           </li>
           <li className="nav-item dropdown">
             <a

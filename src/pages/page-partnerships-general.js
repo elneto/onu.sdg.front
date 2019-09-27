@@ -8,6 +8,7 @@ import Dropdown from "../components/Dropdown";
 import Checkbox from "../components/Form/Checkbox";
 import Input from "../components/Form/Input";
 import Select from "../components/Form/Select";
+import LabelToast from "../components/Labels/LabelToast";
 
 const PagePartnershipsGeneral = () => (
   <>
@@ -22,7 +23,11 @@ const PagePartnershipsGeneral = () => (
                 <Checkbox id={`goal-${goal}`} label={`Goal ${goal}`} />
               ))}
             </Dropdown>
-            <Dropdown title="Action networks & databases" id="networks" className="col-12 mb-5">
+            <Dropdown
+              title="Action networks & databases"
+              id="networks"
+              className="col-12 mb-5"
+            >
               {[...Array(14).keys()].map(index => (
                 <Checkbox id={`network-${index}`} label="Business for 2030" />
               ))}
@@ -57,10 +62,29 @@ const PagePartnershipsGeneral = () => (
                 <Select id="short" label="Short by" />
               </div>
             </div>
+            <div className="col-12 d-flex mb-3">
+              <LabelToast className="mr-2">Goal 1</LabelToast>
+              <LabelToast className="mr-2">Goal 7</LabelToast>
+              <LabelToast className="mr-2">Every woman, every child</LabelToast>
+            </div>
             <div className="row row-spacing">
               {[...Array(14)].map(topic => (
                 <Partnerships01 className="col-12 col-sm-12 col-lg-6" />
               ))}
+            </div>
+            <div className="col-12">
+              <button
+                class="btn btn-primary btn-spinner w-100 mb-5"
+                type="button"
+                disabled
+              >
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                <span className="text">Loading more partnership</span>
+              </button>
             </div>
           </div>
         </div>
