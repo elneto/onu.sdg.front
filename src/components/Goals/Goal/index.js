@@ -101,7 +101,7 @@ const Goal = ({ goal }) => (
 
       <img
         className="goal-logo"
-        src={`/assets/goals/logos/goal-logo-${goal}.jpg`}
+        src={`/assets/goals/logos/goal-logo-${goal}.png`}
         alt="goal logo"
       />
     </a>

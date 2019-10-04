@@ -17,16 +17,15 @@
       .label-group-text,
       .event-label,
       .event-text,
-      .event-hour {
+      .event-hour,.badge a {
         color: $white;
       }
-      .badge {
-        background-color: $white;
+      .badge, .badge a {
         color: $primary;
       }
       .separator,
       .event-label::before,
-      .event-date :after {
+      .event-date :after, .badge {
         background-color: $white;
       }
     }

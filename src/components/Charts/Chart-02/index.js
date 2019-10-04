@@ -106,13 +106,14 @@ export default class Chart02 extends Component {
               }
             }
           ]
-        }
+        },
+        maintainAspectRatio: false
       }
     });
   }
   render() {
     return (
-      <div>
+      <div style={{height: '308px'}}>
         <canvas id="myChart" ref={this.chartRef} />
       </div>
     );

@@ -8,7 +8,7 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.33);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.33);
   }
 
   .goal-image {
@@ -105,18 +105,21 @@
   }
 }
 
-@media (max-width: 992px ) {
+@media (max-width: 992px) {
   .card-goal {
     height: 500px;
   }
 }
-
 
 @media (max-width: 576px) {
   .card-mobile {
     height: 270px;
     pointer-events: auto;
     cursor: pointer;
+
+    .goal-logo {
+      height: 75px;
+    }
     .modal-dialog {
       margin: 0;
       height: 100%;

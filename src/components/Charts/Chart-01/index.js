@@ -7,7 +7,6 @@ export default class Chart01 extends Component {
 
   componentDidMount() {
     const myChartRef = this.chartRef.current.getContext("2d");
-
     new Chart(myChartRef, {
       type: "bar",
       responsive: true,
@@ -121,13 +120,14 @@ export default class Chart01 extends Component {
               }
             }
           ]
-        }
+        },
+        maintainAspectRatio: false
       }
     });
   }
   render() {
     return (
-      <div>
+      <div style={{height: '308px'}}>
         <canvas id="myChart" ref={this.chartRef} />
       </div>
     );
