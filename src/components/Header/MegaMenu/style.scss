@@ -9,6 +9,9 @@
   .mega-menu-item:not(:last-child):not(.important-item) {
     margin-bottom: 12px;
   }
+  a {
+    max-width: 100%;
+  }
 
   .important {
     border: 1px solid $grey-6;
