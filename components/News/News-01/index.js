@@ -17,7 +17,7 @@ const News01 = ({}) => (
           international and regional organizations, Major Groups and other
           Stakeholders.
         </p>
-        <Link>Read More</Link>
+        <span className="card-link">Read More</span>
         <LabelNumericGroup goals={3} />
       </div>
     </a>

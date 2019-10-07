@@ -15,7 +15,7 @@
     .card-title,
     .card-date,
     .card-text,
-    .link,
+    .card-link,
     .label-group-text {
       color: $white;
     }
@@ -23,7 +23,7 @@
       color: $primary;
     }
 
-    .link {
+    .card-link {
       text-decoration: underline;
     }
     .badge {
@@ -31,8 +31,9 @@
       color: $primary;
     }
   }
-  .link {
+  .card-link {
     margin-bottom: 25px;
+    display: block;
   }
 }
 
