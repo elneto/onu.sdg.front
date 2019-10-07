@@ -3,7 +3,7 @@ import "./style.scss";
 
 
 const LabelNumeric = ({ children, color }) => (
-  <span class={`badge badge-primary ${color}`}>{children}</span>
+  <span class={`badge badge-primary ${color}`}><a href="#">{children}</a></span>
 );
 
 export default LabelNumeric;

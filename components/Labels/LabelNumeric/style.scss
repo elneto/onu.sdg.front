@@ -9,6 +9,10 @@
   font-weight: bold;
   border-radius: 2px;
   width: 24px;
+  
+  a {
+    color: $white;
+  }
 
   @for $i from 1 through length($goals) {
     &.goal-#{$i} {

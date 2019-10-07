@@ -101,7 +101,8 @@ Vue.directive("chart-line", {
               }
             }
           ]
-        }
+        },
+        maintainAspectRatio: false
       }
     });
   }

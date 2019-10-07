@@ -116,7 +116,8 @@ Vue.directive("chart-bars", {
               }
             }
           ]
-        }
+        },
+        maintainAspectRatio: false
       }
     });
   }
