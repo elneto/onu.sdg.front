@@ -3,7 +3,7 @@ import React from "react";
 import Layout from "../components/layout";
  
 import NotFound from "../components/Jumbotron/NotFound";
-import Header from "../components/header";
+import Header from "../components/Header";
 import FooterV2 from "../components/FooterV2";
 
 const NotFoundPage = () => (

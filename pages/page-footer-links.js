@@ -1,10 +1,8 @@
-import React from "react";
-import FooterLinks from "../components/FooterLinks";
-import Container from "../components/Container";
+import React from 'react';
+import FooterLinks from '../components/FooterLinks';
+
 const FooterLinksPage = () => (
-  <Container>
-    <FooterLinks />
-  </Container>
+  <FooterLinks/>
 );
 
 export default FooterLinksPage;

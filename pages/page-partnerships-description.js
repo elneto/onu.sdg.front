@@ -1,7 +1,7 @@
 import React from "react";
 
  
-import Header from "../components/header";
+import Header from "../components/Header";
 import FooterV2 from "../components/FooterV2";
 import JumbotronPartnerships from "../components/Jumbotron/JumbotronPartnerships";
 import SharedRelated from "../components/Shared-Related";

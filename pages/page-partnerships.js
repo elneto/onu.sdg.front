@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from "../components/header";
+import Header from "../components/Header";
 import Heading from "../components/Heading";
 import FooterV2 from "../components/FooterV2";
 import TabsLight from "../components/Tabs/TabsLight";
