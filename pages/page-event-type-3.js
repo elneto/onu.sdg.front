@@ -1,7 +1,7 @@
 import React from "react";
 
  
-import Header from "../components/header";
+import Header from "../components/Header";
 import FooterV2 from "../components/FooterV2";
 import JumbotronEvent03 from "../components/Jumbotron/JumbotronEvent03";
 import Document01 from "../components/Documents/Document-01";

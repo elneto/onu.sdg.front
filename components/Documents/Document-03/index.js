@@ -4,8 +4,8 @@ import "./style.scss";
 
 const Document03 = ({ className, id }) => (
   <div className={classNames("document-03 document-card", className)}>
-    <div class="card card-dropdown">
-      <div class="card-body">
+    <div className="card card-dropdown">
+      <div className="card-body">
         <button
           type="button"
           className="btn dropdown-toggle collapsed"
@@ -16,8 +16,8 @@ const Document03 = ({ className, id }) => (
           aria-controls={id}
         >
           <div className="d-flex align-items-center">
-            <div className="document-icon"></div>
-            <span href="#" className="document-name">
+            <span className="document-icon"/>
+            <span className="document-name">
               Synthesis of Voluntary National Reviews
             </span>
           </div>
