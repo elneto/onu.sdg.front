@@ -1,5 +1,5 @@
 import React from "react";
-import LanguageNavBar from "src/components/header/LanguageNavBar";
+import LanguageNavBar from "src/components/Header/LanguageNavBar";
 
 const LanguageNavBarPage = () => <LanguageNavBar />;
 

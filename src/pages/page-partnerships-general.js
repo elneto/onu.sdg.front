@@ -1,7 +1,7 @@
 import React from "react";
 
 import SEO from "../components/seo";
-import Header from "../components/header";
+import Header from "../components/Header";
 import FooterV2 from "../components/FooterV2";
 import Partnerships01 from "../components/Partnerships/Partnership-01";
 import Dropdown from "../components/Dropdown";
