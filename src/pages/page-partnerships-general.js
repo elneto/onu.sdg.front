@@ -38,19 +38,6 @@ const PagePartnershipsGeneral = () => (
               <div className="col">
                 <div className="d-flex border-bottom">
                   <h5>1450 results</h5>
-                  <div className="d-flex ml-auto">
-                    <button className="btn btn-results group">
-                      <div className="rectangle"></div>
-                      <div className="rectangle"></div>
-                      <div className="rectangle"></div>
-                      <div className="rectangle"></div>
-                    </button>
-                    <button className="btn btn-results list">
-                      <div className="rectangle"></div>
-                      <div className="rectangle"></div>
-                      <div className="rectangle"></div>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
