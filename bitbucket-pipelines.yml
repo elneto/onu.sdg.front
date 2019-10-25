@@ -1,7 +1,7 @@
 image: kroniak/ssh-client
 pipelines:
   branches:
-    develop:
+    master:
       - step:
           name: deploy to staging
           image: kroniak/ssh-client
