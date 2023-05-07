@@ -30,7 +30,7 @@
     "@fortawesome/fontawesome-free": "^5.10.2",
     "gatsby-plugin-asset-path": "^1.0.2",
     "gatsby-plugin-root-import": "^2.0.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "prettier": "^1.18.2"
   },
   "keywords": [
